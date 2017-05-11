@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="$tab$" class="figure" data-ziconfig="swtriggerfigure">
+  <table class="w100p h100p">
+    <col class="w100p" />
+    <col class="wctrltab" />
+    <tbody>
+      <tr>
+        <td class="atop">
+          <div class="svgplotborder" id="$tab$spb0">
+            <div id="$tab$p0" data-ziconfig="placeholder"></div>
+          </div>
+        </td>
+        <td class="ctrlside h100p atop">
+          <div id="$tab$swtrigctrltab" class="sidetabs w100p hctrltab" data-ziconfig="divobject" data-zipath="/local/$tab$/ctrltabsel">
+            <ul>
+              <li class="tabbtn">
+                <label for="$tab$tabs-0">Control</label>
+              </li>
+              <li class="tabbtn">
+                <label for="$tab$tabs-1">Settings</label>
+              </li>
+              <li class="tabbtn">
+                <label for="$tab$tabs-2">Grid</label>
+              </li>
+              <li class="tabbtn">
+                <label for="$tab$tabs-3">History</label>
+              </li>
+              <li class="tabbtn">
+                <label for="$tab$tabs-4">Math</label>
+              </li>
+            </ul>
+            <div id="$tab$tabs-0" class="tab-content" data-ziconfig="divobject">
+              <table class="w100p h100p ui-inputs-cont">
+                <col style="width:35%"/>
+                <col style="width:35%"/>
+                <col style="width:30%"/>
+                <tbody>
+                <tr>
+                  <td colspan="3" class="btn-group">
+                    <span class="fleft">
+                      <a id="$tab$swtrig_run-0" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.swtriggerRun.tooltip$"><label>Run/Stop</label></a>
+                      <a id="$tab$swtrig_single-0" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.swtriggerSingle.tooltip$"><label>Single</label></a>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="tlabel-space">
+                  <td class="flabel">Triggered</td>
+                  <td colspan="2">
+                    <div class="led positive" id="$tab$triggered0" data-ziconfig="led" data-zipath="/module/$tab$/trigger/triggered" data-zitooltip="$loc.swtriggerLed.tooltip$" />
+                  </td>
+                </tr>
+                <tr><td colspan="3"></td></tr>
+                <tr style="height:100%;">
+                  <td colspan="3" class="pad0">
+                    <table class="w100p h100p ui-inputs-cont" data-ziinclude="verticalAxisGroups.html?name=swtrigger&height=270" />
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="$tab$tabs-1" class="tab-content" data-ziconfig="divobject">
+              <table class="w100p ui-inputs-cont">
+              <col class="ctrl-col1" />
+              <col class="ctrl-col2" />
+              <col class="ctrl-col3" />
+              <tbody>
+                <tr>
+                  <td colspan="3" class="btn-group">
+                    <a id="$tab$swtrig_run-1" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.swtriggerRun.tooltip$"><label>Run/Stop</label></a>
+                    <a id="$tab$swtrig_single-1" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.swtriggerSingle.tooltip$"><label>Single</label></a>
+                  </td>
+                </tr>
+                <tr class="tlabel-space"><td class="tlabel" colspan="3">Trigger Settings</td></tr>
+                <tr>
+                  <td class="flabel">
+                    <label>Trigger&#160;Signal</label>
+                  </td>
+                  <td colspan="2">
+                    <div class="single-tree-cont">
+                      <div id="$tab$triggernodetree" data-zipath="/local/$tab$/treetriggernode" data-ziconfig="swtrigger-triggernode-select" data-zitooltip="$loc.swtriggerTriggerNode.tooltip$" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="flabel">Trigger&#160;Type</td>
+                  <td>
+                    <div class="select-wrap w100p" data-zitooltip="$loc.swtriggerType.tooltip$">
+                      <select class="onsel_show_hide" id="$tab$swtrigger_type" data-zipath="/module/$tab$/trigger/0/type">
+                        <option value="1" data-linked="edge">Edge</option>
+                        <option value="2" data-linked="digital" disabled="disabled">Digital</option>
+                        <option value="3" data-linked="pulse">Pulse</option>
+                        <option value="4" data-linked="tracking">Tracking Edge</option>
+                        <!--option value="5" data-linked="change">Change</option-->
+                        <option value="6" data-linked="hwtrigger" disabled="disabled">HW Trigger</option>
+                        <option value="7" data-linked="pulse">Tracking Pulse</option>
+                        <option value="8" data-linked="eventcount" disabled="disabled">Pulse Count</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <button id="$tab$swtrigger_forcetrig" class="w100p" tabindex="0" data-zivalue="1" data-zipath="/module/$tab$/trigger/forcetrigger" data-zitooltip="$loc.swtriggerForceTrigger.tooltip$"><label>Force</label></button>
+                  </td>
+                </tr>
+                <tr class="hidable edge digital tracking change hwtrigger">
+                  <td class="flabel">Trigger&#160;Edge</td>
+                  <td>
+                    <div class="select-wrap w100p" data-zitooltip="$loc.swtriggerEdge.tooltip$">
+                      <select id="$tab$swtrig_edgen" data-zipath="/module/$tab$/trigger/0/edge">
+                        <option value="1">Positive</option>
+                        <option value="2">Negative</option>
+                        <option value="3">Both</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="hidable pulse"> <!-- same as above row. Cloned as needed to add different label and tooltip -->
+                  <td class="flabel">Pulse&#160;Type</td>
+                  <td>
+                    <div class="select-wrap w100p" data-zitooltip="$loc.swtriggerPulseType.tooltip$">
+                      <select id="$tab$swtrig_edgep" data-zipath="/module/$tab$/trigger/0/edge">
+                        <option value="1">Positive</option>
+                        <option value="2">Negative</option>
+                        <option value="3">Both</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="hidable digital">
+                  <td class="flabel">Bits</td>
+                  <td>
+                    <input class="num w100p" id="$tab$swtrigger_bits" type="text" value="" data-zipath="/module/$tab$/trigger/0/bits" data-zitooltip="$loc.swtriggerDioBits.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr class="hidable digital">
+                  <td class="flabel">Bit&#160;Mask</td>
+                  <td>
+                    <input class="num w100p" id="$tab$swtrigger_mask" type="text" value="" data-zipath="/module/$tab$/trigger/0/bitmask" data-zitooltip="$loc.swtriggerDioBitmask.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr class="hidable edge pulse tracking">
+                  <td class="flabel">
+                    <label>Level&#160;</label>
+                    <label>(</label><label id="$tab$levellabel" data-zipath="/local/$tab$/sourcelabel" data-ziconfig="localstring"></label><label>)</label>
+                  </td>
+                  <td>
+                    <input class="style10030 num w100p" id="$tab$level" type="text" value="" data-zipath="/local/$tab$/level" data-zitooltip="$loc.swtriggerLevel.tooltip$"/>
+                  </td>
+                  <td>
+                    <a id="$tab$findlevel" class="btn w100p" tabindex="0" data-zipath="/module/$tab$/trigger/0/findlevel" data-zitooltip="$loc.swtriggerFindlevel.tooltip$"><label>Find</label></a>
+                  </td>
+                </tr>
+                <tr class="hidable edge pulse tracking">
+                  <td class="flabel">
+                    <label>Hysteresis&#160;</label>
+                    <label>(</label><label id="$tab$hysteresislabel" data-zipath="/local/$tab$/sourcelabel" data-ziconfig="localstring"></label><label>)</label>
+                  </td>
+                  <td>
+                    <input class="style10030 num w100p" id="$tab$hysteresis" type="text" value="" data-zipath="/local/$tab$/hysteresis" data-zitooltip="$loc.swtriggerHysteresis.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr class="hidable eventcount">
+                  <td class="flabel">Count&#160;Type</td>
+                  <td>
+                    <div class="select-wrap w100p" data-zitooltip="$loc.swtriggerEventCountMode.tooltip$">
+                      <select id="$tab$swtrig_eventcountmode" data-zipath="/module/$tab$/trigger/0/eventcount/mode">
+                        <option value="1">Any Count</option>
+                        <option value="2">Increment</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="flabel">Count</td>
+                  <td>
+                    <input class="num w100p" id="$tab$swtrigger_count" type="text" value="" data-zipath="/module/$tab$/trigger/0/count" data-zitooltip="$loc.swtriggerCount.tooltip$"/>
+                  </td>
+                  <td>
+                    <div class="hproggress w100p" id="$tab$swtrigprogress" data-zipath="/local/$tab$/progress" data-zitooltip="$loc.swtriggerProgress.tooltip$">
+                      <div class="bar" style="width:0%;"></div>
+                      <label class="num"></label>
+                    </div>
+                    <!--input class="num w35 aright" id="$tab$swtrigprogress" data-zipath="/local/$tab$/progress" readonly="readonly" type="text" value="" data-zitooltip="$loc.swtriggerProgress.tooltip$"/>
+                    <label class="slabel" for="$tab$swtrigprogress">%</label-->
+                  </td>
+                </tr>
+                <tr class="hidable edge pulse tracking">
+                  <td class="flabel">Bandwidth&#160;(Hz)</td>
+                  <td>
+                    <input class="style10030 num w100p" id="$tab$swtrigger_bw" type="text" value="" data-zipath="/module/$tab$/trigger/0/bandwidth" data-zitooltip="$loc.swtriggerBandwidth.tooltip$"/>
+                  </td>
+                  <td>
+                    <a id="$tab$swtrigger_bwenable" class="icon-toggle btn w100p" tabindex="0" data-zipath="/local/$tab$/bwenable" data-zitooltip="$loc.swtriggerBandwidthEnable.tooltip$"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="tlabel-space">
+                  <td class="tlabel">Horizontal</td>
+                  <td colspan="2">
+                    <div class="led positive" id="$tab$triggered" data-ziconfig="led" data-zipath="/module/$tab$/trigger/triggered" data-zitooltip="$loc.swtriggerLed.tooltip$" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="flabel">Hold&#160;Off&#160;Time&#160;(s)</td>
+                  <td>
+                    <input class="style10030 num w100p" id="$tab$swtrigger_hotime" type="text" value="" data-zipath="/module/$tab$/trigger/0/holdoff/time" data-zitooltip="$loc.swtriggerHoldOffTime.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">Hold&#160;Off&#160;Count</td>
+                  <td>
+                    <input class="num w100p" id="$tab$swtrigger_hocount" type="text" value="" data-zipath="/module/$tab$/trigger/0/holdoff/count" data-zitooltip="$loc.swtriggerHoldOffCount.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">Delay&#160;(s)</td>
+                  <td>
+                    <input class="style10030 num w100p" id="$tab$swtrigger_delay" type="text" value="" data-zipath="/module/$tab$/trigger/0/delay" data-zitooltip="$loc.swtriggerDelay.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">Duration&#160;(s)</td>
+                  <td>
+                    <input class="style10030 num w100p" id="$tab$swtrigger_duration" type="text" value="" data-zipath="/module/$tab$/trigger/0/duration" data-zitooltip="$loc.swtriggerDuration.tooltip$"/>
+                  </td>
+                  <td/>
+                </tr>
+                <tr class="hidable pulse">
+                  <td class="flabel">Pulse&#160;Min&#160;(s)</td>
+                  <td>
+                    <input class="style10030 num w100p" id="$tab$swtrigger_pulsemin" type="text" value="" data-zipath="/module/$tab$/trigger/0/pulse/min" data-zitooltip="$loc.swtriggerPulseMin.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr class="hidable pulse">
+                  <td class="flabel">Pulse&#160;Max&#160;(s)</td>
+                  <td>
+                    <input class="style10030 num w100p" id="$tab$swtrigger_pulsemax" type="text" value="" data-zipath="/module/$tab$/trigger/0/pulse/max" data-zitooltip="$loc.swtriggerPulseMax.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+            <div id="$tab$tabs-2" class="tab-content" data-ziconfig="divobject">
+              <table class="w100p ui-inputs-cont">
+              <col class="ctrl-col1" />
+              <col class="ctrl-col2" />
+              <col class="ctrl-col3" />
+              <tbody>
+                <tr>
+                  <td colspan="3" class="btn-group">
+                    <a id="$tab$swtrig_run-4" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.swtriggerRun.tooltip$"><label>Run/Stop</label></a>
+                    <a id="$tab$swtrig_single-4" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.swtriggerSingle.tooltip$"><label>Single</label></a>
+                  </td>
+                </tr>
+                <tr class="tlabel-space"><td class="tlabel" colspan="3">Grid Settings</td></tr>
+                <tr>
+                  <td class="flabel">Mode</td>
+                  <td>
+                    <div class="select-wrap w100p" data-zitooltip="$loc.swtriggerGridMode.tooltip$">
+                      <select id="$tab$swtrigger_gridMode" data-zipath="/module/$tab$/trigger/0/grid/mode">
+                        <option value="0">Off</option>
+                        <option value="1">Nearest</option>
+                        <option value="2">Linear</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">Operation</td>
+                  <td>
+                    <div class="select-wrap w100p" data-zitooltip="$loc.swtriggerGridOperation.tooltip$">
+                      <select id="$tab$swtrigger_gridOperation" data-zipath="/module/$tab$/trigger/0/grid/operation">
+                        <option value="0">Replace</option>
+                        <option value="1">Average</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">Columns</td>
+                  <td>
+                    <input class="style10000 num w100p" id="$tab$swtrigger_gridCols" type="text" value="" data-zipath="/module/$tab$/trigger/0/grid/cols" data-zitooltip="$loc.swtriggerGridColumns.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">Rows</td>
+                  <td>
+                    <input class="style10000 num w100p" id="$tab$swtrigger_gridRows" type="text" value="" data-zipath="/module/$tab$/trigger/0/grid/rows" data-zitooltip="$loc.swtriggerGridRows.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">Scan Direction</td>
+                  <td>
+                    <div class="select-wrap w100p" data-zitooltip="$loc.swtriggerGridDirection.tooltip$">
+                      <select id="$tab$swtrigger_gridDirection" data-zipath="/module/$tab$/trigger/0/grid/direction">
+                        <option value="0">Forward</option>
+                        <option value="1">Reverse</option>
+                        <option value="2">Bidirectional</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">Repetitions</td>
+                  <td>
+                    <input class="style10000 num w100p" id="$tab$swtrigger_gridRepetitions" type="text" value="" data-zipath="/module/$tab$/trigger/0/grid/repetitions" data-zitooltip="$loc.swtriggerGridRepetitions.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flabel">AWG Control</td>
+                  <td>
+                    <a id="$tab$swtrigger_awgControl" class="icon-toggle btn w100p" tabindex="0" data-zipath="/module/$tab$/trigger/awgcontrol" data-zitooltip="$loc.swtriggerAwgControl.tooltip$"/>
+                  </td>
+                  <td></td>
+                </tr>
+                <!--tr class="tlabel-space"><td class="tlabel" colspan="3">Display</td></tr-->
+
+              </tbody>
+              </table>
+            </div>
+            <div id="$tab$tabs-3" class="tab-content" data-ziconfig="divobject">
+              <table class="w100p h100p ui-inputs-cont">
+              <col style="width:65px;" />
+              <col style="width:70%;" />
+              <col style="width:30%;" />
+              <tbody class="histlist-wrapper">
+                <tr>
+                  <td colspan="3" class="btn-group">
+                    <a id="$tab$swtrig_run-2" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.swtriggerRun.tooltip$"><label>Run/Stop</label></a>
+                    <a id="$tab$swtrig_single-2" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.swtriggerSingle.tooltip$"><label>Single</label></a>
+                  </td>
+                </tr>
+                <tr style="height:100%;" class="tlabel-space">
+                  <td class="tlabel" colspan="3"><label data-zitooltip="$loc.swtriggerHlistHistory.tooltip$">History</label></td>
+                </tr>
+                <tr style="height:100%">
+                  <td class="atop pad0 h100p">
+                    <table class="w100p">
+                      <tr>
+                        <td><button class="clear_swtrigger w100p" id="$tab$clear_swtrigger" data-zipath="/module/$tab$/trigger/clearhistory" data-zivalue="1" data-zitooltip="$loc.swtriggerHlistClear.tooltip$">Clear All</button></td>
+                      </tr>
+                      <tr>
+                        <td><button class="list-action-btn w100p" data-action="sel-all" data-zitooltip="$loc.swtriggerHlistAll.tooltip$">All</button></td>
+                      </tr>
+                      <tr>
+                        <td><button class="list-action-btn w100p" data-action="sel-none" data-zitooltip="$loc.swtriggerHlistNone.tooltip$">None</button></td>
+                      </tr>
+                      <tr>
+                        <td class="clabel" style="height:20px">Length</td>
+                      </tr>
+                      <tr>
+                        <td class="atop">
+                          <input class="num w100p" id="$tab$histroylength" data-zipath="/module/$tab$/trigger/historylength" type="text" value="" data-zitooltip="$loc.sweepHlistLength.tooltip$" data-ziconfig="historylength"/>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td colspan="2" class="h100p">
+                    <div class="histlist-cont w100p h100p custom-io prelative">
+                      <table class="hlist_table w100p pabsolute">
+                        <col class="w20" />
+                        <col class="w100p" />
+                        <col class="w20" />
+                        <col style="width:1px" />
+                        <tbody class="histlist-body" id="$tab$swtrighistorylist" data-zipath="/local/$tab$/trigger/historylist" data-ziconfig="historylist"></tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="tlabel-space">
+                  <td colspan="3" class="tlabel">Save</td>
+                </tr>
+                <tr>
+                  <td class="flabel">File&#160;Name</td>
+                  <td>
+                    <input class="w100p" id="$tab$swtrigger_filename" type="text" value="" data-zipath="/local/$tab$/filename" data-ziconfig="localstring"/>
+                  </td>
+                  <td>
+                    <button id="$tab$swtrigger_save" class="w100p" data-zivalue="1" tabindex="0" data-zipath="/local/$tab$/save" data-zitooltip="$loc.swtriggerSave.tooltip$">Save</button>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+            <div id="$tab$tabs-4" class="tab-content" data-ziconfig="divobject">
+              <table class="w100p h100p ui-inputs-cont">
+                <col class="ctrl-col1" />
+                <col style="width: 40%;"/>
+                <col style="width: 60%;" />
+                <tbody>
+                <tr>
+                  <td colspan="3" class="btn-group">
+                    <span class="fleft">
+                      <a id="$tab$swtrig_run-3" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.swtriggerRun.tooltip$"><label>Run/Stop</label></a>
+                      <a id="$tab$swtrig_single-3" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.swtriggerSingle.tooltip$"><label>Single</label></a>
+                    </span>
+                  </td>
+                </tr>
+                <tr style="height:100%;">
+                  <td colspan="3">
+                    <table id="$tab$plotmath" class="w100p h100p plotmath-cont" data-ziconfig="plotmath" data-ziinclude="plotmath.html" />
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

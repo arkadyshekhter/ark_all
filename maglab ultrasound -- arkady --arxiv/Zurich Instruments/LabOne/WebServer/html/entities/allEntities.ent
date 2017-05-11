@@ -1,0 +1,44 @@
+<!-- $Id: allEntities.ent 5583 2010-11-23 09:37:42Z be $ -->
+
+<!ENTITY % HTMLLat1 SYSTEM "HTMLLat1.ent">
+<!-- Request the XML parser resolve the entity. -->
+%HTMLLat1;
+
+<!ENTITY % HTMLSymbol SYSTEM "HTMLSymbol.ent">
+<!-- Request the XML parser resolve the entity. -->
+%HTMLSymbol;
+
+<!ENTITY % HTMLSpecial SYSTEM "HTMLSpecial.ent">
+<!-- Request the XML parser resolve the entity. -->
+%HTMLSpecial;
+
+<!ENTITY % MMLAlias SYSTEM "MMLAlias.ent">
+<!-- Request the XML parser resolve the entity. -->
+%MMLAlias;
+
+<!ENTITY % ISOGrk3 SYSTEM "ISOGrk3.ent">
+<!-- Request the XML parser resolve the entity. -->
+%ISOGrk3;
+
+<!-- glyphs substituted using other font -->
+<!--
+<!ENTITY Omega "<symbol role='symbolfont'>&#x03a9;</symbol>">
+<!ENTITY Delta "<symbol role='symbolfont'>&#x0394;</symbol>">
+<!ENTITY delta "<symbol role='symbolfont'>&#x03b4;</symbol>">
+-->
+
+<!-- glyphs available in font -->
+<!--
+<!ENTITY micro  "&#x03bc;">
+<!ENTITY pi     "&#x03c0;">
+<!ENTITY deg    "&#x00b0;">
+<!ENTITY plusmn "&#x00b1;">
+<!ENTITY radic  "&#x221a;">
+<!ENTITY le     "&#x2264;">
+
+<!ENTITY Omega  "&#x03a9;">
+<!ENTITY Delta  "&#x0394;">
+<!ENTITY delta  "&#x03b4;">
+-->
+
+<!-- zi specific special symbols -->

@@ -1,0 +1,19 @@
+@import "../ziHttpSizeDefs.less";
+// ---------------------------------
+// TABLE CONTROL
+// ---------------------------------
+td {  white-space:nowrap; // prevents element like buttonset from wrapping 
+  &.wwrap { white-space: normal; }
+}
+
+table {
+  &.ui-cont > tbody > tr > td, table.ui-cont > tr > td { padding: 0px; }
+  &.ui-cont > tbody > tr > td.ui-block, table.ui-cont > tr > td.ui-block, .ui-block { padding: @vUiBlock-padding @hUiBlock-padding; }
+  &.ui-inputs-cont {
+    tr { height: @element-height + 2 * @cellVertical-padding; }
+    td, th { padding: @cellVertical-padding @cellHorizontal-padding; }
+  }
+  &.cellspacing2 {
+    td, th { padding-left: 2px; padding-right: 2px;}
+  }
+}

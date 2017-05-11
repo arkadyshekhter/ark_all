@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="$tab$" class="figure" data-ziconfig="boxtab">
+  <table class="w100p h100p">
+    <col class="w100p" />
+    <col class="wctrltab" />
+    <tbody>
+      <tr>
+        <td class="atop">
+          <div class="svgplotborder" id="$tab$spb0">
+            <div id="$tab$p0" data-ziconfig="placeholder"></div>
+          </div>
+        </td>
+        <td class="atop h100p ctrlside">
+          <div id="$tab$plotctrltab" class="sidetabs w100p hctrltab" data-ziconfig="divobject" data-zipath="/local/$tab$/ctrltabsel">
+            <ul>
+              <li class="tabbtn">
+                <label for="$tab$tabs-1">PWA</label>
+              </li>
+              <li class="tabbtn">
+                <label for="$tab$tabs-0">Boxcar</label>
+              </li>
+              <li class="tabbtn">
+                <label for="$tab$tabs-2">Math</label>
+              </li>
+            </ul>
+            <div id="$tab$tabs-0" class="tab-content" data-ziconfig="divobject">
+              <table class="w100p ui-inputs-cont">
+                <col style="width:120px" />
+                <col style="width:75%;" />
+                <col style="width:25%;" />
+                <tbody>
+                  <tr>
+                    <td class="flabel">Enable</td>
+                    <td colspan="2">
+                      <a id="$tab$boxcars$index$enable" class="icon-toggle btn fleft" tabindex="0" data-zichecked="false" data-zipath="/$device$/boxcars/$index$/enable" data-zitooltip="$loc.boxEnable.tooltip$" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tlabel" colspan="3">
+                      <label>Signal Input</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Input Signal</td>
+                    <td>
+                      <div class="select-wrap w100p" data-zitooltip="$loc.boxInputSelect.tooltip$">
+                        <select id="$tab$boxcars$index$inputselect" data-zipath="/$device$/boxcars/$index$/inputselect" data-ziconfig="boxcarinputselect" tabindex="0" />
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Osc</td>
+                    <td>
+                      <div class="select-wrap num w100p" data-zitooltip="$loc.boxOscSelect.tooltip$">
+                        <select id="$tab$boxcars$index$oscselect" data-zipath="/$device$/boxcars/$index$/oscselect" data-ziconfig="oscselect" tabindex="0" />
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Frequency (Hz)</td>
+                    <td>
+                      <input class="style10081 num w100p" id="$tab$boxcars$index$freq" data-zipath="/local/$tab$/frequency" type="text" value="" readonly="readonly" data-zitooltip="$loc.boxFrequency.tooltip$" tabindex="0" />
+                    </td>
+                    <td>
+                      <div class="led negative" id="$tab$boxcars$index$freqoverflow" data-ziconfig="led" data-zipath="/$device$/boxcars/$index$/freqoverflow" data-zitooltip="$loc.boxFreqOverflow.tooltip$"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3"></td>
+                    <!-- Spacer -->
+                  </tr>
+                  <tr>
+                    <td class="tlabel">Gate</td>
+                    <td>
+                      <button id="$tab$box_cursorboxcopy" class="w100p" data-zivalue="1" data-zipath="/local/$tab$/copyfromboxcursors" data-zitooltip="$loc.boxCopyFromCursors.tooltip$">Copy&#160;From&#160;Cursors</a>
+                    </td>
+                    <td><a id="$tab$boxcars$index$showmarkers" class="icon-toggle btn" data-zichecked="true" tabindex="0" data-zipath="/local/$tab$/showboxcarmarkers" data-zitooltip="$loc.boxShowMarkers.tooltip$" /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="select-wrap br-arrow clabel w100p" data-zitooltip="$loc.boxWindowStartMode.tooltip$">
+                        <select id="$tab$boxcars$index$windowstarttype" data-zipath="/local/boxcars/$index$/boxstartmodesel" tabindex="0">
+                          <option value="0">Start (deg)</option>
+                          <option value="1">Start (s)</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$windowstart" type="text" value="" data-zipath="/$device$/boxcars/$index$/windowstart" data-zitooltip="$loc.boxPhaseWindowStart.tooltip$" tabindex="0" />
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$timewindowstart" type="text" value="" data-zipath="/local/boxcars/$index$/timewindowstart" data-zitooltip="$loc.boxTimeWindowStart.tooltip$" tabindex="0" />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="select-wrap br-arrow clabel w100p" data-zitooltip="$loc.boxWindowWidthMode.tooltip$">
+                        <select id="$tab$boxcars$index$windowswidthtype" data-zipath="/local/boxcars/$index$/boxwidthmodesel" tabindex="0">
+                          <option value="0">Width (deg)</option>
+                          <option value="1">Width (s)</option>
+                          <option value="2">Width (pts)</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$phasewindowsize" type="text" value="" data-zipath="/local/boxcars/$index$/phasewindowwidth" data-zitooltip="$loc.boxPhaseWindowWidth.tooltip$" tabindex="0" />
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$timewindowsize" type="text" value="" data-zipath="/$device$/boxcars/$index$/windowsize" data-zitooltip="$loc.boxTimeWindowWidth.tooltip$" tabindex="0" />
+                      <input class="style00000 num w100p" id="$tab$boxcars$index$sampleindowsize" type="text" value="" data-zipath="/local/boxcars/$index$/samplewindowwidth" data-zitooltip="$loc.boxSampleWindowWidth.tooltip$" tabindex="0" />
+                    </td>
+                    <td>
+                      <div class="led negative" id="$tab$boxcars$index$periodoverflowled" data-ziconfig="led" data-zipath="/local/boxcars/$index$/periodoverflowled" data-zitooltip="$loc.boxPeriodOverflow.tooltip$"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tlabel">Baseline</td>
+                    <td>
+                      <button id="$tab$box_cursorblcopy" class="w100p" data-zivalue="1" data-zipath="/local/$tab$/baseline/$index$/copyfromcursor" data-zitooltip="$loc.boxBaselineCopyFromCursor.tooltip$">Copy&#160;From&#160;Cursor</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">
+                      <div class="select-wrap br-arrow clabel w100p" data-zitooltip="$loc.boxBaselineWindowStartMode.tooltip$">
+                        <select id="$tab$boxcars$index$windowblstarttype" data-zipath="/local/$tab$/baseline/startmodesel" tabindex="0">
+                          <option value="0">Start (deg)</option>
+                          <option value="1">Start (s)</option>
+                          <option value="2">Offset (deg)</option>
+                          <option value="3">Offset (s)</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$blphasewindowstart" type="text" value="" data-zipath="/$device$/boxcars/$index$/baseline/windowstart" data-zitooltip="$loc.boxBaselinePhaseWindowStart.tooltip$" tabindex="0" />
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$bltimewindowstart" type="text" value="" data-zipath="/local/$tab$/baseline/timewindowstart" data-zitooltip="$loc.boxBaselineTimeWindowStart.tooltip$" tabindex="0" />
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$blphasewindowoffset" type="text" value="" data-zipath="/local/$tab$/baseline/phasewindowoffset" data-zitooltip="$loc.boxBaselinePhaseWindowOffset.tooltip$" tabindex="0" />
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$bltimewindowoffset" type="text" value="" data-zipath="/local/$tab$/baseline/timewindowoffset" data-zitooltip="$loc.boxBaselineTimeWindowOffset.tooltip$" tabindex="0" />
+                    </td>
+                    <td>
+                      <a id="$tab$boxcars$index$baselineenable" class="icon-toggle btn fleft" tabindex="0" data-zichecked="false" data-zipath="/$device$/boxcars/$index$/baseline/enable" data-zitooltip="$loc.boxBaselineEnable.tooltip$" />
+                    </td>
+                  </tr>
+                  <tr style="height:10px;">
+                    <td colspan="3"></td>
+                    <!-- Spacer -->
+                  </tr>
+                  <tr>
+                    <td class="tlabel">Statistics</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Averaging Periods</td>
+                    <td>
+                      <div class="w100p numinput-wrap">
+                        <input class="num w100p" id="$tab$boxcars$index$periods" type="text" pattern="[0-9]*" value="" data-zipath="/$device$/boxcars/$index$/periods" data-ziconfig="int" data-zitooltip="$loc.boxAveragingPeriods.tooltip$" tabindex="0" min="1" step="2" />
+                        <button class="spinner btn-up" tabindex="-1" data-action="*"></button>
+                        <button class="spinner btn-down" tabindex="-1" data-action="/"></button>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Averaging BW (Hz)</td>
+                    <td>
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$awgbw" type="text" value="" data-zipath="/$device$/boxcars/$index$/averagerbandwidth" data-zitooltip="$loc.boxAveragerBandwidth.tooltip$" readonly="readonly" tabindex="0" />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">
+                      <div class="select-wrap br-arrow clabel w100p" data-zitooltip="$loc.boxRateMode.tooltip$">
+                        <select id="$tab$boxcars$index$ratemodesel" data-zipath="/local/boxcars/$index$/ratemodesel" tabindex="0">
+                          <option value="0">Rate Limit (Sa/s)</option>
+                          <option value="1">Rate (Sa/s)</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$ratelimit" type="text" value="" data-zipath="/$device$/boxcars/$index$/limitrate" data-zitooltip="$loc.boxRateLimit.tooltip$" tabindex="0" />
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$rate" type="text" value="" data-zipath="/$device$/boxcars/$index$/rate" data-zitooltip="$loc.boxRate.tooltip$" tabindex="0" hidden="hidden" readonly="readonly" />
+                    </td>
+                    <td>
+                      <input class="num w100p" id="$tab$boxcars$index$decimation" type="text" value="" readonly="readonly" data-zipath="/$device$/boxcars/$index$/decimation" data-ziconfig="int" data-zitooltip="$loc.boxDecimation.tooltip$" tabindex="0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">
+                      <label>Value&#160;</label>
+                      <label class="unit dyn-brackets" id="$tab$boxcar$index$setunit" data-zipath="/local/boxcars/$index$/setunit" data-ziconfig="localstring"></label>
+                    </td>
+                    <td>
+                      <input class="style10130 num w100p" id="$tab$boxcars$index$value" type="text" value="" readonly="readonly" data-zipath="/$device$/boxcars/$index$/value" data-zitooltip="$loc.boxValue.tooltip$" tabindex="0" />
+                    </td>
+                    <td>
+                      <div class="led negative" id="$tab$boxcars$index$overflow" data-ziconfig="led" data-zipath="/$device$/boxcars/$index$/overflow" data-zitooltip="$loc.boxValueOverflow.tooltip$"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Sample Loss</td>
+                    <td>
+                      <div class="led negative" id="$tab$boxcars$index$fifooverflow" data-ziconfig="led" data-zipath="/$device$/boxcars/$index$/fifooverflow" data-zitooltip="$loc.boxSampleloss.tooltip$"></div>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="$tab$tabs-1" class="tab-content" data-ziconfig="divobject">
+              <table class="w100p ui-inputs-cont">
+                <col style="width:120px" />
+                <col style="width:75%;" />
+                <col style="width:25%;" />
+                <tbody>
+                  <tr>
+                    <td colspan="3" class="btn-group">
+                      <span class="fleft">
+                        <a id="$tab$run_1" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.pwaRun.tooltip$">
+                          <label>Run/Stop</label>
+                        </a>
+                        <a id="$tab$single_1" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.pwaSingle.tooltip$">
+                          <label>Single</label>
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tlabel" colspan="3">
+                      <label>Signal Input</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="flabel">Input Signal</label>
+                    </td>
+                    <td>
+                      <div class="select-wrap w100p" data-zitooltip="$loc.pwaInputSelect.tooltip$">
+                        <select id="$tab$inputselect" data-zipath="/$device$/inputpwas/$index$/inputselect" data-ziconfig="demodadcselect" />
+                      </div>
+                    </td>
+                    <td>
+                      <a id="$tab$inputinterlock" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/inputpwas/$index$/inputinterlock" data-zitooltip="$loc.pwaInputinterlock.tooltip$" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="flabel">Osc</label>
+                    </td>
+                    <td>
+                      <div class="select-wrap num w100p" data-zitooltip="$loc.pwaOscselect.tooltip$">
+                        <select id="$tab$oscselect" data-zipath="/$device$/inputpwas/$index$/oscselect" data-ziconfig="oscselect"></select>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="flabel">Frequency (Hz)</label>
+                    </td>
+                    <td>
+                      <input class="style10081 num w100p" id="$tab$pwawavefreq" type="text" readonly="readonly" value="" data-zipath="/local/$tab$/pwawavefrequency" data-zitooltip="$loc.pwaFrequency.tooltip$" />
+                    </td>
+                    <td>
+                      <div class="led negative" id="$tab$commens_led" data-ziconfig="led" data-zipath="/local/$tab$/commensurabilityled" data-zitooltip="$loc.pwaCommensurability.tooltip$"></div>
+                      <!--input class="num w100p" id="$tab$commens" type="text" value="" readonly="readonly" data-zipath="/local/$tab$/commensurability" /-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3"></td>
+                    <!-- Spacer -->
+                  </tr>
+                  <tr>
+                    <td class="tlabel">
+                      <label>Horizontal</label>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="flabel">Mode</label>
+                    </td>
+                    <td>
+                      <div class="select-wrap w100p" data-zitooltip="$loc.pwaAxis.tooltip$">
+                        <select id="$tab$pwafft" data-zipath="/local/$tab$/pwatransformation">
+                          <option value="0">Phase</option>
+                          <option value="1">Time</option>
+                          <option value="2">Freq Domain FFT</option>
+                          <option value="3">Harmonics</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button id="$tab$copyfrompwarange" class="w100p" data-zivalue="1" data-zipath="/local/$tab$/copyfrompwarange" data-zitooltip="$loc.pwaCopyFromRange.tooltip$">Copy&#160;From&#160;Range</a>
+                    </td>
+                    <td>
+                      <button class="btn-fixed" id="$tab$startwidthrst" data-zivalue="1" data-zipath="/local/$tab$/startwidthreset" data-zitooltip="$loc.pwaStartWidthReset.tooltip$">R</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label id="$tab$pwastartlabel" data-zipath="/local/$tab$/pwastartlabel" class="flabel" data-ziconfig="localstring">Start Phase (deg)</label>
+                    </td>
+                    <td>
+                      <input class="style10030 num w100p" id="$tab$shift" type="text" value="" data-zipath="/$device$/inputpwas/$index$/shift" data-zitooltip="$loc.pwaStart.tooltip$" />
+                      <input class="style10030 num w100p" id="$tab$pwastarttime" type="text" value="" data-zipath="/local/$tab$/pwastarttime" data-zitooltip="$loc.pwaStart.tooltip$" />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label id="$tab$pwawidthlabel" data-zipath="/local/$tab$/pwawidthlabel" class="flabel" data-ziconfig="localstring">Width (deg)</label>
+                    </td>
+                    <td>
+                      <div class="w100p numinput-wrap">
+                        <input class="style10030 num w100p" id="$tab$widthphase" type="text" value="" pattern="[0-9]*" data-zipath="/local/$tab$/pwawidthphase" data-zitooltip="$loc.pwaWidth.tooltip$" min="0" max="360" step="2" />
+                        <button class="spinner btn-up" tabindex="-1" data-action="*"></button>
+                        <button class="spinner btn-down" tabindex="-1" data-action="/"></button>
+                      </div>
+                      <input class="style10030 num w100p" id="$tab$pwawidthtime" type="text" value="" data-zipath="/local/$tab$/pwawidthtime" data-zitooltip="$loc.pwaWidth.tooltip$" />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <!-- Holdoff is not yet implemented-->
+                  <!-- tr>
+                    <td>
+                      <label class="flabel">Holdoff (s)</label>
+                    </td>
+                    <td>
+                      <input class="style10030 num w100p" id="$tab$holdoff" type="text" value="" data-zipath="/$device$/inputpwas/$index$/holdoff" />
+                    </td>
+                    <td></td>
+                  </tr -->
+                  <tr>
+                    <td>
+                      <label class="flabel">Samples</label>
+                    </td>
+                    <td>
+                      <div class="w100p numinput-wrap">
+                        <input class="style10150 num w100p" id="$tab$sample" type="text" value="" pattern="[0-9]*" data-zipath="/$device$/inputpwas/$index$/samplecount" data-ziconfig="int" data-zitooltip="$loc.pwaSample.tooltip$" step="2" />
+                        <button class="spinner btn-up" tabindex="-1" data-action="*"></button>
+                        <button class="spinner btn-down" tabindex="-1" data-action="/"></button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="led negative num" id="$tab$pwaoverflow" type="text" value="" readonly="readonly" data-zipath="/local/$tab$/pwaoverflow" data-zitooltip="$loc.pwaOverflow.tooltip$" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label id="$tab$acqlabel" class="flabel" data-zipath="/local/$tab$/pwaacqtimelabel" data-ziconfig="localstring">Acq Time (s)</label>
+                    </td>
+                    <td>
+                      <input class="style10030 num w100p" id="$tab$acquisitiontime" readonly="readonly" type="text" value="" data-zipath="/$device$/inputpwas/$index$/acquisitiontime" data-zitooltip="$loc.pwaAcquisitiontime.tooltip$" />
+                      <input class="style10030 num w100p" id="$tab$pwaresolution" readonly="readonly" hidden="hidden" type="text" value="" data-zipath="/local/$tab$/pwaresolution" data-zitooltip="$loc.pwaResolution.tooltip$" />
+                    </td>
+                    <td>
+                      <div class="hproggress w100p" id="$tab$progress" data-zipath="/$device$/inputpwas/$index$/progress" data-zitooltip="$loc.pwaProgress.tooltip$">
+                        <div class="bar" style="width:0%;"></div>
+                        <label class="num"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label id="$tab$pwamaxfftharmonicslabel" data-zipath="/local/$tab$/pwamaxfftharmonicslabel" class="flabel">Max Harmonics</label>
+                    </td>
+                    <td>
+                      <div class="w100p">
+                        <div class="w100p numinput-wrap">
+                          <input class="style00000 num w100p" id="$tab$pwamaxfftharmonics" type="text" value="" pattern="[0-9]*" data-zipath="/local/$tab$/pwamaxfftharmonics" data-zitooltip="$loc.pwaMaxFFTHarmonics.tooltip$" step="2" />
+                          <button class="spinner btn-up" tabindex="-1" data-action="*"></button>
+                          <button class="spinner btn-down" tabindex="-1" data-action="/"></button>
+                        </div>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3"></td>
+                    <!-- Spacer -->
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="tlabel">Vertical</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Signal</td>
+                    <td>
+                      <div class="select-wrap w100p" data-zitooltip="$loc.pwaSignal.tooltip$">
+                        <select id="$tab$signal" data-ziconfig="pwa-signal-select" data-zipath="/local/$tab$/signal" />
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <!-- no implementation at the moment -->
+                  <!--tr>
+                    <td>
+                      <label class="flabel">Loop Time (s)</label>
+                    </td>
+                    <td>
+                      <input class="style10030 num w100p" id="$tab$looptime" type="text" value="" data-zipath="/$device$/inputpwas/$index$/looptime" />
+                    </td>
+                    <td></td>
+                  </tr-->
+                </tbody>
+              </table>
+            </div>
+            <div id="$tab$tabs-2" class="tab-content" data-ziconfig="divobject">
+              <table class="w100p h100p ui-inputs-cont">
+                <col class="ctrl-col1" />
+                <col style="width: 40%;" />
+                <col style="width: 60%;" />
+                <tbody>
+                  <tr>
+                    <td colspan="3" class="btn-group">
+                      <span class="fleft">
+                      <a id="$tab$run_2" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.pwaRun.tooltip$">
+                        <label>Run/Stop</label>
+                      </a>
+                      <a id="$tab$single_2" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.pwaSingle.tooltip$">
+                        <label>Single</label>
+                      </a>
+                    </span>
+                    </td>
+                  </tr>
+                  <tr style="height:100%;">
+                    <td colspan="3">
+                      <table id="$tab$plotmath" class="w100p plotmath-cont" data-ziconfig="plotmath" data-ziinclude="plotmath.html" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

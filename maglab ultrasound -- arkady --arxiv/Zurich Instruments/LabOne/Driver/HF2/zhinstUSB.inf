@@ -1,0 +1,110 @@
+; $Id: zhinstUSB.inx 4054 2010-04-28 14:07:51Z be $
+; zhinstUSB.inf - Install the zhinst USB user-mode driver
+;
+
+[Version]
+Signature="$Windows NT$"
+Class=%ClassName%
+ClassGuid={9E775704-1548-4807-B03E-7391FB856CFB}
+Provider=%ZHINST%
+DriverVer=04/04/2011,6.1.7600.16386
+CatalogFile=wudf.cat
+
+[Manufacturer]
+%ZHINST%=ZHINST,NTAMD64
+
+[ZHINST.NTAMD64]
+%zhinstUsbDeviceName%=zhinstUSB_Install, USB\VID_1e7b&PID_0002
+
+[ClassInstall32]
+AddReg=LabEquipmentClass_RegistryAdd
+
+[LabEquipmentClass_RegistryAdd]
+HKR,,,,%ClassName%
+HKR,,Icon,,"-10"
+
+[SourceDisksFiles]
+zhinstUSB.dll=1
+WudfUpdate_01009.dll=1
+WdfCoInstaller01009.dll=1
+winusbcoinstaller2.dll=1
+
+[SourceDisksNames]
+1 = %MediaDescription%
+
+; =================== UMDF zhinstUSB Device ==================================
+
+[zhinstUSB_Install.NT]
+CopyFiles=UMDriverCopy
+Include=WINUSB.INF                      ; Import sections from WINUSB.INF
+Needs=WINUSB.NT                         ; Run the CopyFiles & AddReg directives for WinUsb.INF
+
+[zhinstUSB_Install.NT.hw]
+AddReg=zhinstUSB_Device_AddReg
+
+[zhinstUSB_Install.NT.Services]
+AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall  ; flag 0x2 sets this as the service for the device
+AddService=WinUsb,0x000001f8,WinUsb_ServiceInstall  ; this service is installed because its a filter.
+
+[zhinstUSB_Install.NT.Wdf]
+KmdfService=WINUSB, WinUsb_Install
+UmdfDispatcher=WinUsb
+UmdfService=WUDFzhinstUSB, WUDFzhinstUSB_Install
+UmdfServiceOrder=WUDFzhinstUSB
+
+[zhinstUSB_Install.NT.CoInstallers]
+AddReg=CoInstallers_AddReg
+CopyFiles=CoInstallers_CopyFiles
+
+[WinUsb_Install]
+KmdfLibraryVersion = 1.9
+
+[WUDFzhinstUSB_Install]
+UmdfLibraryVersion=1.9.0
+DriverCLSID = "{B7AA89F1-9579-47f6-9C6C-0F9841BDECBE}"
+ServiceBinary = "%12%\UMDF\zhinstUSB.dll"
+
+[zhinstUSB_Device_AddReg]
+HKR,,"LowerFilters",0x00010008,"WinUsb" ; FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_APPEND
+
+[WUDFRD_ServiceInstall]
+DisplayName = %WudfRdDisplayName%
+ServiceType = 1
+StartType = 3
+ErrorControl = 1
+ServiceBinary = %12%\WUDFRd.sys
+LoadOrderGroup = Base
+
+
+[WinUsb_ServiceInstall]
+DisplayName     = %WinUsb_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\WinUSB.sys
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WudfUpdate_01009.dll", "winusbcoinstaller2.dll", "WdfCoInstaller01009.dll,WdfCoInstaller"
+
+[CoInstallers_CopyFiles]
+WudfUpdate_01009.dll
+WdfCoInstaller01009.dll
+winusbcoinstaller2.dll
+
+[DestinationDirs]
+UMDriverCopy=12,UMDF ; copy to driversMdf
+CoInstallers_CopyFiles=11
+
+[UMDriverCopy]
+zhinstUSB.dll
+
+; =================== Generic ==================================
+
+[Strings]
+ZHINST="Zurich Instruments Ltd"
+MediaDescription="zhinstUSB Installation Media"
+ClassName="Lab Equipment"
+WudfRdDisplayName="Windows Driver Foundation - User-mode Driver Framework Reflector"
+zhinstUsbDeviceName="ZI HF2" 
+WinUsb_SvcDesc="WinUSB Driver"
+

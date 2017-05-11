@@ -1,0 +1,104 @@
+<div>
+  <table class="w100p dialog-table">
+    <tr hidden="hidden">
+      <td>
+        <div class="select-wrap" hidden="hidden">
+          <select class="showActionDialog onsel_show_hide" id="$dialog$mode" data-zipath="/local/$dialog$/mode" data-linked="$dialog$">
+            <option value="0" data-linked="actdialog_hide"></option><!-- hide -->
+            <option value="1" data-linked="actdialog_netlink">LabOne Net Link</option>
+            <option value="2" data-linked="actdialog_saveas">Save As...</option>
+          </select>
+        </div>
+      </td>
+    </tr>
+    <tr class="hidable actdialog_netlink">
+      <td>
+        <table class="w100p ui-inputs-cont">
+          <tr>
+            <td>
+              <p>Copy the link below and use it as an external data source in tools like Excel, Matlab, Igor Pro etc.. Click on Help button for more instructions.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="w100p">
+                <col class="w100p" />
+                <col class="w100" />
+                <tr>
+                  <td>
+                    <div class="custom-io" readonly="readonly" style="padding:0px 4px;">
+                      <p id="$dialog$netlink" class="innertext lhrow hrow textselect-area w100p" readonly="readonly" data-zipath="/local/$dialog$/netlink" data-ziconfig="localstring"/>
+                    </div>
+                  </td>
+                  <td>
+                    <button id="$dialog$netlinkcopy2clip" class="$dialog$_show w100p" data-action="copy2clipboard" data-linked="$dialog$netlink" data-zivalue="1" data-zipath="/local/$dialog$/confirm">Copy Link</button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr class="hidable actdialog_saveas">
+      <td>
+        <table class="w100p ui-inputs-cont">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <input class="w100p border-box" id="$dialog$name" type="text" value="" data-zipath="/local/$dialog$/textinput" data-ziconfig="localstring"/>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!--tr class="dialog-row"><td>Other row</td></tr-->
+    <!-- buttons -->
+    <tr class="h20"></tr><!-- Space -->
+    <tr class="hidable actdialog_netlink">
+      <td>
+        <table class="w100p">
+        <col class="w100" />
+        <col class="w100p" />
+        <col class="w100" />
+        <col class="w5" />
+        <col class="w100" />
+        <tr>
+          <td>
+            <button class="internallink no-sessionid w100p" target="_blank" data-zilink="help?section=netlink" data-zitooltip="$loc.mathNetLinkHelp.tooltip$">Help</button>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="aright">
+            <button id="$dialog$netlinkcancel" class="$dialog$_show w100p" data-zivalue="1" data-zipath="/local/$dialog$/confirm">Close</button>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    <tr class="hidable actdialog_saveas">
+      <td>
+        <table class="w100p">
+          <col class="w100" />
+          <col class="w100p" />
+          <col class="w100" />
+          <tr>
+            <td>
+              <button id="$dialog$cancel" class="$dialog$_show w100p" data-zivalue="0" data-zipath="/local/$dialog$/confirm">Cancel</button>
+            </td>
+            <td></td>
+            <td class="aright">
+              <button id="$dialog$txtsave" class="$dialog$_show w100p" data-zivalue="1" data-zipath="/local/$dialog$/confirm">Save</button>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>

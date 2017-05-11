@@ -1,0 +1,34 @@
+Main Less > CSS files and their dependencies
+ziHttp.less compiles to ziHttp.css. Depends on: 
+	- ziHttpCssReset.less			// HTML cross browser reset
+	- ziSvg.less					// main SVG structure
+	
+ziblack.less compiles to ziblack.css. Depends on: 
+	- jquery-ui.min.less			// jquery UI
+	- ziblackColorDefs.less 		// color definitions
+	- ziHttpThemeBase.less			// CSS structure for HTML
+	- ziSvgThemeBase.less			// CSS structure for SVG 
+	
+ziwhite.less compiles to ziwhite.css. Depends on: 
+	- jquery-ui.min.less			// jquery UI
+	- ziwhiteColorDefs.less 		// color definitions
+	- ziHttpThemeBase.less			// CSS structure for HTML
+	- ziSvgThemeBase.less			// CSS structure for SVG 
+ 
+ziHttpLog.less	compiles to ziHttpLog.css. Depends on:
+	- ziHttpCssReset.less
+
+ziwhite_save.less compiles to ziwhite_save.css. Depends on: 
+- ziwhiteColorDefs.less 			//  color definitions 
+- ziSvg.less						//  base structure for SVG
+- ziSvgThemeBase.less				//  base colors for SVG
+
+ziblack_save.less compiles to ziblack_save.css. Depends on: 
+- ziblackColorDefs.less 			//  color definitions 
+- ziSvg.less						//  base structure for SVG
+- ziSvgThemeBase.less				//  base colors for SVG
+
+
+
+
+See http://lesscss.org/ and https://github.com/less/less.js/wiki/GUI-compilers-that-use-LESS.js to learn how to compile less files to CSS.

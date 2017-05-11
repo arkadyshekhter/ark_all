@@ -1,0 +1,76 @@
+<div>
+  <div class="ui-block" style="padding-left:0px;padding-right:0px;min-height:140px;">
+    <table class="w100p h100p $tab$refinputexpcol-cont" border="0">
+      <col class="w10"></col>
+      <col class="w40"></col>
+      <col class="w100p"></col>
+      <tr class="h100p">
+        <td></td>
+        <td>
+          <div class="prelative w100p h100p">
+            <div class="gli-vwire-single w100p pabsolute" style="height:4px;bottom:0px;"></div>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="gli-vwire-single"></td>
+        <td>
+          <table class="w100p ui-inputs-cont" border="0">
+            <col class="w100p"></col>
+            <col class="w65"></col>
+            <col class="w5"></col>
+            <col class="w20"></col>
+            <tbody>
+              <tr>
+                <td class="blabel">
+                  <div class="select-wrap w100p br-arrow no-bg" data-zitooltip="$loc.demodsMode.tooltip$">
+                    <select class="onsel_show_hide" id="$tab$$type$usge$index$l" data-ziconfig="demodusagelargelabels" data-zipath="/local/demods/$extrefch$/demodusage"></select>
+                  </div>
+                </td>
+                <td>
+                  <div class="select-wrap hidable extref w100p br-arrow no-bg" data-zitooltip="$loc.demodsAdcSelect.tooltip$">
+                    <select id="$tab$inputsel$index$1" data-zipath="/$device$/demods/$extrefch$/adcselect" data-ziconfig="demodadcselect" />
+                  </div>
+                </td>
+                <td></td>
+                <td>
+                  <div class="expcol-cont">
+                    <div class="$tab$refinputexpcol expcol-chain vertical" style="height:100px;display:none;"></div>
+                    <div class="expcolbtn" data-linked="$tab$refinputexpcol" id="$tab$$type$expbtn$index$" data-zipath="/local/$tab$refinputexpcol" data-ziconfig="expandtoggle"/>
+                    <div class="$tab$refinputexpcol vert-label" style="display:none;"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="$tab$refinputexpcol-inv">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <!--   ********** Narrow **********   -->
+          <div id="$tab$$type$ebox1" data-zipath="/local/$tab$/block/extref/ebox1" hidden="hidden">
+            <table class="w100p ui-cont" data-ziinclude="glockin_block_extrefnomd_demod_diagram.html?type=ebox1&index=$index$&extrefch=$extrefch$&alias=" /> <!-- Demod -->
+          </div>
+          <div id="$tab$$type$ebox8" data-zipath="/local/$tab$/block/extref/ebox8" hidden="hidden">
+            <table class="w100p ui-cont" data-ziinclude="glockin_block_extrefnomd_extref_diagram.html?type=ebox8&index=$index$&extrefch=$extrefch$&alias=" /> <!-- Extref -->
+          </div>
+          <!--   ********** Wide **********   -->
+          <div id="$tab$$type$ediag1" data-zipath="/local/$tab$/block/extref/ediag1" hidden="hidden">
+            <table class="w100p ui-cont" data-ziinclude="glockin_block_extrefnomd_demod_diagram.html?type=ediag1&index=$index$&extrefch=$extrefch$&alias=" /> <!-- Demod -->
+          </div>
+          <div id="$tab$$type$ediag8" data-zipath="/local/$tab$/block/extref/ediag8" hidden="hidden">
+            <table class="w100p ui-cont" data-ziinclude="glockin_block_extrefnomd_extref_diagram.html?type=ediag8&index=$index$&extrefch=$extrefch$&alias=" /> <!-- Extref -->
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

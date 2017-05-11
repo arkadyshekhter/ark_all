@@ -1,0 +1,662 @@
+[
+  {
+    "desc": "Writes the value as a 32-bit value to the DIO bus. The value can be either a const or a var value. Configure the settings in the DIO tab when using this command.", 
+    "label": "void setDIO(var value)", 
+    "snippet": "setDIO(${1:value})", 
+    "word": "setDIO"
+  }, 
+  {
+    "desc": "Reads a 32-bit value from the DIO bus. ", 
+    "label": "var getDIO()", 
+    "snippet": "getDIO();", 
+    "word": "getDIO"
+  }, 
+  {
+    "desc": "Sets the trigger output signals with the given value. Each trigger output line is represented by one bit of the integer value. ", 
+    "label": "void setTrigger(var value)", 
+    "snippet": "setTrigger(${1:value})", 
+    "word": "setTrigger"
+  }, 
+  {
+    "desc": "Sets the ID value that is attached to data streamed from the device to the host PC. The ID value is useful for synchronizing the data acquisition process in combination with the sweeper or the software trigger. ", 
+    "label": "void setID(var id)", 
+    "snippet": "setID(${1:id})", 
+    "word": "setID"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms on the defined output channels. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playWave(const output, wave waveform, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playWave(${1:output}, ${2:waveform}, ${3:rate})", 
+    "word": "playWave"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms on the defined output channels. It can contain multiple waveforms with an output definition. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playWave(const output, wave waveform,...)", 
+    "snippet": "playWave(${1:output}, ${2:waveform})", 
+    "word": "playWave"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms, output channels are assigned automatically depending on the number of input waveforms. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playWave(wave waveform, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playWave(${1:waveform}, ${2:rate})", 
+    "word": "playWave"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms, output channels are assigned automatically depending on the number of input waveforms. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playWave(wave waveform,...)", 
+    "snippet": "playWave(${1:waveform})", 
+    "word": "playWave"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms on the defined output channels. It starts immediately even if the AWG is still busy. ", 
+    "label": "void playWaveNow(const output, wave waveform, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playWaveNow(${1:output}, ${2:waveform}, ${3:rate})", 
+    "word": "playWaveNow"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms on the defined output channels. It can contain multiple waveforms with an output definition. It starts immediately even if the AWG is still busy. ", 
+    "label": "void playWaveNow(const output, wave waveform,...)", 
+    "snippet": "playWaveNow(${1:output}, ${2:waveform})", 
+    "word": "playWaveNow"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms, channels are assigned automatically depending on the number of input waveforms. It starts immediately even if the AWG is still busy. ", 
+    "label": "void playWaveNow(wave waveform, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playWaveNow(${1:waveform}, ${2:rate})", 
+    "word": "playWaveNow"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms, channels are assigned automatically depending on the number of input waveforms. It starts immediately even if the AWG is still busy. ", 
+    "label": "void playWaveNow(wave waveform,...)", 
+    "snippet": "playWaveNow(${1:waveform})", 
+    "word": "playWaveNow"
+  }, 
+  {
+    "desc": "Starts to play the specified part of the given waveforms on the defined output channels. It can contain multiple waveforms with an output definition. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playWaveIndexed(const output, wave waveform, var offset, const length, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playWaveIndexed(${1:output}, ${2:waveform}, ${3:offset}, ${4:length}, ${5:rate})", 
+    "word": "playWaveIndexed"
+  }, 
+  {
+    "desc": "Starts to play the specified part of the given waveforms, channels are assigned automatically depending on the number of input waveforms. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playWaveIndexed(wave waveform, var offset, const length, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playWaveIndexed(${1:waveform}, ${2:offset}, ${3:length}, ${4:rate})", 
+    "word": "playWaveIndexed"
+  }, 
+  {
+    "desc": "Starts to play the specified part of the given waveforms on the defined output channels. It can contain multiple waveforms with an output definition. It starts immediately even if the AWG is still busy. ", 
+    "label": "void playWaveIndexedNow(const output, wave waveform, var offset, const length, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playWaveIndexedNow(${1:output}, ${2:waveform}, ${3:offset}, ${4:length}, ${5:rate})", 
+    "word": "playWaveIndexedNow"
+  }, 
+  {
+    "desc": "Starts to play the specified part of the given waveforms, channels are assigned automatically depending on the number of input waveforms. It starts immediately even if the AWG is still busy. ", 
+    "label": "void playWaveIndexedNow(wave waveform, var offset, const length, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playWaveIndexedNow(${1:waveform}, ${2:offset}, ${3:length}, ${4:rate})", 
+    "word": "playWaveIndexedNow"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms on the defined output channels with enabled 4-channel-mode. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playAuxWave(const output, wave waveform, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playAuxWave(${1:output}, ${2:waveform}, ${3:rate})", 
+    "word": "playAuxWave"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms on the defined output channels with enabled 4-channel-mode. It can contain multiple waveforms with an output definition. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playAuxWave(const output, wave waveform,...)", 
+    "snippet": "playAuxWave(${1:output}, ${2:waveform})", 
+    "word": "playAuxWave"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms, channels are assigned automatically depending on the number of input waveforms, with enabled 4-channel-mode. The playback begins as soon as the previous waveform is finished. ", 
+    "label": "void playAuxWave(wave waveform, const rate=AWG_RATE_DEFAULT)", 
+    "snippet": "playAuxWave(${1:waveform}, ${2:rate})", 
+    "word": "playAuxWave"
+  }, 
+  {
+    "desc": "Starts to play the given waveforms, channels are assigned automatically depending on the number of input waveforms, with enabled 4-channel-mode. If the AWG is already busy playing another waveform does it block and start to play as soon as the preview waveform is finished. ", 
+    "label": "void playAuxWave(wave waveform,...)", 
+    "snippet": "playAuxWave(${1:waveform})", 
+    "word": "playAuxWave"
+  }, 
+  {
+    "desc": "Waits for the given number of cycles (min 4 cycles). ", 
+    "label": "void wait(var cycles)", 
+    "snippet": "wait(${1:cycles})", 
+    "word": "wait"
+  }, 
+  {
+    "desc": "Waits until the AWG is done playing the current waveform. ", 
+    "label": "void waitWave()", 
+    "snippet": "waitWave();", 
+    "word": "waitWave"
+  }, 
+  {
+    "desc": "Waits until the masked trigger input is equal to the given reference value. ", 
+    "label": "void waitTrigger(const mask, const value)", 
+    "snippet": "waitTrigger(${1:mask}, ${2:value})", 
+    "word": "waitTrigger"
+  }, 
+  {
+    "desc": "Waits until the indexed analog trigger input is equal to the given value. ", 
+    "label": "void waitAnaTrigger(const index, const value)", 
+    "snippet": "waitAnaTrigger(${1:index}, ${2:value})", 
+    "word": "waitAnaTrigger"
+  }, 
+  {
+    "desc": "Waits until the indexed digital trigger input is same as the given value. This function reads the current value on one of the internally generated trigger input signals produced by the Cross-Trigger Engine. The physical signal connected to the AWG trigger inputs must be configured in the Cross-Trigger Engine itself. ", 
+    "label": "void waitDigTrigger(const index, const value)", 
+    "snippet": "waitDigTrigger(${1:index}, ${2:value})", 
+    "word": "waitDigTrigger"
+  }, 
+  {
+    "desc": "Waits until the oscillator phase of the indexed demodulator reaches the defined value. ", 
+    "label": "void waitDemodOscPhase(const demod, const position=0)", 
+    "snippet": "waitDemodOscPhase(${1:demod}, ${2:position})", 
+    "word": "waitDemodOscPhase"
+  }, 
+  {
+    "desc": "Waits until the indexed demodulator delivers a new sample. ", 
+    "label": "void waitDemodSample(const demod)", 
+    "snippet": "waitDemodSample(${1:demod})", 
+    "word": "waitDemodSample"
+  }, 
+  {
+    "desc": "Gets the trigger input signals and applies the given mask on it. The trigger input lines are represented as individual bits in the return value. ", 
+    "label": "var getTrigger(const mask)", 
+    "snippet": "getTrigger(${1:mask})", 
+    "word": "getTrigger"
+  }, 
+  {
+    "desc": "Gets the indexed analog trigger input value. ", 
+    "label": "var getAnaTrigger(const index)", 
+    "snippet": "getAnaTrigger(${1:index})", 
+    "word": "getAnaTrigger"
+  }, 
+  {
+    "desc": "Gets the indexed digital trigger input value. ", 
+    "label": "var getDigTrigger(const index)", 
+    "snippet": "getDigTrigger(${1:index})", 
+    "word": "getDigTrigger"
+  }, 
+  {
+    "desc": "Writes a value to one of the nodes in the device. If the path does not start with a device identifier, then the current device is assumed. ", 
+    "label": "void setInt(string path, var value)", 
+    "snippet": "setInt(${1:path}, ${2:value})", 
+    "word": "setInt"
+  }, 
+  {
+    "desc": "Writes a value to one of the nodes in the device. If the path does not start with a device identifier, then the current device is assumed. ", 
+    "label": "void setDouble(string path, const value)", 
+    "snippet": "setDouble(${1:path}, ${2:value})", 
+    "word": "setDouble"
+  }, 
+  {
+    "desc": "Writes a value to one of the user registers. The user registers may be used for communicating information to the LabOne user interface or a running API program. ", 
+    "label": "void setUserReg(const register, var value)", 
+    "snippet": "setUserReg(${1:register}, ${2:value})", 
+    "word": "setUserReg"
+  }, 
+  {
+    "desc": "Reads the value from one of the user registers. The user registers may be used for communicating information to the LabOne user interface or a running API program. ", 
+    "label": "var getUserReg(const register)", 
+    "snippet": "getUserReg(${1:register})", 
+    "word": "getUserReg"
+  }, 
+  {
+    "desc": "Reads the length as configured by the LabOne Sweeper. The length is only valid when the AWG is started by the Sweeper. ", 
+    "label": "var getSweeperLength(const index)", 
+    "snippet": "getSweeperLength(${1:index})", 
+    "word": "getSweeperLength"
+  }, 
+  {
+    "desc": "Overwrites the global default rate for the following playWave commands. ", 
+    "label": "void setRate(const rate)", 
+    "snippet": "setRate(${1:rate})", 
+    "word": "setRate"
+  }, 
+  {
+    "desc": "Resets the local timer. ", 
+    "label": "void now()", 
+    "snippet": "now();", 
+    "word": "now"
+  }, 
+  {
+    "desc": "Waits until the local timer reaches the given value. ", 
+    "label": "void at(var time)", 
+    "snippet": "at(${1:time})", 
+    "word": "at"
+  }, 
+  {
+    "desc": "Throws the given error message when reached. ", 
+    "label": "void error(string msg,...)", 
+    "snippet": "error(${1:msg})", 
+    "word": "error"
+  }, 
+  {
+    "desc": "Returns the defined message when reached. ", 
+    "label": "void info(string msg,...)", 
+    "snippet": "info(${1:msg})", 
+    "word": "info"
+  }, 
+  {
+    "desc": "Asures that the waveform is kept in the cache memory the whole time it is locked. ", 
+    "label": "void lock(wave w)", 
+    "snippet": "lock(${1:w})", 
+    "word": "lock"
+  }, 
+  {
+    "desc": "Allow the compiler again to use this memory block to cache other waveforms. ", 
+    "label": "void unlock(wave w)", 
+    "snippet": "unlock(${1:w})", 
+    "word": "unlock"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "if (${1:condition}) {\n  ${2:/* code */}\n}\n", 
+    "word": "if"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "else {\n  ${1:/* code */}\n}\n", 
+    "word": "else"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "for (${1:i} = 0; $1 < $(2:N); $1${3:++}) {\n  ${4:/* code */}\n}\n", 
+    "word": "for"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "repeat (${1:N}) {\n  ${2:/* code */}\n}\n", 
+    "word": "repeat"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "return ${1:value};\n", 
+    "word": "return"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "return;\n", 
+    "word": "return"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "do {\n  ${2:/* code */}\n} while (${1:condition});\n", 
+    "word": "do"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "while (${1:condition}) {\n  ${2:/* code */}\n}\n", 
+    "word": "while"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "switch (${1:x}) {\n  case ${2:1}:\n    ${3:/* code */}\n  default:\n    ${4:/* default */}\n}\n", 
+    "word": "switch"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "case ${1:x}:\n  ${2:/* code */}\n", 
+    "word": "case"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "default:\n  ${2:/* code */}\n", 
+    "word": "default"
+  }, 
+  {
+    "desc": "", 
+    "label": "", 
+    "snippet": "goto ${1:label};\n", 
+    "word": "goto"
+  }, 
+  {
+    "desc": "absolute value ", 
+    "label": "const abs(const c)", 
+    "snippet": "abs(${1:c})", 
+    "word": "abs"
+  }, 
+  {
+    "desc": "inverse cosine ", 
+    "label": "const acos(const c)", 
+    "snippet": "acos(${1:c})", 
+    "word": "acos"
+  }, 
+  {
+    "desc": "hyperbolic inverse cosine ", 
+    "label": "const acosh(const c)", 
+    "snippet": "acosh(${1:c})", 
+    "word": "acosh"
+  }, 
+  {
+    "desc": "inverse sine ", 
+    "label": "const asin(const c)", 
+    "snippet": "asin(${1:c})", 
+    "word": "asin"
+  }, 
+  {
+    "desc": "hyperbolic inverse sine ", 
+    "label": "const asinh(const c)", 
+    "snippet": "asinh(${1:c})", 
+    "word": "asinh"
+  }, 
+  {
+    "desc": "inverse tangent ", 
+    "label": "const atan(const c)", 
+    "snippet": "atan(${1:c})", 
+    "word": "atan"
+  }, 
+  {
+    "desc": "hyperbolic inverse tangent ", 
+    "label": "const atanh(const c)", 
+    "snippet": "atanh(${1:c})", 
+    "word": "atanh"
+  }, 
+  {
+    "desc": "cosine ", 
+    "label": "const cos(const c)", 
+    "snippet": "cos(${1:c})", 
+    "word": "cos"
+  }, 
+  {
+    "desc": "hyperbolic cosine ", 
+    "label": "const cosh(const c)", 
+    "snippet": "cosh(${1:c})", 
+    "word": "cosh"
+  }, 
+  {
+    "desc": "exponential function ", 
+    "label": "const exp(const c)", 
+    "snippet": "exp(${1:c})", 
+    "word": "exp"
+  }, 
+  {
+    "desc": "logarithm to base e (2.71828...) ", 
+    "label": "const ln(const c)", 
+    "snippet": "ln(${1:c})", 
+    "word": "ln"
+  }, 
+  {
+    "desc": "logarithm to the base 10 ", 
+    "label": "const log(const c)", 
+    "snippet": "log(${1:c})", 
+    "word": "log"
+  }, 
+  {
+    "desc": "logarithm to the base 2 ", 
+    "label": "const log2(const c)", 
+    "snippet": "log2(${1:c})", 
+    "word": "log2"
+  }, 
+  {
+    "desc": "logarithm to the base 10 ", 
+    "label": "const log10(const c)", 
+    "snippet": "log10(${1:c})", 
+    "word": "log10"
+  }, 
+  {
+    "desc": "sign function -1 if x&lt;0; 1 if x&gt;0 ", 
+    "label": "const sign(const c)", 
+    "snippet": "sign(${1:c})", 
+    "word": "sign"
+  }, 
+  {
+    "desc": "sine ", 
+    "label": "const sin(const c)", 
+    "snippet": "sin(${1:c})", 
+    "word": "sin"
+  }, 
+  {
+    "desc": "hyperbolic sine ", 
+    "label": "const sinh(const c)", 
+    "snippet": "sinh(${1:c})", 
+    "word": "sinh"
+  }, 
+  {
+    "desc": "square root ", 
+    "label": "const sqrt(const c)", 
+    "snippet": "sqrt(${1:c})", 
+    "word": "sqrt"
+  }, 
+  {
+    "desc": "tangent ", 
+    "label": "const tan(const c)", 
+    "snippet": "tan(${1:c})", 
+    "word": "tan"
+  }, 
+  {
+    "desc": "hyperbolic tangent ", 
+    "label": "const tanh(const c)", 
+    "snippet": "tanh(${1:c})", 
+    "word": "tanh"
+  }, 
+  {
+    "desc": "smallest integer value not less than the argument ", 
+    "label": "const ceil(const c)", 
+    "snippet": "ceil(${1:c})", 
+    "word": "ceil"
+  }, 
+  {
+    "desc": "round to nearest integer ", 
+    "label": "const round(const c)", 
+    "snippet": "round(${1:c})", 
+    "word": "round"
+  }, 
+  {
+    "desc": "largest integer value not greater than the argument ", 
+    "label": "const floor(const c)", 
+    "snippet": "floor(${1:c})", 
+    "word": "floor"
+  }, 
+  {
+    "desc": "mean value of all arguments ", 
+    "label": "const avg(const c1, const c2,...)", 
+    "snippet": "avg(${1:c1}, ${2:c2})", 
+    "word": "avg"
+  }, 
+  {
+    "desc": "maximum of all arguments ", 
+    "label": "const max(const c1, const c2,...)", 
+    "snippet": "max(${1:c1}, ${2:c2})", 
+    "word": "max"
+  }, 
+  {
+    "desc": "minimum of all arguments ", 
+    "label": "const min(const c1, const c2,...)", 
+    "snippet": "min(${1:c1}, ${2:c2})", 
+    "word": "min"
+  }, 
+  {
+    "desc": "first argument raised to the power of second argument ", 
+    "label": "const pow(const base, const exp)", 
+    "snippet": "pow(${1:base}, ${2:exp})", 
+    "word": "pow"
+  }, 
+  {
+    "desc": "sum of all arguments ", 
+    "label": "const sum(const c1, const c2,...)", 
+    "snippet": "sum(${1:c1}, ${2:c2})", 
+    "word": "sum"
+  }, 
+  {
+    "desc": "Connect two or more waveforms with optional linear interpolation between the waveforms. ", 
+    "label": "wave join(wave wave1, wave wave2, const interpolLength=0)", 
+    "snippet": "join(${1:wave1}, ${2:wave2}, ${3:interpolLength})", 
+    "word": "join"
+  }, 
+  {
+    "desc": "Connect two or more waveforms. ", 
+    "label": "wave join(wave wave1, wave wave2,...)", 
+    "snippet": "join(${1:wave1}, ${2:wave2})", 
+    "word": "join"
+  }, 
+  {
+    "desc": "Interleave two or more waveforms sample by sample. ", 
+    "label": "wave interleave(wave wave1, wave wave2,...)", 
+    "snippet": "interleave(${1:wave1}, ${2:wave2})", 
+    "word": "interleave"
+  }, 
+  {
+    "desc": "Add two or more waveforms sample by sample. ", 
+    "label": "wave add(wave wave1, wave wave2,...)", 
+    "snippet": "add(${1:wave1}, ${2:wave2})", 
+    "word": "add"
+  }, 
+  {
+    "desc": "Multiply two or more waveforms sample by sample. ", 
+    "label": "wave multiply(wave wave1, wave wave2,...)", 
+    "snippet": "multiply(${1:wave1}, ${2:wave2})", 
+    "word": "multiply"
+  }, 
+  {
+    "desc": "Scale the input waveform with the factor and return the scaled waveform. The input waveform remains unchanged. ", 
+    "label": "wave scale(wave waveform, const factor)", 
+    "snippet": "scale(${1:waveform}, ${2:factor})", 
+    "word": "scale"
+  }, 
+  {
+    "desc": "Flip the input waveform back to front and return the flipped waveform. The input waveform remains unchanged. ", 
+    "label": "wave flip(wave waveform)", 
+    "snippet": "flip(${1:waveform})", 
+    "word": "flip"
+  }, 
+  {
+    "desc": "Cut a segment out of the input waveform and returns it. The input waveform remains unchanged. The segment is flipped in case that \"from\" is larger than \"to\". ", 
+    "label": "wave cut(wave waveform, const from, const to)", 
+    "snippet": "cut(${1:waveform}, ${2:from}, ${3:to})", 
+    "word": "cut"
+  }, 
+  {
+    "desc": "Filter generates a rational transfer function with the waveforms a and b as numerator and denominator coefficients. The transfer function is normalized by a[0], which has to be nonzero. The filter is applied on the input waveform x and returns the filtered waveform. ", 
+    "label": "wave filter(wave a, wave b, wave x)", 
+    "snippet": "filter(${1:a}, ${2:b}, ${3:x})", 
+    "word": "filter"
+  }, 
+  {
+    "desc": "Constant amplitude of 0 over the defined number of samples. ", 
+    "label": "wave zeros(const samples)", 
+    "snippet": "zeros(${1:samples})", 
+    "word": "zeros"
+  }, 
+  {
+    "desc": "Constant amplitude of 1 over the defined number of samples. ", 
+    "label": "wave ones(const samples)", 
+    "snippet": "ones(${1:samples})", 
+    "word": "ones"
+  }, 
+  {
+    "desc": "Sine function with arbitrary amplitude (a), phase offset (p), number of periods (f) and number of samples (N). ", 
+    "label": "wave sine(const samples, const amplitude=1.0, const phaseOffset, const nrOfPeriods)", 
+    "snippet": "sine(${1:samples}, ${2:amplitude}, ${3:phaseOffset}, ${4:nrOfPeriods})", 
+    "word": "sine"
+  }, 
+  {
+    "desc": "Cosine function with arbitrary amplitude (a), phase offset (p), number of periods (f) and number of samples (N). ", 
+    "label": "wave cosine(const samples, const amplitude=1.0, const phaseOffset, const nrOfPeriods)", 
+    "snippet": "cosine(${1:samples}, ${2:amplitude}, ${3:phaseOffset}, ${4:nrOfPeriods})", 
+    "word": "cosine"
+  }, 
+  {
+    "desc": "Normalized sinc function with control of peak position (p), amplitude (a), width (beta) and number of samples (N). ", 
+    "label": "wave sinc(const samples, const amplitude=1.0, const position, const beta)", 
+    "snippet": "sinc(${1:samples}, ${2:amplitude}, ${3:position}, ${4:beta})", 
+    "word": "sinc"
+  }, 
+  {
+    "desc": "Linear ramp from the start (s) to the end level (e) over the number of samples (N). ", 
+    "label": "wave ramp(const samples, const startLevel, const endLevel)", 
+    "snippet": "ramp(${1:samples}, ${2:startLevel}, ${3:endLevel})", 
+    "word": "ramp"
+  }, 
+  {
+    "desc": "Sawtooth function with arbitrary amplitude, phase and number of periods. ", 
+    "label": "wave sawtooth(const samples, const amplitude=1.0, const phaseOffset, const nrOfPeriods)", 
+    "snippet": "sawtooth(${1:samples}, ${2:amplitude}, ${3:phaseOffset}, ${4:nrOfPeriods})", 
+    "word": "sawtooth"
+  }, 
+  {
+    "desc": "Triangle function with arbitrary amplitude, phase and number of periods. ", 
+    "label": "wave triangle(const samples, const amplitude=1.0, const phaseOffset, const nrOfPeriods)", 
+    "snippet": "triangle(${1:samples}, ${2:amplitude}, ${3:phaseOffset}, ${4:nrOfPeriods})", 
+    "word": "triangle"
+  }, 
+  {
+    "desc": "Gaussian pulse with arbitrary amplitude (a), position (p), width (w) and number of samples (N). ", 
+    "label": "wave gauss(const samples, const amplitude=1.0, const position, const width)", 
+    "snippet": "gauss(${1:samples}, ${2:amplitude}, ${3:position}, ${4:width})", 
+    "word": "gauss"
+  }, 
+  {
+    "desc": "Derivative of Gaussian pulse with arbitrary amplitude (a), position (p), width (w) and number of samples (N). ", 
+    "label": "wave drag(const samples, const amplitude=1.0, const position, const width)", 
+    "snippet": "drag(${1:samples}, ${2:amplitude}, ${3:position}, ${4:width})", 
+    "word": "drag"
+  }, 
+  {
+    "desc": "Blackman window function with arbitrary amplitude (a), alpha parameter and number of samples (N). ", 
+    "label": "wave blackman(const samples, const amplitude=1.0, const alpha)", 
+    "snippet": "blackman(${1:samples}, ${2:amplitude}, ${3:alpha})", 
+    "word": "blackman"
+  }, 
+  {
+    "desc": "Hamming window function with arbitrary amplitude (a) and number of samples (N). ", 
+    "label": "wave hamming(const samples, const amplitude=1.0)", 
+    "snippet": "hamming(${1:samples}, ${2:amplitude})", 
+    "word": "hamming"
+  }, 
+  {
+    "desc": "Hann window function with arbitrary amplitude (a) and number of samples (N). ", 
+    "label": "wave hann(const samples, const amplitude=1.0)", 
+    "snippet": "hann(${1:samples}, ${2:amplitude})", 
+    "word": "hann"
+  }, 
+  {
+    "desc": "Const amplitude (a) over the defined number of samples. ", 
+    "label": "wave rect(const samples, const amplitude)", 
+    "snippet": "rect(${1:samples}, ${2:amplitude})", 
+    "word": "rect"
+  }, 
+  {
+    "desc": "White noise with arbitrary amplitude, power and standard deviation. ", 
+    "label": "wave rand(const samples, const amplitude=1.0, const mean, const stdDev)", 
+    "snippet": "rand(${1:samples}, ${2:amplitude}, ${3:mean}, ${4:stdDev})", 
+    "word": "rand"
+  }, 
+  {
+    "desc": "Frequency chirp function with arbitrary amplitude, start and stop frequency, initial phase and number of samples. Start and stop frequency are expressed in units of the sampling frequency. The amplitude can only be defined if the initial phase is defined as well. ", 
+    "label": "wave chirp(const samples, const amplitude=1.0, const startFreq, const stopFreq, const phase=0)", 
+    "snippet": "chirp(${1:samples}, ${2:amplitude}, ${3:startFreq}, ${4:stopFreq}, ${5:phase})", 
+    "word": "chirp"
+  }, 
+  {
+    "desc": "", 
+    "label": "wave marker(const samples, const markerValue)", 
+    "snippet": "marker(${1:samples}, ${2:markerValue})", 
+    "word": "marker"
+  }, 
+  {
+    "desc": "Root raised cosine function with arbitrary amplitude (a), position (p), roll-off factor (beta) and width (w) and number of samples (N). ", 
+    "label": "wave rrc(const samples, const amplitude=1.0, const position, const beta, const width)", 
+    "snippet": "rrc(${1:samples}, ${2:amplitude}, ${3:position}, ${4:beta}, ${5:width})", 
+    "word": "rrc"
+  }, 
+  {
+    "desc": "Generate a waveform with the specified point-by-point values. ", 
+    "label": "wave vect(const amplitude)", 
+    "snippet": "vect(${1:amplitude})", 
+    "word": "vect"
+  }
+]
