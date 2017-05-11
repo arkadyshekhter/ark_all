@@ -1,0 +1,72 @@
+<table>
+  <col class="w15"></col>
+  <col class="w95"></col>
+  <col class="w15"></col>
+  <col class="w100p"></col>
+  <tr class="hrow">
+    <td colspan="2"><label class="blabel ui-block-hpadding">Low-Pass Filter</label></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="hrow">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="h2rows">
+    <td class="pad0"><div class="gli-harrow-double h2rows w100p"></div></td>
+    <td class="pad0"><div class="gli-block-lp"></div></td>
+    <td class="pad0"><div class="gli-harrow-double h2rows w100p"></div></td>
+    <td class="pad0"><div class="gli-block-sinc"></div></td>
+  </tr>
+  <tr class="h2rows">
+    <td></td>
+    <td class="atop pad0">
+      <table class="w100p ui-inputs-cont">
+        <col class="w35"></col>
+        <col class="w100p"></col>
+        <tr>
+          <td class="flabel">Order</td>
+          <td class="clabel">
+            <div class="select-wrap w100p br-arrow clabel" data-zitooltip="$loc.tcBw.tooltip$">
+              <select id="$tab$$type$tcbw" class="tcbwSel" data-zipath="/local/tcbw">
+                <option value="0">TC</option>
+                <option value="1">BW NEP</option>
+                <option value="2">BW 3&#8201;dB</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="select-wrap num w100p" data-zitooltip="$loc.demodsOrder.tooltip$">
+              <select id="$tab$order$index$" data-zipath="/$device$/demods/$index$/order" data-ziconfig="int">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+            </div>
+          </td>
+          <td><input class="style10130 w100p num" id="$tab$$type$tc$index$" type="text" value="" data-zipath="/local/demods/$index$/tcbw" data-zitooltip="$loc.demodsTimeconstant.tooltip$"/></td>
+        </tr>
+      </table>
+    </td>
+    <td></td>
+    <td class="atop pad0">
+      <table class="w100p ui-inputs-cont">
+      <tr>
+        <td class="flabel">Sinc</td>
+      </tr>
+      <tr>
+        <td><a id="$tab$$type$sinc$index$" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/demods/$index$/sinc" data-zitooltip="$loc.demodsSinc.tooltip$"/></td>
+      </tr>
+      </table>
+    </td>
+  </tr>
+</table>

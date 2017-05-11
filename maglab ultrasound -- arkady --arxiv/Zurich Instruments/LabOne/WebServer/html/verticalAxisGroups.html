@@ -1,0 +1,33 @@
+<table class="w100p h100p ui-inputs-cont">
+  <col style="width: 35%" />
+  <col style="width: 35%" />
+  <col style="width: 30%" />
+  <tbody>
+  <tr class="tlabel-space">
+    <td colspan="3" class="tlabel"><label data-zitooltip="$loc.vagTitle.tooltip$">Vertical Axis Groups</label></td>
+  </tr>
+  <tr>
+    <td class="clabel">Signal Type</td>
+    <td class="clabel">Channel</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <div class="select-wrap w100p">
+        <select id="$tab$signalselect" data-zipath="/local/$tab$/signaltoadd" data-ziconfig="$name$-signaltype-select" data-zitooltip="$loc.vagSignal.tooltip$"></select>
+      </div>
+    </td>
+    <td>
+      <div class="select-wrap num w100p">
+        <select id="$tab$channelselect" data-zipath="/local/$tab$/channeltoadd" data-ziconfig="select-object" data-zitooltip="$loc.vagChannel.tooltip$"></select>
+      </div>
+    </td>
+    <td><button id="$tab$addsignal" class="w100p" data-zipath="/local/$tab$/signaladd" data-zivalue="1" data-zitooltip="$loc.vagAdd.tooltip$">Add Signal</button></td>
+  </tr>
+  <tr style="height:100%;">
+    <td colspan="3" class="h100p">
+      <div id="$tab$signalgroups" class="h100p tree-main-container custom-io" data-zipath="/local/$tab$/groupselect,/local/$tab$/signaldelete,/local/$tab$/signalactive" data-ziconfig="signalgroups" />
+    </td>
+  </tr>
+  </tbody>
+</table>

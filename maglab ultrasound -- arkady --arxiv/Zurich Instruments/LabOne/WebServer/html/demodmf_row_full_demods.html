@@ -1,0 +1,53 @@
+<tr class="demod-row">
+  <td class="aright flabel">$alias$</td>
+  <td><div class="select-wrap w70" data-zitooltip="$loc.demodsMode.tooltip$"><select id="$tab$usge$index$l" data-ziconfig="demodusage" data-zipath="/local/demods/$index$/demodusage"></select></div></td>
+  <td><div class="select-wrap num w30" data-zitooltip="$loc.demodsOscselect.tooltip$"><select class="osc" id="$tab$osc$index$" data-zipath="/$device$/demods/$index$/oscselect" data-ziconfig="oscselect"></select></div></td>
+  <td><input class="w30 num aright" id="$tab$harm$index$" type="text" value="" data-ziconfig="int" data-zipath="/$device$/demods/$index$/harmonic" data-zitooltip="$loc.demodsHarmonic.tooltip$"/></td>
+  <td>
+    <input class="style10081 w110 num aright" id="$tab$frequency$index$" type="text" value="" readonly="readonly" data-zipath="/$device$/demods/$index$/freq" data-zitooltip="$loc.demodsFreq.tooltip$"/>
+    <!--input class="style10081 w110 num aright" id="$tab$frequency$index$hf2" type="text" value="" readonly="readonly" data-zipath="/local/demods/$index$/freq" data-zitooltip="$loc.demodsFreq.tooltip$"/-->
+  </td>
+  <td></td>
+  <td><input class="style10030 phasecol w75 num aright" id="$tab$phase$index$" type="text" value="" data-zipath="/$device$/demods/$index$/phaseshift" data-zitooltip="$loc.demodsPhaseshift.tooltip$"/></td>
+  <td><button id="$tab$phase$index$auto" class="icon-zeroadjust phasecol" data-zipath="/local/phase/$index$/auto" data-zivalue="1" data-zitooltip="$loc.demodsAutozero.tooltip$"/></td>
+  <td></td>
+  <td>
+    <div class="select-wrap w75" data-zitooltip="$loc.demodsAdcSelect.tooltip$">
+      <select id="$tab$inputsel$index$" data-zipath="/$device$/demods/$index$/adcselect" data-ziconfig="demodadcselect" />
+    </div>
+  </td>
+  <td></td>
+  <td>
+    <div class="select-wrap num w35" data-zitooltip="$loc.demodsOrder.tooltip$">
+    <select id="$tab$order$index$" data-zipath="/$device$/demods/$index$/order" data-ziconfig="int">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+    </select>
+    </div>
+  </td>
+  <td><input class="style10130 w55 num aright" id="$tab$tc$index$" type="text" value="" data-zipath="/local/demods/$index$/tcbw" data-zitooltip="$loc.demodsTimeconstant.tooltip$"/></td>
+  <td><a id="$tab$sinc$index$" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/demods/$index$/sinc" data-zitooltip="$loc.demodsSinc.tooltip$"/></td>
+  <td class="pad0"><div id="$tab$tcchain$index$" class="chain_dots w100p hrow" data-zipath="/local/demods/$index$/tcchain"></div></td>
+  <td></td>
+  <td><a id="$tab$demodenable$index$" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/demods/$index$/enable" data-zitooltip="$loc.demodsEnable.tooltip$" /></td>
+  <td><input class="style10130 w65 num aright" id="$tab$rate$index$" type="text" value="" data-zipath="/$device$/demods/$index$/rate" data-zitooltip="$loc.demodsRate.tooltip$"/></td>
+  <td class="pad0"><div id="$tab$chainrate$index$" class="chain_dots w100p hrow" data-zipath="/local/demods/$index$/ratechain" data-zideviceoption-render="!DEMODNOMD|IA"></div></td>
+  <!--td class="pad0" data-zideviceoption-render="DEMODNOMD"></td-->
+  <td></td>
+  <td class="trigcol">
+    <div class="select-wrap w95" data-zitooltip="$loc.demodsTriggersource.tooltip$">
+      <select id="$tab$trigsel$index$" data-zipath="/local/demods/$index$/triggersource" data-ziconfig="demodtriggerselect" />
+    </div>
+  </td>
+  <td class="trigcol">
+    <div class="select-wrap w55" data-zitooltip="$loc.demodsTriggermode.tooltip$">
+      <select id="$tab$edgesel$index$" data-zipath="/local/demods/$index$/triggermode" data-ziconfig="select-object"></select>
+    </div>
+  </td>
+</tr>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--generated document-->
+<!--Copyright (c) 2012 Zurich Instruments AG, www.zhinst.com-->
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="64px" height="64px"><g><line style="fill:none;stroke:#009ee0;stroke-width:2" x1="0" x2="64" y1="21" y2="21"/><line style="fill:none;stroke:#009ee0;stroke-width:2" x1="0" x2="64" y1="48" y2="48"/><rect style="fill:#009ee0;" x="02" y="22" width="4" height="4"/><rect style="fill:#009ee0;" x="12" y="22" width="4" height="4"/><rect style="fill:#009ee0;" x="22" y="22" width="4" height="4"/><rect style="fill:#009ee0;" x="32" y="22" width="4" height="4"/><rect style="fill:#009ee0;" x="42" y="22" width="4" height="4"/><rect style="fill:#009ee0;" x="52" y="22" width="4" height="4"/><rect style="fill:#009ee0;" x="62" y="22" width="2" height="4"/><rect style="fill:#009ee0;" x="02" y="43" width="4" height="4"/><rect style="fill:#009ee0;" x="12" y="43" width="4" height="4"/><rect style="fill:#009ee0;" x="22" y="43" width="4" height="4"/><rect style="fill:#009ee0;" x="32" y="43" width="4" height="4"/><rect style="fill:#009ee0;" x="42" y="43" width="4" height="4"/><rect style="fill:#009ee0;" x="52" y="43" width="4" height="4"/><rect style="fill:#009ee0;" x="62" y="43" width="2" height="4"/><path style="fill:none;stroke:#009ee0;stroke-width:2" d="M0,28 h12  v12 h-12"/><path style="fill:none;stroke:#009ee0;stroke-width:2" d="M18,28 h16 v12 h-16z"/><path style="fill:none;stroke:#009ee0;stroke-width:2" d="M40,28 h16 v12 h-16z"/><path style="fill:none;stroke:#009ee0;stroke-width:2" d="M64,28 h-2 v12 h2"/></g>
+        --&gt;
+        
+      </svg>

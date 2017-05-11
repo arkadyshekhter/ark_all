@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="$tab$" class="figure" data-ziconfig="pllhf2tab">
+<table class="w100p">
+  <col class="wctrlplluhf"/>
+  <col class="w100p"/>
+  <tbody>
+  <tr>
+    <td class="atop">
+      <table class="w100p">
+        <colgroup>
+          <col class="w50p"/>
+          <col class="wboxspace"/>
+          <col class="w50p"/>
+          <col class="w20"/>
+        </colgroup>
+        <tr>
+          <td class="atop ui-block">
+          <table class="w100p ui-inputs-cont">
+            <col class="w100" />
+            <col class="w100p"/>
+            <col class="w22" />
+            <tr>
+              <td class="blabel" colspan="3">PLL $alias$</td>
+            </tr>
+            <tr>
+              <td class="flabel">Enable</td>
+              <td>
+                <a id="$tab$pll$index$en" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/plls/$index$/enable" data-zitooltip="$loc.pllEnable.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr><td class="tlabel" colspan="3"></td></tr>
+            <tr>
+              <td class="tlabel" colspan="3">PLL Settings</td>
+            </tr>
+            <tr>
+              <td class="flabel">Input</td>
+              <td>
+                <div class="select-wrap">
+                  <select id="$tab$pll$index$input" data-zipath="/$device$/plls/$index$/adcselect" data-zitooltip="$loc.pllInput.tooltip$">
+                    <option value="0">Sig In 1</option>
+                    <option value="1">Sig In 2</option>
+                    <option value="2">Aux In 1 (&lt;20kHZ)</option>
+                    <option value="3">Aux In 2 (&lt;20kHZ)</option>
+                    <option value="4">DIO D0 (&lt;2MHZ)</option>
+                    <option value="5">DIO D1 (&lt;2MHZ)</option>
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Center Freq (Hz)</td>
+              <td>
+                <input class="style10081 num w100p" id="$tab$pll$index$freqcenter" type="text" value="" data-zipath="/$device$/plls/$index$/freqcenter" data-zitooltip="$loc.pllCenter.tooltip$" />
+              </td>
+              <td>
+                <a id="$tab$pll$index$autocenter" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/plls/$index$/autocenter" data-zitooltip="$loc.pllAutoCenter.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Range&#160;(Hz)</td>
+              <td>
+                <input class="style10130 num w100p" id="$tab$pll$index$freqrange" type="text" value="" data-zipath="/$device$/plls/$index$/freqrange" data-zitooltip="$loc.pllRange.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">TC&#160;Mode</td>
+              <td>
+                <a id="$tab$pll$index$tcmode" class="icon-toggle btn" tabindex="0" data-zipath="/local/plls/$index$/tcmode" data-zitooltip="$loc.pllTcMode.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr><td colspan="3"></td></tr>
+            <tr><td class="flabel bold" colspan="3">Phase Detector</td></tr>
+            <tr>
+              <td class="flabel">Harmonic</td>
+              <td>
+                <div class="select-wrap num w100p" data-zitooltip="$loc.pllharmonic.tooltip$">
+                  <select id="$tab$pll$index$sharmonic" data-zipath="/$device$/plls/$index$/harmonic">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">TC (s)</td>
+              <td><input class="style10130 num w100p" id="$tab$pll$index$tc" type="text" value="" data-zipath="/$device$/plls/$index$/timeconstant" data-zitooltip="$loc.pllTc.tooltip$"/></td>
+              <td>
+                <a id="$tab$plls$index$autotimeconstant" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/plls/$index$/autotimeconstant" data-zitooltip="$loc.pllAutoTimeconstant.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Demod BW (Hz)</td>
+              <td>
+                <input class="style10130 num w100p" id="$tab$pll$index$bw" type="text" value="" data-zipath="/local/$tab$/$index$/bwtc" data-zitooltip="$loc.pllbwtc.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Order</td>
+              <td>
+                <div class="select-wrap num w100p" data-zitooltip="$loc.pllOrder.tooltip$">
+                  <select id="$tab$pll$index$order" data-zipath="/$device$/plls/$index$/order">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="tlabel" colspan="3">PID Settings</td>
+            </tr>
+            <tr>
+              <td class="flabel">
+                <label>Setpoint&#160;</label>
+                <label id="$tab$pll$index$setunit" data-zipath="/local/plls/$index$/setunit" data-ziconfig="localstring"></label>
+              </td>
+              <td>
+                <input class="style11130 num w100p" id="$tab$pll$index$setpoint" type="text" value="0" data-zipath="/$device$/plls/$index$/setpoint" data-zitooltip="$loc.pllSetpoint.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">
+                <label>P&#160;</label>
+                <label id="$tab$pll$index$punit" data-zipath="/local/plls/$index$/punit" data-ziconfig="localstring"></label>
+              </td>
+              <td>
+                <input class="style11130 num w100p" id="$tab$pid$index$p" type="text" value="0" data-zipath="/local/plls/$index$/p" data-zitooltip="$loc.pllsP.tooltip$"/>
+              </td>
+              <td><a id="$tab$pll$index$autopid" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/plls/$index$/autopid" data-zitooltip="$loc.pllAutoPid.tooltip$"/></td>
+            </tr>
+            <tr>
+              <td class="flabel">
+                <label>I&#160;</label>
+                <label id="$tab$pid$index$iunit" data-zipath="/local/plls/$index$/iunit" data-ziconfig="localstring"></label>
+              </td>
+              <td>
+                <input class="style11130 num w100p" id="$tab$pid$index$i" type="text" value="0" data-zipath="/local/plls/$index$/i" data-zitooltip="$loc.pllsI.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">
+                <label>D&#160;</label>
+                <label id="$tab$pll$index$dunit" data-zipath="/local/plls/$index$/dunit" data-ziconfig="localstring"></label>
+              </td>
+              <td>
+                <input class="style11130 num w100p" id="$tab$pll$index$d" type="text" value="0" data-zipath="/local/plls/$index$/d" data-zitooltip="$loc.pllsD.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Rate&#160;(Hz)</td>
+              <td>
+                <input class="style10130 num w100p" id="$tab$pll$index$rate" type="text" data-zipath="/$device$/plls/$index$/rate" data-zitooltip="$loc.pllsRate.tooltip$" readonly="readonly" />
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">
+                <label>Error/PLL Lock</label>
+              </td>
+              <td>
+                <input class="style11130 num w100p" id="$tab$pid$index$error" type="text" data-zipath="/$device$/plls/$index$/error" data-zitooltip="$loc.pllsError.tooltip$" readonly="readonly"/>
+              </td>
+              <td>
+                <div class="led positive" id="$tab$lockled$index$" data-ziconfig="led" data-zipath="/local/oscs/$index$/locked" data-zitooltip="$loc.localPlllock.tooltip$"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel"><label for="$tab$pid$index$shift">Freq Shift (Hz)</label></td>
+              <td>
+                <input class="style10130 num w100p" id="$tab$pll$index$freqdelta" type="text" value="" readonly="readonly" data-zipath="/$device$/plls/$index$/freqdelta" data-zitooltip="$loc.pllsShift.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button id="$tab$pid$index$toadvisor" class="w100p" data-zivalue="1" data-zipath="/local/$tab$/$index$/toadvisor" data-zitooltip="$loc.localToadvisor.tooltip$" tabindex="1">To Advisor</button></td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <td class="wboxspace" /> <!--space-->
+        <td class="atop ui-block">
+          <table class="w100p ui-inputs-cont">
+            <colgroup>
+              <col class="w100" />
+              <col class="w100p"/>
+              <col class="w20" />
+            </colgroup>
+            <tr>
+              <td class="blabel" colspan="3">PLL Advisor</td>
+            </tr>
+            <tr>
+              <td>Advanced Mode</td>
+              <td>
+                <a id="$tab$pidadvisor$index$advanced" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/module/$tab$$index$/pidAdvisor/advancedmode" data-zitooltip="$loc.hf2PllAdvisorAdvancedMode.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr><td colspan="3"></td></tr>
+            <tr>
+              <td class="bold">Display</td>
+              <td>
+                <div class="select-wrap w100p" data-zitooltip="$loc.hf2PllAdvisorDisplay.tooltip$">
+                  <select id="$tab$pidadvisor$index$plotsel" data-zipath="/local/$tab$/$index$/pidAdvisor/shownsignal">
+                    <option value="0">Bode Magnitude</option>
+                    <option value="1">Bode Phase</option>
+                    <option value="3">Step Resp</option>
+                    <option value="2" disabled="disabled">Impulse Resp</option>
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <label>Start (</label>
+                <label id="$tab$pidadvisor$index$xunit0" data-zipath="/local/$tab$/$index$/pidAdvisor/xunit" data-ziconfig="localstring">Hz</label>
+                <label>)</label>
+              </td>
+              <td>
+                <input id="$tab$pidadvisor$index$displayfstart" class="style10130 num w100p" tabindex="1" type="text" value="0" data-zipath="/module/$tab$$index$/pidAdvisor/display/freqstart" readonly="readonly" data-zitooltip="$loc.hf2PllAdvisorDisplayFreqStart.tooltip$"/>
+                <input id="$tab$pidadvisor$index$displaytstart" class="style10130 num w100p" tabindex="1" type="text" value="0" data-zipath="/module/$tab$$index$/pidAdvisor/display/timestart" readonly="readonly" data-zitooltip="$loc.hf2PllAdvisorDisplayTimeStart.tooltip$" hidden="hidden"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <label>Stop (</label>
+                <label id="$tab$pidadvisor$index$xunit1" data-zipath="/local/$tab$/$index$/pidAdvisor/xunit" data-ziconfig="localstring">Hz</label>
+                <label>)</label>
+                </td>
+              <td>
+                <input id="$tab$pidadvisor$index$displayfstop" class="style10130 num w100p" tabindex="1" type="text" value="0" data-zipath="/module/$tab$$index$/pidAdvisor/display/freqstop" readonly="readonly" data-zitooltip="$loc.hf2PllAdvisorDisplayFreqStop.tooltip$"/>
+                <input id="$tab$pidadvisor$index$displaytstop" class="style10130 num w100p" tabindex="1" type="text" value="0" data-zipath="/module/$tab$$index$/pidAdvisor/display/timestop" readonly="readonly" data-zitooltip="$loc.hf2PllAdvisorDisplayTimeStop.tooltip$" hidden="hidden"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Response In</td>
+              <td>
+                <div class="select-wrap w100p" data-zitooltip="$loc.hf2PllAdvisorResponseInput.tooltip$">
+                  <select id="$tab$pid$index$tfinput" data-zipath="/module/$tab$$index$/pidAdvisor/tf/input">
+                    <option value="0">Demod Input</option>
+                    <option value="1">Setpoint</option>
+                    <option value="2">PID Output</option>
+                    <option value="3">Instrument Output</option>
+                    <option value="4">DUT Output</option>
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Response Out</td>
+              <td>
+                <div class="select-wrap w100p" data-zitooltip="$loc.hf2PllAdvisorResponseOutput.tooltip$">
+                  <select id="$tab$pid$index$tfoutput" data-zipath="/module/$tab$$index$/pidAdvisor/tf/output">
+                    <option value="2">PID Output</option>
+                    <option value="3">Instrument Output</option>
+                    <option value="4">DUT Output</option>
+                    <option value="0">Demod Input</option>
+                    <option value="1">PID Error</option>
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Closed-Loop</td>
+              <td>
+                <a id="$tab$pidadvisor$index$closedloop" class="icon-toggle btn" tabindex="1" data-zipath="/module/$tab$$index$/pidAdvisor/tf/closedloop" data-zitooltip="$loc.hf2PllAdvisorClosedLoop.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr><td colspan="3"></td></tr>
+            <tr>
+              <td class="blabel" colspan="3">Advisor</td>
+            </tr>
+            <tr>
+              <td class="flabel">Target BW (Hz)</td>
+              <td>
+                <input id="$tab$pidadvisor$index$pidtargetbw" class="style10130 num w100p" tabindex="1" type="text" value="0" data-zipath="/module/$tab$$index$/pidAdvisor/pid/targetbw" data-zitooltip="$loc.hf2PllAdvisorPidTargetBW.tooltip$"/>
+              </td>
+              <td>
+                <a id="$tab$pidadvisor$index$pidautobw" class="icon-toggle btn" tabindex="1" data-zipath="/module/$tab$$index$/pidAdvisor/pid/autobw" data-zitooltip="$loc.hf2PllAdvisorAutoBW.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Advise Mode</td>
+              <td>
+                <div class="select-wrap w100p" data-zitooltip="$loc.hf2PllAdvisorAdviseMode.tooltip$">
+                  <select id="$tab$pidadvisor$index$pidmode" data-zipath="/module/$tab$$index$/pidAdvisor/pid/mode" data-ziconfig="pid-advisor-mode-select">
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="blabel"></td>
+              <td>
+               <a id="$tab$pid$index$advisorcalculate" class="btn w100p" data-zipath="/module/$tab$$index$/pidAdvisor/calculate" data-zivalue="1" data-zitooltip="$loc.hf2PllAdvisorAdvise.tooltip$" tabindex="0"><label>Advise</label></a>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="blabel">PID</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr><td colspan="3"></td></tr>
+            <tr>
+              <td class="flabel">
+                <label>P&#160;</label>
+                <label id="$tab$pidadvisor$index$punit" data-zipath="/local/plls/$index$/punit" data-ziconfig="localstring"></label>
+              </td>
+              <td>
+                <input class="style11130 num w100p" id="$tab$pidadvisor$index$p" type="text" value="0" data-zipath="/local/$tab$/$index$/pidAdvisor/p" data-zitooltip="$loc.hf2PllAdvisorP.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">
+                <label>I&#160;</label>
+                <label id="$tab$pidadvisor$index$iunit" data-zipath="/local/plls/$index$/iunit" data-ziconfig="localstring"></label>
+              </td>
+              <td>
+                <input class="style11130 num w100p" id="$tab$pidadvisor$index$i" type="text" value="0" data-zipath="/local/$tab$/$index$/pidAdvisor/i" data-zitooltip="$loc.hf2PllAdvisorI.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">
+                <label>D&#160;</label>
+                <label id="$tab$pidadvisor$index$dunit" data-zipath="/local/plls/$index$/dunit" data-ziconfig="localstring"></label>
+              </td>
+              <td>
+                <input class="style11130 num w100p" id="$tab$pidadvisor$index$d" type="text" value="0" data-zipath="/local/$tab$/$index$/pidAdvisor/d" data-zitooltip="$loc.hf2PllAdvisorD.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Rate&#160;(Hz)</td>
+              <td>
+                <input class="style10130 num w100p" id="$tab$pidadvisor$index$rate" type="text" data-zipath="/module/$tab$$index$/pidAdvisor/pid/rate" data-zitooltip="$loc.hf2PllAdvisorRate.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BW (Hz)</td>
+              <td>
+                <input id="$tab$pidadvisor$index$tfbw" class="style10130 num w100p" tabindex="1" type="text" value="0" data-zipath="/module/$tab$$index$/pidAdvisor/bw" readonly="readonly" data-zitooltip="$loc.hf2PllAdvisorSystemBW.tooltip$"/>
+              </td>
+              <td><div class="led negative passfail" id="$tab$pidadvisor$index$advisortargetfail" data-ziconfig="led" data-zipath="/module/$tab$$index$/pidAdvisor/targetfail" data-zitooltip="$loc.hf2PllAdvisorTargetFail.tooltip$"></div></td>
+            </tr>
+            <tr>
+              <td class="flabel"><label for="$tab$pidadvisor$index$pmlabel">PM (deg)</label></td>
+              <td><input class="style10130 num w100p" id="$tab$pidadvisor$index$pm" type="text" value="" data-zipath="/module/$tab$$index$/pidAdvisor/pm" readonly="readonly" data-zitooltip="$loc.hf2PllAdvisorPM.tooltip$" tabindex="0"/></td>
+              <td><div class="led positive passfail" id="$tab$pidadvisor$index$stable" data-ziconfig="led" data-zipath="/module/$tab$$index$/pidAdvisor/stable" data-zitooltip="$loc.hf2PllAdvisorStable.tooltip$"></div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button id="$tab$plladvisor$index$todevice" class="w100p" data-zivalue="1" data-zipath="/local/$tab$/$index$/todevice" data-zitooltip="$loc.hf2PllTodevice.tooltip$" tabindex="1">To PLL</button></td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <td/>
+        </tr>
+      </table>
+    </td>
+    <td class="atop">
+      <div class="svgplotborder" id="$tab$sppa$index$">
+        <div id="$tab$p0" data-ziconfig="placeholder"></div>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>

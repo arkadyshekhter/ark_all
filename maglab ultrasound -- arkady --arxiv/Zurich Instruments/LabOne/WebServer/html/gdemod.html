@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="$tab$" data-ziconfig="graphlockintab">
+<table class="el_width gtab-cont ui-cont" id="$tab$tw" data-zipath="/local/$tab$/totalwidth" style="width:1270px;">
+  <colgroup><!-- column width is set from the server. initial valuas are just to have nice display at the begining-->
+    <col class="el_width" id="$tab$col0" data-zipath="/local/$tab$/col/0/width" style="width:390px;"></col>
+    <col class="el_width" id="$tab$col1" data-zipath="/local/$tab$/col/1/width" style="width:20px;"></col><!-- space -->
+    <col class="el_width" id="$tab$col2" data-zipath="/local/$tab$/col/2/width" style="width:75px;"></col>
+    <col class="el_width" id="$tab$col3" data-zipath="/local/$tab$/col/3/width" style="width:190px;"></col>
+    <col class="el_width" id="$tab$col4" data-zipath="/local/$tab$/col/4/width" style="width:20px;"></col>
+    <col class="el_width" id="$tab$col5" data-zipath="/local/$tab$/col/5/width" style="width:195px;"></col>
+    <col class="el_width" id="$tab$col6" data-zipath="/local/$tab$/col/6/width" style="width:20px;"></col>
+    <col class="el_width" id="$tab$col7" data-zipath="/local/$tab$/col/7/width" style="width:306px;"></col>
+  </colgroup>
+  <tbody>
+    <tr class="hgli-block">
+      <!--SIGNAL INPUT BLOCK-->
+      <td class="atop">
+        <div class="atop hgli-block ui-block" style="padding-right:0px;" id="$tab$siginblock" data-zipath="/local/$tab$/siginuiblock">
+          <table class="w100p ui-cont">
+            <tr class="hrow" data-ziinclude="glockin_block_sigin_selector.html?index=$index$" />
+            <tr>
+              <td>
+                <!-- TODO(2K): consider generating this based on rule config -->
+                <!--   ********** Narrow **********   -->
+                <div id="$tab$siginblockboxv1" data-zipath="/local/$tab$/block/sigin/vbox1" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_v_boxes.html?type=vsibox1&index=$index$&input=0&alias=1" /> <!-- Voltage Input 1 -->
+                </div>
+                <div id="$tab$siginblockboxv2" data-zipath="/local/$tab$/block/sigin/vbox2" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_v_boxes.html?type=vsibox2&index=$index$&input=1&alias=2" /> <!-- Voltage Input 2 -->
+                </div>
+                <div id="$tab$siginblockboxi2" data-zipath="/local/$tab$/block/sigin/ibox2" hidden="hidden" data-zidevicetype-render="MF">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_i_boxes.html?type=isibox2&index=$index$&input=0&alias=1" /> <!-- Current Input 2 -->
+                </div>
+                <div id="$tab$siginblockboxt1" data-zipath="/local/$tab$/block/sigin/tbox1" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_trigger_diagram.html?type=tsibox1&index=0&alias=1" /> <!-- TODO(2K): Trigger Input 1 -->
+                </div>
+                <div id="$tab$siginblockboxt2" data-zipath="/local/$tab$/block/sigin/tbox2" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_trigger_diagram.html?type=tsibox2&index=1&alias=2" /> <!-- TODO(2K): Trigger Input 2 -->
+                </div>
+                <div id="$tab$siginblockboxo1" data-zipath="/local/$tab$/block/sigin/obox1" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=osibox1&index=0&alias=1" /> <!-- TODO(2K): Aux Out 1 -->
+                </div>
+                <div id="$tab$siginblockboxo2" data-zipath="/local/$tab$/block/sigin/obox2" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=osibox2&index=1&alias=2" /> <!-- TODO(2K): Aux Out 2 -->
+                </div>
+                <div id="$tab$siginblockboxo3" data-zipath="/local/$tab$/block/sigin/obox3" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=osibox3&index=2&alias=3" /> <!-- TODO(2K): Aux Out 3 -->
+                </div>
+                <div id="$tab$siginblockboxo4" data-zipath="/local/$tab$/block/sigin/obox4" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=osibox4&index=3&alias=4" /> <!-- TODO(2K): Aux Out 4 -->
+                </div>
+                <div id="$tab$siginblockboxa1" data-zipath="/local/$tab$/block/sigin/abox1" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxin_diagram.html?type=asibox1&index=0" /> <!-- TODO(2K): Auxiliary Input 1 -->
+                </div>
+                <div id="$tab$siginblockboxa2" data-zipath="/local/$tab$/block/sigin/abox2" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxin_diagram.html?type=asibox2&index=1" /> <!-- TODO(2K): Auxiliary Input 2 -->
+                </div>
+                <div id="$tab$siginblockboxp1" data-zipath="/local/$tab$/block/sigin/pbox1" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_phase_diagram.html?type=psibox1&index=$index$" /> <!-- TODO(2K): Phase Demod 4 -->
+                </div>
+                <div id="$tab$siginblockboxp2" data-zipath="/local/$tab$/block/sigin/pbox2" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_phase_diagram.html?type=psibox2&index=$index$" /> <!-- TODO(2K): Phase Demod 8 -->
+                </div>
+                <!--   ********** Wide **********   -->
+                <div id="$tab$sigininblockdiagv1" data-zipath="/local/$tab$/block/sigin/vdiag1" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_v_diagram.html?type=vsidiag1&index=$index$&input=0&alias=1" /> <!-- Voltage Input 1 -->
+                </div>
+                <div id="$tab$sigininblockdiagv2" data-zipath="/local/$tab$/block/sigin/vdiag2" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_v_diagram.html?type=vsidiag2&index=$index$&input=1&alias=2" /> <!-- Voltage Input 2 -->
+                </div>
+                <div id="$tab$sigininblockdiagi2" data-zipath="/local/$tab$/block/sigin/idiag2" hidden="hidden" data-zidevicetype-render="MF">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_i_diagram.html?type=isidiag2&index=$index$&input=0&alias=1" /> <!-- Current Input 2 -->
+                </div>
+                <div id="$tab$siginblockdiagt1" data-zipath="/local/$tab$/block/sigin/tdiag1" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_trigger_diagram.html?type=tsidiag1&index=0&alias=1" /> <!-- TODO(2K): Trigger Input 1 -->
+                </div>
+                <div id="$tab$siginblockdiagt2" data-zipath="/local/$tab$/block/sigin/tdiag2" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_trigger_diagram.html?type=tsidiag2&index=1&alias=2" /> <!-- TODO(2K): Trigger Input 2 -->
+                </div>
+                <div id="$tab$siginblockdiago1" data-zipath="/local/$tab$/block/sigin/odiag1" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=osidiag1&index=0&alias=1" /> <!-- TODO(2K): Aux Out 1 -->
+                </div>
+                <div id="$tab$siginblockdiago2" data-zipath="/local/$tab$/block/sigin/odiag2" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=osidiag2&index=1&alias=2" /> <!-- TODO(2K): Aux Out 2 -->
+                </div>
+                <div id="$tab$siginblockdiago3" data-zipath="/local/$tab$/block/sigin/odiag3" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=osidiag3&index=2&alias=3" /> <!-- TODO(2K): Aux Out 3 -->
+                </div>
+                <div id="$tab$siginblockdiago4" data-zipath="/local/$tab$/block/sigin/odiag4" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=osidiag4&index=3&alias=4" /> <!-- TODO(2K): Aux Out 4 -->
+                </div>
+                <div id="$tab$siginblockdiaga1" data-zipath="/local/$tab$/block/sigin/adiag1" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxin_diagram.html?type=asidiag1&index=0" /> <!-- TODO(2K): Auxiliary Input 1 -->
+                </div>
+                <div id="$tab$siginblockdiaga2" data-zipath="/local/$tab$/block/sigin/adiag2" hidden="hidden">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxin_diagram.html?type=asidiag2&index=1" /> <!-- TODO(2K): Auxiliary Input 2 -->
+                </div>
+                <div id="$tab$siginblockdiagp1" data-zipath="/local/$tab$/block/sigin/pdiag1" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_phase_diagram.html?type=psidiag1&index=$index$" /> <!-- TODO(2K): Phase Demod 4 -->
+                </div>
+                <div id="$tab$siginblockdiagp2" data-zipath="/local/$tab$/block/sigin/pdiag2" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                  <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_phase_diagram.html?type=psidiag2&index=$index$" /> <!-- TODO(2K): Phase Demod 8 -->
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <!--/SIGNAL INPUT BLOCK-->
+      <td class="atop">
+        <!--div class="gli-hwire-single w100p hgli-block"></div-->
+        <div class="gli-hwire-single hgli-block w100p h100p prelative" id="$tab$demoduiblock4" data-zipath="/local/$tab$/demoduiblock">
+          <div class="pabsolute w100p h100p"></div>
+          <div class="pabsolute w100p h50p gli-vwire-single" id="$tab$refinputsamesi0" data-zipath="/local/$tab$/block/refinput/same" hidden="hidden" style="bottom:0px;" data-zideviceoption-render="DEMODNOMD&!IA"></div>
+          <div class="pabsolute w100p h100p gli-wire-connection" id="$tab$refinputsamesi1" data-zipath="/local/$tab$/block/refinput/same" hidden="hidden" data-zideviceoption-render="DEMODNOMD&!IA"></div>
+        </div>
+      </td><!-- space -->
+      <!--DEMODULATOR-->
+      <td class="atop ui-block-vpadding">
+        <div data-ziinclude="glockin_block_demod_diagram.html?type=diagram&index=$index$" id="$tab$demoduiblock" data-zipath="/local/$tab$/demoduiblock"/>
+      </td>
+      <!--/DEMODULATOR-->
+      <!--LOW PASS BLOCK-->
+      <td class="atop">
+        <div class="atop ui-block hgli-block gli-hwire-double" style="padding-left:0px;padding-right:0px;" id="$tab$lpuiblock" data-zipath="/local/$tab$/lpuiblock">
+          <table class="w100p" data-ziinclude="glockin_block_lp_diagram.html?type=diagram&index=$index$&alias=" />
+        </div>
+      </td>
+      <!--/LOW PASS BLOCK -->
+      <td class="atop">
+        <div class="prelative hgli-block w100p" id="$tab$transferuiblock0" data-zipath="/local/$tab$/transferuiblock">
+          <div class="gli-harrow-double w100p h100p pabsolute" hidden="hidden" id="$tab$auxboxarrow" data-zipath="/local/$tab$/block/aux/box"></div>
+          <div class="gli-hwire-double w100p h100p pabsolute"></div>     
+        </div>
+      </td>
+      <td colspan="3" class="atop">
+        <!--div id="$tab$auxbox" data-zipath="/local/$tab$/block/aux/box" hidden="hidden">
+          <table class="w100p ui-inputs-cont" data-ziinclude="glockin_block_aux_boxes.html?index=$index$&alias="/>
+        </div>
+        <div id="$tab$auxdiag" data-zipath="/local/$tab$/block/aux/diagram" hidden="hidden">
+          <table class="w100p ui-inputs-cont" data-ziinclude="glockin_block_aux_diagram.html?index=$index$&alias="/>
+        </div-->
+        <div class="ui-block pad0" id="$tab$transferuiblock1" data-zipath="/local/$tab$/transferuiblock">
+          <div id="$tab$grouptransfersel" class="sidetabs groupsidetabs hgli-block" data-zipath="/local/$tab$/grouptransfersel">
+            <ul>
+              <li class="tabbtn"><label for="$tab$transbox">PC</label></li>
+              <li data-ziincludemultiple="tab_li.html?feature=auxouts&for=$tab$ao" />
+            </ul>
+            <div id="$tab$transbox">
+              <table class="w100p" data-ziinclude="glockin_block_transfer_diagram.html?type=diagrammd&index=$index$" border="0"/>
+            </div>
+            <div data-ziincludemultiple="glockin_block_aux.html?feature=auxouts" />
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr class="h20">
+      <td></td>
+      <td>
+        <div id="$tab$refinputsames0" class="gli-vwire-single w100p h20" data-zipath="/local/$tab$/block/refinput/same" hidden="hidden" data-zideviceoption-render="DEMODNOMD&!IA"></div>
+      </td>
+      <td>
+        <table class="w100p h100p">
+          <col class="w10"></col>
+          <col class="w40"></col>
+          <col class="w100p"></col>
+          <tbody>
+            <tr>
+              <td></td>
+              <td><div class="gli-vwire-single w100p h20" id="$tab$demoduiblock3" data-zipath="/local/$tab$/demoduiblock"></div></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td colspan="5"></td>
+    </tr>
+    <tr>
+      <!--REFERENCE BLOCK-->
+      <td class="abottom">
+        <div id="$tab$refinputdiffref" data-zipath="/local/$tab$/block/refinput/different">
+          <div data-zideviceoption-render="!DEMODNOMD|IA">
+            <div class="atop hgli-block ui-block" style="padding-right:0px;">
+              <div id="$tab$refbox" data-zipath="/local/$tab$/block/ref/box" hidden="hidden">
+                <table class="w100p ui-cont" data-ziinclude="glockin_block_ref_boxes.html?type=box&index=$index$&alias=" />
+              </div>
+              <div id="$tab$refdiagram" data-zipath="/local/$tab$/block/ref/diagram" hidden="hidden">
+                <table class="w100p ui-cont" data-ziinclude="glockin_block_ref_diagram.html?type=diagram&index=$index$&alias=" />
+              </div>
+            </div>          
+          </div>
+          <div data-zideviceoption-render="DEMODNOMD&!IA">
+            <div class="atop hgli-block ui-block" style="padding-right:0px;">
+              <table class="w100p ui-cont">
+                <tr class="hrow" data-ziinclude="glockin_block_extrefin_selector.html?index=$index$" />
+                <tr>
+                  <td>
+                    <!--   ********** Narrow **********   -->
+                    <div id="$tab$ebox1" data-zipath="/local/$tab$/block/extref/ebox1" hidden="hidden"><!-- Demod -->
+                      <table class="w100p ui-cont" data-ziinclude="glockin_block_ref_boxes.html?type=box&index=$index$&alias=" />
+                    </div>
+                    <div id="$tab$ebox8" data-zipath="/local/$tab$/block/extref/ebox8" hidden="hidden"><!-- Extref -->
+                      <div id="$tab$extrefinblockboxv1" data-zipath="/local/$tab$/block/extrefin/vbox1" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_v_boxes.html?type=verbox1&index=$index$&input=0&alias=1" /> <!-- Voltage Input 1 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxv2" data-zipath="/local/$tab$/block/extrefin/vbox2" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_v_boxes.html?type=verbox2&index=$index$&input=1&alias=2" /> <!-- Voltage Input 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxi2" data-zipath="/local/$tab$/block/extrefin/ibox2" hidden="hidden" data-zidevicetype-render="MF">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_i_boxes.html?type=ierbox2&index=$index$&input=0&alias=1" /> <!-- Current Input 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxt1" data-zipath="/local/$tab$/block/extrefin/tbox1" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_trigger_diagram.html?type=terbox1&index=0&alias=1" /> <!-- TODO(2K): Trigger Input 1 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxt2" data-zipath="/local/$tab$/block/extrefin/tbox2" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_trigger_diagram.html?type=terbox2&index=1&alias=2" /> <!-- TODO(2K): Trigger Input 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxo1" data-zipath="/local/$tab$/block/extrefin/obox1" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=oerbox1&index=0&alias=1" /> <!-- TODO(2K): Aux Out 1 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxo2" data-zipath="/local/$tab$/block/extrefin/obox2" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=oerbox2&index=1&alias=2" /> <!-- TODO(2K): Aux Out 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxo3" data-zipath="/local/$tab$/block/extrefin/obox3" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=oerbox3&index=2&alias=3" /> <!-- TODO(2K): Aux Out 3 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxo4" data-zipath="/local/$tab$/block/extrefin/obox4" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=oerbox4&index=3&alias=4" /> <!-- TODO(2K): Aux Out 4 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxa1" data-zipath="/local/$tab$/block/extrefin/abox1" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxin_diagram.html?type=aerbox1&index=0" /> <!-- TODO(2K): Auxiliary Input 1 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxa2" data-zipath="/local/$tab$/block/extrefin/abox2" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxin_diagram.html?type=aerbox2&index=1" /> <!-- TODO(2K): Auxiliary Input 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxp1" data-zipath="/local/$tab$/block/extrefin/pbox1" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_phase_diagram.html?type=perbox1&index=$index$" /> <!-- TODO(2K): Phase Demod 4 -->
+                      </div>
+                      <div id="$tab$extrefinblockboxp2" data-zipath="/local/$tab$/block/extrefin/pbox2" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_phase_diagram.html?type=perbox2&index=$index$" /> <!-- TODO(2K): Phase Demod 8 -->
+                      </div>
+                    </div>
+                    <!--   ********** Wide **********   -->
+                    <div id="$tab$ediag1" data-zipath="/local/$tab$/block/extref/ediag1" hidden="hidden"><!-- Demod -->
+                      <table class="w100p ui-cont" data-ziinclude="glockin_block_ref_diagram.html?type=diagram&index=$index$&alias=" />
+                    </div>
+                    <div id="$tab$ediag8" data-zipath="/local/$tab$/block/extref/ediag8" hidden="hidden"><!-- Extref -->
+                      <div id="$tab$extrefinblockdiagv1" data-zipath="/local/$tab$/block/extrefin/vdiag1" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_v_diagram.html?type=verdiag1&index=$index$&input=0&alias=1" /> <!-- Voltage Input 1 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiagv2" data-zipath="/local/$tab$/block/extrefin/vdiag2" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_v_diagram.html?type=verdiag2&index=$index$&input=1&alias=2" /> <!-- Voltage Input 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiagi2" data-zipath="/local/$tab$/block/extrefin/idiag2" hidden="hidden" data-zidevicetype-render="MF">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_i_diagram.html?type=ierdiag2&index=$index$&input=0&alias=1" /> <!-- Current Input 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiagt1" data-zipath="/local/$tab$/block/extrefin/tdiag1" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_trigger_diagram.html?type=terdiag1&index=0&alias=1" /> <!-- TODO(2K): Trigger Input 1 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiagt2" data-zipath="/local/$tab$/block/extrefin/tdiag2" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_trigger_diagram.html?type=terdiag2&index=1&alias=2" /> <!-- TODO(2K): Trigger Input 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiago1" data-zipath="/local/$tab$/block/extrefin/odiag1" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=oerdiag1&index=0&alias=1" /> <!-- TODO(2K): Aux Out 1 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiago2" data-zipath="/local/$tab$/block/extrefin/odiag2" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=oerdiag2&index=1&alias=2" /> <!-- TODO(2K): Aux Out 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiago3" data-zipath="/local/$tab$/block/extrefin/odiag3" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=oerdiag3&index=2&alias=3" /> <!-- TODO(2K): Aux Out 3 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiago4" data-zipath="/local/$tab$/block/extrefin/odiag4" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxout_diagram.html?type=oerdiag4&index=3&alias=4" /> <!-- TODO(2K): Aux Out 4 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiaga1" data-zipath="/local/$tab$/block/extrefin/adiag1" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxin_diagram.html?type=aerdiag1&index=0" /> <!-- TODO(2K): Auxiliary Input 1 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiaga2" data-zipath="/local/$tab$/block/extrefin/adiag2" hidden="hidden">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_auxin_diagram.html?type=aerdiag2&index=1" /> <!-- TODO(2K): Auxiliary Input 2 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiagp1" data-zipath="/local/$tab$/block/extrefin/pdiag1" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_phase_diagram.html?type=perdiag1&index=$index$" /> <!-- TODO(2K): Phase Demod 4 -->
+                      </div>
+                      <div id="$tab$extrefinblockdiagp2" data-zipath="/local/$tab$/block/extrefin/pdiag2" hidden="hidden" data-zidevicetype-render="HF2|UHF">
+                        <table class="w100p ui-cont" data-ziinclude="glockin_block_sigin_phase_diagram.html?type=perdiag2&index=$index$" /> <!-- TODO(2K): Phase Demod 8 -->
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </td>
+      <!--/REFERENCE BLOCK-->
+      <td class="abottom">
+        <div class="hgli-block gli-hwire-single w100p" id="$tab$refinputdiffext" data-zipath="/local/$tab$/block/refinput/different"></div>
+        <table class="w100p h100p" id="$tab$refinputsame" data-zipath="/local/$tab$/block/refinput/same" hidden="hidden" data-zideviceoption-render="DEMODNOMD&!IA">
+          <tr class="h100p">
+            <td class="gli-vwire-single"></td>
+          </tr>
+          <tr class="hgli-block">
+            <td>
+              <div class="prelative w100p hgli-block">
+                <div class="gli-hwire-single w50p h100p pabsolute" style="right:0px;"></div>
+                <div class="gli-vwire-single pabsolute w100p h50p" style="top:0px;"></div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td colspan="2" class="abottom">
+        <div class="w100p h100p" data-ziinclude="glockin_block_extrefnomd_diagram.html?type=diagrammd&index=$index$&extrefch=1&alias=" data-zideviceoption-render="DEMODNOMD&!IA"/>
+        <div class="w100p h100p" data-ziinclude="glockin_block_extref_diagram.html?type=diagrammd&index=$index$&alias=" data-zideviceoption-render="!DEMODNOMD|IA"/>
+      </td>
+      <td class="abottom">
+        <div class="hgli-block gli-hwire-single w100p" id="$tab$rofullwire" data-zipath="/local/demods/$index$/extref/show"></div>
+      </td>
+      <!--OUTAMP 0 BLOCK-->
+      <!-- Note: block and diagram are same. Use diagram. -->
+      <!--td class="abottom">
+        <div class="atop ui-block hgli-block" style="padding-left: 0px;padding-right:0px;">
+          <table data-zideviceoption-render="DEMODMF|DEMODNOMFIS" class="w100p ui-inputs-cont" data-ziinclude="glockin_block_outamp_diagram.html?index=$index$&sigout=0&type=diagram" />
+          <table data-zideviceoption-render="DEMOD|DEMODNOMD" class="w100p ui-inputs-cont" data-ziinclude="glockin_block_outamp_diagram.html?index=$sigout0AmplitudeIndex$&sigout=0&type=diagram" />
+        </div>
+      </td-->
+      <td class="abottom" colspan="3">
+        <div class="ui-block pad0" id="$tab$outputsuiblock0" data-zipath="/local/$tab$/outputsuiblock">
+          <div id="$tab$groupsigoutsel" class="sidetabs groupsidetabs hgli-block" data-zipath="/local/$tab$/groupsigoutsel">
+            <ul data-zideviceoption-render="!DEMOD&amp;!DEMODNOMD">
+              <li data-ziincludemultiple="tab_li.html?feature=sigouts&for=$tab$outamp"/>
+            </ul>
+            <!-- #7845 -->
+            <ul class="hide-tabselect gli-hwire-single" data-zideviceoption-render="DEMOD|DEMODNOMD">
+              <li data-ziincludemultiple="tab_li.html?feature=sigouts&for=$tab$outamp"/>
+            </ul>
+
+            <div data-ziincludemultiple="glockin_block_outamp_and_sigout.html?feature=sigouts&channel=$index$&alias=" data-zideviceoption-render="DEMODMF|DEMODNOMFIS"/>
+            <div data-ziinclude="glockin_block_outamp_and_sigout.html?index=0&channel=$sigout0AmplitudeIndex$&alias=1" id="$tab$outamp0" data-zideviceoption-render="DEMOD|DEMODNOMD"/>
+            <div data-ziinclude="glockin_block_outamp_and_sigout.html?index=1&channel=$sigout1AmplitudeIndex$&alias=2" id="$tab$outamp1" data-zideviceoption-render="DEMOD|DEMODNOMD" data-zidevicetype-render="HF2|UHF"/>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
