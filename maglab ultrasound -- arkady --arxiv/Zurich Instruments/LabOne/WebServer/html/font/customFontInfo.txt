@@ -1,2 +1,0 @@
-the source was downloaded from https://fedorahosted.org/liberation-fonts/ 
-The dot inside of the zero has been removed using FontForge, an open source tool (http://fontforge.org/)
