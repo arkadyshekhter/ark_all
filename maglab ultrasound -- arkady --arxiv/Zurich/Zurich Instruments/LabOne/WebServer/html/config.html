@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style scoped="">
+  .wconfcon { width: 210px; min-width: 210px;}
+  .wconfui { width: 210px; min-width: 210px;}
+  .wconfrd { width: 465px; min-width: 465px;}
+</style>
+<div id="$tab$" class="h100p" data-ziconfig="configtab">
+  <table class="h100p">
+    <col class="wconfcon"/>
+    <col class="wboxspace"/>
+    <col/>
+    <col class="wboxspace"/>
+    <col style="width:210px;"/>
+    <col class="wboxspace"/>
+    <col style="width:525px;"/>
+    <tbody>
+    <tr>
+      <td class="atop ui-block wconfcon">
+        <table class="w100p ui-inputs-cont">
+          <col class="w100p"></col>
+          <col class="w100"></col>
+          <tbody>
+            <tr>
+              <td class="blabel">Web Server</td>
+              <td>
+                <button id="$tab$about" class="btn w100p" data-zivalue="1" data-zipath="/local/about" data-zitooltip="$loc.labOneAbout.tooltip$">About</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Revision</td>
+              <td>
+                <input class="num w100p" id="$tab$srvrevision" type="text" value="" readonly="readonly" data-zipath="/local/webserver/revision" data-zitooltip="$loc.webserverRevision.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Host</td>
+              <td>
+                <input class="w100p" id="$tab$webserverhost" type="text" readonly="readonly" data-zipath="/local/webserver/ipaddress" data-zitooltip="$loc.webserverHost.tooltip$" data-ziconfig="localstring"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Port</td>
+              <td>
+                <input class="num w100p" id="$tab$webserverport" type="text" readonly="readonly" data-zipath="/local/webserver/port" data-zitooltip="$loc.webserverPort.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="blabel">Data Server</td>
+            </tr>
+            <tr>
+              <td class="flabel">Revision</td>
+              <td>
+                <input class="num w100p" id="$tab$revision" type="text" value="" readonly="readonly" data-zipath="/zi/about/revision" data-zitooltip="$loc.dataserverRevision.tooltip$" data-ziconfig="int"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Host</td>
+              <td>
+                <input class="w100p" id="$tab$dataserverhost" type="text" readonly="readonly" data-zipath="/local/dataserver/current/host" data-zitooltip="$loc.dataserverHost.tooltip$" data-ziconfig="localstring"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Port</td>
+              <td>
+                <input class="num w100p" id="$tab$dataserverport" type="text" readonly="readonly" data-zipath="/local/dataserver/current/port" data-zitooltip="$loc.dataserverPort.tooltip$" data-ziconfig="localstring"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Connectivity</td>
+              <td>
+                <div class="w100p select-wrap" data-zitooltip="$loc.dataserverOpen.tooltip$">
+                  <select id="$tab$open" data-zipath="/zi/config/open">
+                    <option value="0">Localhost Only</option>
+                    <option value="1">From Everywhere</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="tlabel">File Upload</td>
+            </tr>
+            <tr>
+              <td class="pad0" colspan="2">
+                <div class="w100p drop2upload dashed custom-io h2rows" data-zitooltip="$loc.localFileUpload.tooltip$" data-action="swupdate_settings" data-linked="$tab$" style="font-size:8.5pt;">
+                  <table class="w100p h100p" style="pointer-events:none;">
+                    <tr>
+                      <td class="acenter" style="white-space:normal;">
+                        <label data-zideviceoption-render="!ARM">Drop settings file(s) here</label>
+                        <label data-zideviceoption-render="ARM">Drop settings or SW update file here</label>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <input type="file" id="$tab$manualfilesel" multiple="true" hidden="hidden" onchange="ziUpload(this.files, '/upload?action=swupdate_settings&id=$tab$');" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td class="wboxspace"></td> <!-- Section Spacing -->
+      <td class="atop ui-block">
+        <table class="ui-inputs-cont cfgsessioncol-cont" style="max-width:215px;">
+          <thead>
+            <tr>
+              <th class="tlabel cfgsessioncol" colspan="2">Sessions</th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <div class="expcol-cont bold" data-ziinclude="expcolbtn.html?name=cfgsessioncol&label=Sessions and Settings&index=0" />
+              </th>
+            </tr>
+          </thead>
+          <tbody class="cfgsessioncol">
+            <tr>
+              <td><label class="flabel">Current&#160;Session</label></td>
+              <td>
+                <input class="num w100p" id="$tab$sessionid" type="text" value="" readonly="readonly" data-zipath="/local/sessionid" data-zitooltip="$loc.sessionId.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="atop">
+                <!-- label class="flabel">Active&#160;Sessions</label -->
+              </td>
+              <td>
+                <!-- 0 - hide;  1 - show without cancel/close control;  2 - show with cancel/close control -->
+                <button class="sel_devBtn w100p" id="$tab$sel_dev" data-zipath="/local/seshdialog/show" data-zivalue="2" data-zitooltip="$loc.configSessionDialog.tooltip$">Session Dialog</button>
+                <!-- textarea class="w100" id="$tab$sessionlist" data-zipath="/local/sessionlist" rows="2" cols="1" style="resize:none; height:50px"></textarea -->
+              </td>
+            </tr>
+            <!--tr>
+              <td></td>
+              <td class="btn-group">
+                <button id="$tab$sessionload" data-zipath="/local/sessionswitch" data-zivalue="1">Switch</button>
+                <button id="$tab$sessionclose" data-zipath="/local/sessionclose" data-zivalue="1">Close</button>
+              </td>
+            </tr!-->
+            <!--tr>
+              <td></td>
+              <td class="atop">
+                <button id="$tab$batch" class="w100" data-zipath="/local/batch" data-zivalue="1">Batch Process</button>
+              </td>
+            </tr-->
+            <tr>
+              <td colspan="2" class="tlabel">Settings</td>
+            </tr>
+            <tr>
+              <td class="flabel">File&#160;Name</td>
+              <td>
+                <div class="combobox-wrap" data-zitooltip="$loc.settingsFile.tooltip$" style="width:109px;">
+                  <div class="w100p select-wrap">
+                    <select id="$tab$settingsfilelist" data-zipath="/local/settingsfilelist" data-ziconfig="select-object"/>
+                  </div>
+                  <div class="comboinput-wrap">
+                    <input class="w100p" id="$tab$settingfile" type="text" value="" data-zipath="/local/settingsfile" data-ziconfig="localstring"/>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Include</td>
+              <td>
+                <table class="w100p">
+                  <col class="w45"></col>
+                  <col class="w22"></col>
+                  <col class="w20"></col>
+                  <col class="w22"></col>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label>Device</label>
+                      </td>
+                      <td>
+                        <a id="$tab$settingsdevice" class="icon-toggle btn" tabindex="0" data-zipath="/local/settingsdevice" data-zitooltip="$loc.settingsDevice.tooltip$"/>
+                      </td>
+                      <td class="aright">
+                        <label>UI</label>
+                      </td>
+                      <td>
+                        <a id="$tab$settingsui" class="icon-toggle btn" tabindex="0" data-zipath="/local/settingsui" data-zitooltip="$loc.settingsUi.tooltip$"/>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Load&#160;Preferences</td>
+              <td>
+                <a id="$tab$settingspreferences" class="icon-toggle btn" tabindex="0" data-zipath="/local/settingspreferences" data-zitooltip="$loc.settingsPreferences.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="btn-group w100p-2btn">
+                  <button id="$tab$savesetting" data-zipath="/local/settingssave" data-zivalue="1" data-zitooltip="$loc.settingsSave.tooltip$">
+                    <label id="$tab$savesettingtext" data-zipath="/local/settingssavetext" data-ziconfig="localstring">Save</label>
+                  </button>
+                  <button id="$tab$loadsetting" data-zipath="/local/settingsload" data-zivalue="1" data-zitooltip="$loc.settingsLoad.tooltip$">
+                    <label id="$tab$loadsettingtext" data-zipath="/local/settingsloadtext" data-ziconfig="localstring">Load</label>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr data-zidevicetype-render="MF" data-zideviceoption-render="ARM">
+              <td class="tlabel">SSH Access</td>
+              <td></td>
+            </tr>
+            <tr data-zidevicetype-render="MF" data-zideviceoption-render="ARM">
+              <td class="flabel">Public key</td>
+              <td>
+                <button class="w100p" id="$tab$publickeyload" data-zipath="/local/publickey/load" data-zivalue="1" data-zitooltip="$loc.settingsLoadPublicKey.tooltip$">
+                  <label>Load From USB</label>
+                </button>
+              </td>
+            </tr>
+            <tr data-zidevicetype-render="MF" data-zideviceoption-render="ARM">
+              <td></td>
+              <td>
+                <button class="w100p" id="$tab$publickeydelete" data-zipath="/local/publickey/delete" data-zivalue="1" data-zitooltip="$loc.settingsDeletePublicKey.tooltip$">
+                  <label>Delete All</label>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td class="wboxspace"></td> <!-- Section Spacing -->
+      <td class="atop ui-block wconfui">
+        <table class="w100p ui-inputs-cont">
+          <col class="w100p"/>
+          <col class="w100"/>
+          <tbody>
+          <tr>
+            <td colspan="2" class="blabel">User Preferences</td>
+          </tr>
+          <tr>
+            <td class="flabel">Display Theme</td>
+            <td>
+              <div class="w100p select-wrap" data-zitooltip="$loc.localTheme.tooltip$">
+                <select id="$tab$theme" class="themeSel" data-zipath="/local/theme">
+                  <option data-linked="ziWhite" value="0">Light</option>
+                  <option data-linked="ziBlack" value="1">Dark</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="flabel">Print Theme</td>
+            <td>
+              <div class="w100p select-wrap" data-zitooltip="$loc.localPrintTheme.tooltip$">
+                <select id="$tab$printtheme" data-zipath="/local/printtheme">
+                  <option value="0">Light</option>
+                  <option value="1">Dark</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="flabel">Grid</td>
+            <td>
+              <div class="w100p select-wrap" data-zitooltip="$loc.localGridtype.tooltip$">
+                <select id="$tab$grid" class="grid_type" data-zipath="/local/gridtype">
+                  <option value="0">Dashed</option>
+                  <option value="1">Solid</option>
+                  <option value="2">None</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="flabel">Resampling</td>
+            <td>
+              <div class="select-wrap w100p" data-zitooltip="$loc.resamplingMethod.tooltip$">
+                <select id="$tab$resamplingmethod" data-zipath="/local/resamplingmethod">
+                  <option value="0">Linear</option>
+                  <option value="1">PCHIP</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="flabel">Show Shortcuts</td>
+            <td>
+              <a id="$tab$shortcuts" class="icon-toggle btn" tabindex="0" data-zipath="/local/showplotshortcuts" data-zitooltip="$loc.plotShortcuts.tooltip$" />
+            </td>
+          </tr>
+          <tr>
+            <td class="flabel">Dynamic Tabs</td>
+            <td><a id="$tab$dynamicli" class="icon-toggle btn" tabindex="0" data-zipath="/local/dynamiclilayout" data-zitooltip="$loc.dynamicTablayout.tooltip$" /></td>
+          </tr>
+          <tr>
+            <td class="flabel">Lock-In Mode</td>
+            <td>
+              <div class="w100p select-wrap" data-zitooltip="$loc.glockinMode.tooltip$">
+                <select id="$tab$glimode" data-zipath="/local/glockin/mode">
+                  <option value="0">Auto</option>
+                  <option value="1">Expanded</option>
+                  <option value="2">Collapsed</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="flabel">Log Format</td>
+            <td>
+              <div class="w100p select-wrap" data-zitooltip="$loc.logFormat.tooltip$">
+                <select id="$tab$logformat" data-zipath="/local/logformat">
+                  <option value="0">Telnet</option>
+                  <option value="1">Matlab</option>
+                  <option value="2">Python</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="flabel">CSV Delimiter</td>
+            <td>
+              <div class="w100p select-wrap" data-zitooltip="$loc.localCSVDelimiter.tooltip$">
+                <select id="$tab$csvdelimiter" data-zipath="/local/csvdelimitersel">
+                  <option value="0">Comma</option>
+                  <option value="1">Semicolon</option>
+                  <option value="2">Tab</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+<!--
+          <tr>
+            <td class="flabel">Locale</td>
+            <td>
+              <div class="w100p select-wrap" data-zitooltip="$loc.localLocale.tooltip$">
+                <select id="$tab$locale" data-zipath="/local/localesel">
+                  <option value="1">System Default</option>
+                  <option value="2">English</option>
+                  <option value="3">German</option>
+                  <option value="4">French</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+-->
+          <tr>
+            <td class="flabel">Auto Start</td>
+            <td>
+              <a id="$tab$autostart" class="icon-toggle btn" tabindex="0" data-zipath="/local/autostart" data-zitooltip="$loc.configAutoStart.tooltip$" />
+            </td>
+          </tr>
+          <tr>
+            <td class="flabel">Update&#160;Reminder</td>
+            <td>
+              <a id="$tab$updatereminder" class="icon-toggle btn" tabindex="0" data-zipath="/local/updatereminder" data-zitooltip="$loc.configUpdateReminder.tooltip$" />
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </td>
+      <td class="wboxspace"></td> <!-- Section Spacing -->
+      <td class="atop ui-block wconfrd h100p">
+        <table class="w100p h100p">
+          <colgroup>
+          <col class="wtree"/>
+          <col class="w10"/>
+          <col class="w100p"/>
+          </colgroup>
+          <tr style="height:100%;">
+            <td class="atop">
+              <table class="w100p h100p ui-inputs-cont">
+                <tr>
+                  <td colspan="2" class="blabel">Record Data</td>
+                </tr>
+                <tr style="height:100%;">
+                  <td colspan="2" rowspan="16" class="atop h100p pad0">
+                    <div class="w100p h100p" id="$tab$snsel" data-ziconfig="tree-allnodes-nosignals" data-zipath="/local/streamingnodes" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td/> <!-- space -->
+            <td class="atop">
+              <table class="w100p ui-inputs-cont">
+                <col class="w50"/>
+                <col class="w100p"/>
+                <tbody>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Drive</td>
+                    <td>
+                      <div class="w100p select-wrap" data-zitooltip="$loc.localStreamingDriveSelect.tooltip$">
+                        <select id="$tab$recdrive" data-zipath="/local/streamingdrivesel" data-ziconfig="select-object"></select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Format</td>
+                    <td>
+                      <div class="w100p select-wrap" data-zitooltip="$loc.localFileformat.tooltip$">
+                        <select id="$tab$format" data-zipath="/local/fileformat">
+                          <option value="0">Matlab</option>
+                          <option value="1">CSV</option>
+                          <option value="2" data-zideviceoption-render="IA">ZView</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="flabel atop">Folder</td>
+                    <td>
+                      <textarea class="w100p click-selectall" style="height:86px;resize:none;" cols="3" id="$tab$folder" type="text" value="" readonly="readonly" data-zipath="/module/mainframe/saveEngine/directory" data-zitooltip="$loc.streamingFolder.tooltip$"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Queue</td>
+                    <td>
+                      <input class="w85 num" id="$tab$queued" type="text" value="" readonly="readonly" data-zipath="/module/mainframe/saveEngine/queuedchunks" data-zitooltip="$loc.queueChunks.tooltip$"/>
+                      <label class="slabel">Chunks</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Size</td>
+                    <td>
+                      <input class="style10130 w85 num" id="$tab$size" type="text" value="" readonly="readonly" data-zipath="/module/mainframe/saveEngine/savedbytes" data-zitooltip="$loc.streamingBytes.tooltip$"/>
+                      <label class="slabel">Bytes</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="flabel">Record</td>
+                    <td>
+                      <a id="$tab$plotter_stream-2" class="icon-toggle btn" tabindex="0" data-zipath="/local/streaming" data-zitooltip="$loc.localStreaming.tooltip$"/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

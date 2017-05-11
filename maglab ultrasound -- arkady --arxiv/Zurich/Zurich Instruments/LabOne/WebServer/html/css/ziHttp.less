@@ -1,0 +1,984 @@
+/*
+ * Copyright [2013] Zurich Instruments AG
+ */
+@import "ziHttpCssReset.less";              // reset CSS to unify the appearance across browsers
+@import "ziRelease-id.less";
+@import "ziHttpSizeDefs.less";
+
+@path:							              "../icons";	      // Paths def for images
+
+
+
+//	Monospace font definition
+@font-face {
+    font-family: "liberation_monoregular"; 
+    src: url("../font/liberationmono-edited-webfont.eot"),
+         url("../font/liberationmono-edited-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.pre-space { white-space: pre; }
+.pad0 {padding: 0 !important;}
+.no-bg { background-color: transparent !important; box-shadow: none!important; }
+
+// ---------------------------------
+// INPUTS
+// ---------------------------------
+@import "components/inputs.less";
+
+
+
+html { overflow-y: scroll; overflow-x: auto; height: 100%;} // Force vertical scroll bar
+table.no-overflow td, .no-overflow { overflow: hidden; }
+
+// ---------------------------------
+// TABLE CONTROL
+// ---------------------------------
+@import "components/table.less";
+
+// ---------------------------------
+// LABEL CONTROL
+// ---------------------------------
+.blabel, .tlabel, .clabel, .flabel, .rlabel, .fllabel, .slabel, .llabel { padding: 0 2px 0 0; cursor: default; }
+.blabel { font-weight: bold; } /* bpx title label */
+.tlabel { font-weight: bold; vertical-align: bottom;}   /* section title label*/
+.clabel { text-align: left; /*vertical-align: bottom; */ /*line-height: 22px;*/}   /* column title label - above the box */
+.flabel { text-align: left;  }                            /* field label - left side of the box*/
+.rlabel { text-align: right; line-height: @element-height;}                          /* field label right aligned - left side of the box*/
+.slabel { padding: 0 2px 0 2px; text-align: left; line-height: @element-height; }        /* sufix label - after the box*/
+.llabel { text-align: left; vertical-align: middle; font-size: 1.4em;}     /* large multiple row label */
+label.unit { }  /* Units in the label e.g. (Hz) */
+.bold {font-weight: bold;}
+.no-bold {font-weight: normal;}
+.italic {font-style: italic;}
+.no-shadow { box-shadow: none !important; }
+tr.tlabel-space { height: 26px !important; vertical-align: bottom;}
+.ui-block-hpadding { padding-left: @hUiBlock-padding !important; padding-right: @hUiBlock-padding !important; }
+.ui-block-vpadding { padding-top: @vUiBlock-padding !important; padding-bottom: @vUiBlock-padding !important; }
+
+// ---------------------------------
+// WIDTH/HEIGHT CONTROL
+// ---------------------------------
+@import "components/width_height.less";
+/* Special case width control */
+.wctrltab {width: @ctrlTab-width;}   /* width of plot control column */
+.wtree { width: @ctrlTab-width - 8;}
+.wctrlplluhf{width: 473px;}
+.wctrlbox{width: 220px;}
+.wboxspace {width: 6px; min-width: 5px;}
+.ctrl-col1{ width: 100px; }
+.ctrl-col2{ width: 70%; }
+.ctrl-col3{ width: 30%; }
+
+.hctrltab { height: 100%; min-height: 429px; }
+
+// ---------------------------------
+// ALIGN CONTROL
+// ---------------------------------
+@import "components/align.less";
+// ---------------------------------
+
+// ---------------------------------
+// FONT/SELECTION
+// ---------------------------------
+@import "components/font_select.less";
+//	Avoid the selectin of static elements if the mouse is moved.
+//	NOTE1: For mozilla case, the value must be '-moz-none'. If 'none', it can't be overrided.
+//	NOTE2: This doesn't prevent ctrl+a selection for some browsers 
+//	NOTE3: Opera & IE9 selections can't be controlled from pure CSS
+//	relative position with hidden overflow prevents hidden overflow scroll on webkit browsers 
+body { position:static; font-family: Arial, Helvetica, sans-serif; font-size: @mainFontSize;  cursor: default;
+  -webkit-user-drag: none;
+  .user-select(none);
+}
+/* enabling element selection by overriding */
+input[type=text] { .user-select(text); }
+
+/* TODO: hack for minWidth - the min-width for #mainframe CSS must match the constant in ziscript.js/$(window).resize() */
+#mainframe { padding: @page-spacing; width: 100%; min-width: 900px; float: left; overflow:hidden; }
+//div.main { width: 100%; float: left; margin: 0 0 22px 0;}
+//div.frame { margin: 0 0 0 (@sidebarButton-size + @page-spacing); overflow:hidden;}
+div.column { width: auto; height: auto; margin: 0 0 @footer-height (@sidebarButton-size + @page-spacing); /*float: left; */overflow:hidden; }
+div.container { width: auto; height: auto; overflow:hidden;}
+
+div.row { padding: 0px 5px 0px 5px; float: left; margin: 5px 0 5px 0; position:relative; overflow: hidden; width: 100%}
+div.page { height: 100%; width: 100%; overflow-x: auto; overflow-y: hidden; 
+	& > div { height: 100%; }
+}
+
+div.figure, div.pageframe  { height:100%;  width: 100%; }
+div.figure > table > tbody > tr:first-child { height: 100%; }
+
+#sidebar { position: absolute; top: @page-spacing; left: @page-spacing; width: @sidebarButton-size; }
+// #sidebarframe { width: (@sidebarButton-size + @page-spacing); max-height: 1000px; float: left; margin: 0 0 0 -100%; overflow:hidden; /*min-height: 900px;*/}
+
+
+#footer { width: auto; z-index: 99; height: @footer-height; position:fixed; bottom:0px; /*padding: 0 5px 0 0;*/ margin: 0 @page-spacing 0 (@sidebarButton-size + @page-spacing); overflow:hidden;
+  table.footer-table { border: 1px solid #000; border-bottom: none; }
+}
+
+// ---------- Row Separator ------------------ 
+div.separator-evt {
+	width: 100%; height: 15px; float: left; overflow:hidden; cursor: row-resize; margin-top: -10px; text-align: center; line-height: 1; font-size: 15px;
+	&:before{
+		content: ".....";
+	}
+}
+div.separator { height: 1px; }  // dragging helper
+
+
+// ---------------------------------
+// DIALOGS
+// ---------------------------------
+.noClosingDialog(){  // less function
+  .ui-dialog-titlebar-close, .cancel-btn { display: none; }
+}
+
+@ziDialog-default-zindex: 200;
+@ziDialog-connectivity-zindex: 201;
+@ziDialog-featurecode-zindex: 202;
+@ziDialog-action-zindex: 203;
+@ziDialog-msg-zindex: 204;
+
+
+.zi-dialog {
+  z-index: @ziDialog-default-zindex !important;
+
+  &.featurecode-dialog {
+    z-index: @ziDialog-featurecode-zindex !important; 
+  }
+  
+  &.msg-dialog {
+    z-index: @ziDialog-msg-zindex !important; 
+  }
+
+  &.devsel-dialog {
+    z-index: @ziDialog-connectivity-zindex !important; 
+  }
+
+  &.action-dialog {
+    z-index: @ziDialog-action-zindex !important; 
+    min-width: 585px;
+    max-width: 912px;
+    & > .ui-dialog-content {
+      tr.dialog-row{ display: none; }
+      tr.dialog-row.show {
+        display: table-row;
+      }
+    }
+  }
+
+  &.ui-dialog {
+  	&.tree-dialog {
+  		// top: 0px!important;
+  		// left: auto!important;
+  		// right: (@ctrlTab-width + 10) !important;
+  		.ui-block {
+  			min-height: 380px;
+        height: 100%;
+  			overflow: auto;
+  		}
+  	}
+    padding: 0;
+    &.centered {
+  	  left: 0 !important;
+  	  right: 0 !important;
+  	  margin: 0 auto;
+    }
+    
+    .ui-dialog-titlebar-close{ 
+      background: none; top: 15px; right: 5px; border: none;
+      .ui-icon{
+        width: 100%; height: 100%; margin: 0; top: 0; left: 0;
+      }
+    }
+    &.no-close {
+      .noClosingDialog();
+    }
+
+    
+    .dialog-row { display: none; }  // default state: hide all rows
+
+    &.loadingui {
+      .noClosingDialog();
+      tr.loadingui-row { display: table-row; }
+    }
+    
+    &.devsettings {
+      tr.devsettings-row, tr.dataserver-row, tr.message-row { display: table-row; }
+    }
+
+    &.e500 {
+      .noClosingDialog();
+      tr.e500-row, tr.message-row { display: table-row; }
+    }
+    
+    &.e404 {
+      tr.e404-row, tr.message-row{ display: table-row; }
+    }
+    
+    &.e1000 {
+      .noClosingDialog();
+      tr.e1000-row, tr.message-row{ display: table-row; }
+    }
+
+    &.e1001 {
+      tr.e1000-row, tr.message-row{ display: table-row; }
+    }
+
+    
+    /* vertical text positioning for remaining jquery buttons */
+    .ui-button .ui-button-text { line-height: 100%;  }
+  }
+}
+
+// ---------- Graphical Progressbars ------------------ 
+.progressbar_value_aux,
+.progressbar_value,
+.progressbar_value_vert{ position: absolute; display: block; border: 0; left: 0; bottom: 0%; }
+
+.v10progressbar-cover,
+.progressbar-cover1,
+.progressbar-cover_vert,
+.progressbar-cover_rt{ position: absolute; display: block; margin: 0; border: 0; overflow: hidden; }
+
+/* Aux progressbars */
+.v10progressbar { width: 39px; height: 93px; position: relative; } /* background image defined in ziwhite/ziblack */
+.v10progressbar-cover { width: 15px; height: 86px; top: 3px; left: 21px; }
+.progressbar_value_aux {width: 15px; height: 110%; }
+
+.progressbar1 { width: 51px;  height: 95px;  position: relative; } /* background image defined in ziwhite/ziblack */
+.progressbar-cover1 { width: 15px; height: 87px; top: 5px; left: 28px; text-indent: -30px; }
+.progressbar_value { width: 15px; height: 110%; }
+
+/* device progressbar */
+.progressbar_vert {  width: 113px; height: 31px; position: relative; margin: -3px 0 -9px 0;}  /* background image defined in ziwhite/ziblack */
+.progressbar-cover_vert { width: 99px; height: 13px; top: 3px; left: 2px; text-indent: -30px; }
+.progressbar_value_vert { width: 99px; height: 13px; }
+
+
+// ---------------------------------
+// EXPAND/COLLAPSE BUTTONS
+// ---------------------------------
+.expcol-cont {
+	position: relative;
+	& > div.expcolbtn{
+		position: relative;
+		width: @button-size;  height: @button-size; margin-right: @expcolButton-size - @button-size + 1;
+		padding: 0; float: left; cursor: pointer; 
+		&:before{
+			position: absolute; top: floor((@button-size - @expcolButton-size)/2); width: @expcolButton-size; height: @expcolButton-size; border-width: 1px; border-style: solid;
+			content: "";
+			background-repeat: no-repeat; background-position: center; background-size: @expcolButton-size @expcolButton-size; 
+		}
+	}
+}
+.vert-label{
+  position: absolute;
+  -webkit-transform:  rotate(-90deg) translateX(-100%) ; -ms-transform: rotate(-90deg) translateX(-100%); transform: rotate(-90deg) translateX(-100%);
+  -webkit-transform-origin: top left; -ms-transform-origin:  top left; transform-origin:  top left; 
+  -webkit-backface-visibility:hidden;
+  //margin-left: -2px;
+  margin-top: @element-height + 1/5*@element-height;
+  height: @element-height;
+  line-height: 1;
+}
+.expcol-chain {
+  position: absolute;
+  border: 1px dotted #000;
+
+  border-left: none;
+  border-bottom: none;
+
+  width: 100%; height: @element-height/2 - 1; top: @element-height/2;
+
+  &.vertical {
+  	border: 1px dotted #000;
+		border-top: none;
+		border-left: none;
+		width: @element-height/2 - 2; height: 100%;
+  }
+}
+
+/* adding spacing for li only demods*/
+.demods-nonmf-uhf + table.demod-rows tr:nth-child(5),
+//.demods-nonmf-mf tr:nth-child(5),
+.demods-nonmf-hf2 + table.demod-rows tr:nth-child(4) td {
+  height: 10 + 2*@row-height !important;
+  vertical-align: bottom;
+  .chain_dots {
+  	height: 10 + 2*@row-height !important;
+  }
+}
+
+// ---------- Numerical Plots ------------------ 
+/* numerical tab plots */
+ul.num-plotlist { margin-right: -5px; padding: 1px 0 0 1px;}
+ul.num-plotlist > li { float: left; margin: 0px 5px 5px 0px; }   /* maring has to be aligned with cellspacing variable in ziHttpConfig.xml Shows bad sortable behavior if directly placed in HTML */
+
+// ---------------------------------
+// LEDs
+// ---------------------------------
+.led {
+	border: none;
+	width: 14px; height: 14px; border-radius: 50%; margin: 2px 0px;  // round LEDs
+	// mixins
+	._led_green { background-color: #39e81e; box-shadow: inset 0px -3px 5px -1px rgba(46, 149, 29, 0.9); }
+	._red_red { background-color: #e8391e; box-shadow: inset 0px -3px 5px -1px rgba(149, 46, 29, 0.9); }
+	._led_yellow { 	background-color: #FFE738; box-shadow: inset 0px -3px 5px -1px rgba(209, 184, 0, 0.9); }
+	&.negative.state_1, &.positive.passfail, &.negative.passfail.state_1 { ._red_red }
+	&.positive.state_1, &.positive.passfail.state_1, &.negative.passfail { ._led_green }
+	// 3 state led (-1 off; 0 - green;  1 - red; 2 - yellow)
+	&.passfailoff {
+		&.state_-1 { }  // off
+		&.state_0 { ._led_green }
+		&.state_1 { ._red_red }
+	}
+
+	&.state_2 { ._led_yellow }
+
+	/* squeare LEDs for footer*/
+	&.led-rect { width: 100%; height: 10px; margin: 0; border-radius: 0px; }
+	&.led-rect.inline{ display: inline-block; vertical-align: bottom; height: 20px;} 
+}
+
+input.errorcount{ color: red;}
+
+// ---------- SVG Plots ------------------ 
+@import "ziSvg.less";  // import SVG styling
+.svgplotborder { overflow: hidden; }
+
+
+// ---------- Tree ------------------ 
+ul.dynatree-container{float: left;/* fix for Defect #2821 IE */ background-color: transparent; border: none; font-family: Arial, Helvetica, sans-serif; width:100%; height: 100%;} 
+div.tree-container-config { width: 220px; overflow:auto; }
+div.tree-main-container { height:100%; overflow: auto; position: relative; }  // relative position to enable auto scrolling when item is being dragged 
+span.dynatree-folder a { font-weight: normal; /*font-weight: bold; JS: 12.1.2013 This is very ugly on Chrome */ }
+
+div.sh-tree div.tree-main-container { min-height: 165px; }  /* small tree height for numerical tab */
+div.mh-tree div.tree-main-container { min-height: 170px; }  /* medium tree height for config tab */
+div.lh-tree div.tree-main-container { min-height: 260px; }  /* large tree height for plot tabs */
+
+// ---------------------------------
+// BUTTONS
+// ---------------------------------
+@import "components/button.less";
+
+// ---------------------------------
+// SIDEBAR BUTTON ICONS
+// ---------------------------------
+@sidebar-icons-count: 28;
+div.btn.icon{ position: relative; width: @sidebarButton-size; height: @sidebarButton-size; line-height: normal; margin: 0 0 3px 0; text-align: left; cursor: pointer;
+  [class^="icon-"]{ font-size: 12pt; line-height: @sidebarIcon-size; background-image: url("@{path}/sidebar/btn_mnu_sprites.png?@{release}"); width: @sidebarIcon-size; height: @sidebarIcon-size; background-size: (1 * @sidebarIcon-size) (@sidebar-icons-count * @sidebarIcon-size);/* background-size: 82px 82px;*/ margin: 0 auto; margin-top: -2px; padding: 0;}
+  &.ui-draggable-dragging{ cursor: move; }
+  .menu-icon-label { position: absolute; bottom: 0; left: @sidebarIcon-padding; overflow: hidden; white-space:nowrap; font-size: 0.7em; padding: 0; }
+  .menu-icon-super { position: absolute; top: 0; right: @sidebarIcon-padding; overflow: hidden; white-space:nowrap; font-size: 0.7em; padding: 0; }
+ 
+  .generateSidebarIcon(config, 	  0);
+  .generateSidebarIcon(device, 	  1);
+  .generateSidebarIcon(demod, 	  2);
+  .generateSidebarIcon(pll, 		  3);
+  .generateSidebarIcon(pid, 		  4);
+  .generateSidebarIcon(mod, 		  5);
+  .generateSidebarIcon(realtime,  6);
+  .generateSidebarIcon(num, 		  7);
+  .generateSidebarIcon(plotter,   8);
+  .generateSidebarIcon(scope, 	  9);
+  .generateSidebarIcon(fft, 		  10);
+  .generateSidebarIcon(zoomfft,	  11);
+  .generateSidebarIcon(sweep, 	  12);
+  .generateSidebarIcon(swtrigger, 13);
+  .generateSidebarIcon(inout, 	  14);
+  .generateSidebarIcon(auxiliary, 15);
+  .generateSidebarIcon(dio, 		  16);
+  .generateSidebarIcon(hf2ta, 	  17);
+  .generateSidebarIcon(hf2ca, 	  18);
+  .generateSidebarIcon(debug, 	  19);
+  .generateSidebarIcon(boxcar, 	  20);
+  .generateSidebarIcon(outpwa, 	  21);
+  .generateSidebarIcon(dap,       22);
+  .generateSidebarIcon(rfm,       23);
+  .generateSidebarIcon(impedance, 24);
+  .generateSidebarIcon(awg,       25);
+  .generateSidebarIcon(lab,       26);
+  .generateSidebarIcon(cnt,       27);
+}
+
+.sidebarBgPosition (@i: 0 , @j:0) { // mixin for icon position 
+	background-position: @i *(-@sidebarIcon-size)  @j*(-@sidebarIcon-size);
+}
+.generateSidebarIcon (@iconName, @pos)  {
+	.icon-@{iconName}		 { 		.sidebarBgPosition(2, @pos); }
+	//.icon:hover .icon-@{iconName} 	{ .sidebarBgPosition(0, @pos); }
+}
+
+// ---------------------------------
+// TOOLTIPS
+// ---------------------------------
+div.tooltip{  // Common tooltip styling
+	position: absolute;
+	display: block;
+
+	text-align: left;
+	white-space: normal;
+	font-size: 0.9em;
+
+	border-style: solid;
+	border-width: 1px; 
+
+	width: auto;
+	max-width: 240px;
+
+	padding: 4px;
+	opacity: 0;
+	z-index: 1010;
+  
+	&:before {
+		position: absolute;
+		height: 0;
+		width: 0;
+		border-style: solid;
+
+		content: "";
+		display: block;
+		line-height: 0;
+	}
+	&.right:before {
+		border-width: 6px 6px 6px 0px;
+		border-right-style: solid;
+		left: -7px;
+		top: 3px;
+	}
+	&.left:before {
+		border-width: 6px 0px 6px 6px;
+		border-left-style: solid;
+		left: 100%;
+		top: 3px;
+	}
+	&.top:before {
+		top: 100%;
+		margin-top: -15px;
+	}
+}
+
+
+// ---------------------------------
+// HISTORY LIST
+// ---------------------------------
+.histlist-cont {
+	position: relative; height: 100%; min-height: 300px; overflow-x: hidden; overflow-y: auto; 
+	& > table.hlist_table { position: absolute; }
+}
+.ui-selectable-helper { visibility: hidden; } /* in order to make it more similar to select multiple box*/
+.hlist_signame[readonly], .hlist_group[readonly]{ background: none; }
+
+.color_picker, .hlist_cpicker { width: @colorPicker-size; height: @colorPicker-size; border-width: 1px; border-style: solid; color: transparent; cursor: pointer; font-size: 0; background: none; }
+.hlist_group {width: @colorPicker-size; height: @colorPicker-size;}
+
+.generateColortipColor(@pos, @color){ &:nth-child(@{pos}){   background-color: @color;    	} } // cell background generator
+.tooltip.colortip{
+	.color-cell { width: 13px; height: 13px; border: 1px solid #333; margin: 1px; display: inline-block; cursor: pointer; vertical-align: bottom;
+		&:hover { border: 1px solid #666;
+		}
+	}
+	.color-hex { text-align: right; padding-top: 4px;
+		input.hex { margin-left: 2px; font-size: inherit;
+		}
+		label { line-height: @element-height; font-size: inherit;
+		}
+	}
+	.color-cell{
+		.generateColortipColor(0, #000			);
+		.generateColortipColor(1, #993300    	);
+		.generateColortipColor(2, #333300    	);
+		.generateColortipColor(3, #000080    	);
+		.generateColortipColor(4, #333399    	);
+		.generateColortipColor(5, #333	    	);
+		.generateColortipColor(6, #800000    	);
+		.generateColortipColor(7, #FF6600    	);
+		.generateColortipColor(8, #808000    	);
+		.generateColortipColor(9, #008000    	);
+		.generateColortipColor(10, #008080    	);
+		.generateColortipColor(11, #0000FF    	);
+		.generateColortipColor(12, #666699    	);
+		.generateColortipColor(13, #808080    	);
+		.generateColortipColor(14, #FF0000    	);
+		.generateColortipColor(15, #FF9900    	);
+		.generateColortipColor(16, #99CC00   	);
+		.generateColortipColor(17, #339966    	);
+		.generateColortipColor(18, #33CCCC    	);
+		.generateColortipColor(19, #3366FF    	);
+		.generateColortipColor(20, #800080    	);
+		.generateColortipColor(21, #999    		);
+		.generateColortipColor(22, #FF00FF    	);
+		.generateColortipColor(23, #FFCC00    	);
+		.generateColortipColor(24, #FFFF00    	);
+		.generateColortipColor(25, #00FF00    	);
+		.generateColortipColor(26, #00FFFF    	);
+		.generateColortipColor(27, #00CCFF    	);
+		.generateColortipColor(28, #993366    	);
+		.generateColortipColor(29, #C0C0C0    	);
+		.generateColortipColor(30, #FF99CC    	);
+		.generateColortipColor(31, #FFCC99   	);
+		.generateColortipColor(32, #FFFF99    	);
+		.generateColortipColor(33, #CCFFFF    	);
+		.generateColortipColor(34, #99CCFF    	);
+		.generateColortipColor(35, #FFF    		);
+		.generateColortipColor(36, #ff3300    	);
+		.generateColortipColor(37, #cc9933    	);
+		.generateColortipColor(38, #9933ff    	);
+		.generateColortipColor(39, #063    		);
+		.generateColortipColor(40, #C90    		);
+		.generateColortipColor(41, #F3C    		);
+		.generateColortipColor(42, #9CC    		);
+		.generateColortipColor(43, #906    		);
+	}
+}
+
+// ---------- Forcing Composit layers ---------- 
+// forcing composit layers on refresh-intensive elements 
+//	  to speed up rendering on web-kit browsers 
+//	  TODO: profile this for each new version of browser as the 
+//	  newer versions of Blink rendering engine could become smarter
+div.icon.ui-draggable-dragging, div.svgplotborder svg, .numplot, .ctrlside .led, .hproggress .bar, #sidebar, div.pmathtable-wrap { -webkit-transform: translateZ(0); } /* 3d transform forces the creation of composite layer */
+
+
+
+// --------------- Progress Box ----------------  
+.hproggress {
+  position: relative;
+  height: @element-height;
+  line-height: @element-height - 2;
+  .bar{
+    height: 100%;
+    max-width: 100%;
+	//-webkit-transition: width 0.05s ease;
+	//transition: width 0.05s ease;
+  }
+  label {
+  	position: absolute;
+  	top: 0px; left: 0px;
+  	padding: 0 2px;
+  	width: 100%;
+    font-size: @numInputFontSize;
+    .user-select(text);
+  }
+}
+
+// --------------- WebKit Scrollbar  ----------------  
+::-webkit-scrollbar { width: @scrollbarSize; height: @scrollbarSize - 2; }  // custom scrollbar
+
+
+// ---------------------------------
+// TABS
+// ---------------------------------
+.TabBase(){  // base class
+  overflow: hidden;
+  border: 1px solid #000;
+  
+  & > ul {
+    height: @tabNavigation-height;
+    float: left;
+    width: 100%;
+    border: none;  // reset
+    border-bottom: 1px solid #000;
+
+    & > li.tabbtn {
+      height: 100%;
+      float: left;
+      list-style: none;
+      position: relative;
+      line-height: @tabNavigation-height;
+      border: none;  // reset
+      border-right: 1px solid #000;
+      border-left: 1px solid #000;
+      margin-left: -1px;
+      text-align: center;
+      cursor: pointer;
+      
+      &.selected {
+        //z-index: 2;
+        height: @tabNavigation-height;
+        cursor: default;
+        & > label{ cursor: default; }
+      }
+      
+      & > label {
+        cursor: pointer;
+        float: left;
+        padding: 0 5px;
+      }
+
+      & > div.close {
+        width: @button-size; 
+        height: @button-size;
+        margin: (@tabNavigation-height - @button-size)/2;
+        float: left;
+        cursor: pointer; 
+        background-position:center; 
+        background-size: 7px 7px; 
+      }
+
+      &.rowctrl {  // | Add Row x |
+        float: right;
+        border: none;
+      }
+      
+      &.tab-placeholder {
+        width: 70px;
+      }
+    }
+  }
+  div.tab-content {
+    display: none;  // tabs' content is hidden by default
+    &.show {
+      display: block;
+    }
+  }
+}
+
+// MAIN TABS
+div.column{
+  div.container {
+    .TabBase();
+    border-top: none;
+  }
+  border-top: 1px solid #000;
+}
+
+// SIDE TABS 
+div.sidetabs {
+  .TabBase();
+  height: 100%;
+	& > ul { float: none; 
+    & > li.tabbtn > label{ padding: 0 7px; }
+    &.hide-tabselect > li.tabbtn { display: none; }
+  }
+	& > div.tab-content { padding: 4px; height: calc(~"100%" - @tabNavigation-height); }
+}
+
+
+// VERTICAL TABS 
+div.plot_tabs, div.groupsidetabs {
+  .TabBase();
+  
+  padding-left: @tabNavigation-height;
+  height: 100%;
+  position: relative;
+  
+  & > ul {
+    position: absolute;
+    width: @tabNavigation-height;
+    height: 100%;
+    left: 0px; top: 0px;
+    
+    & > li.tabbtn {
+      height: auto;
+      width: @tabNavigation-height;
+      border: none;  // reset
+      border-bottom: 1px solid #000;
+    
+      &.selected {
+        height: auto;
+        width: @tabNavigation-height + 1;
+      }
+    
+      & > label{
+        width: @tabNavigation-height;
+        height: 100%;
+        padding: 0;
+      }
+    }
+  }
+  
+  & > div {
+    padding: 4px 4px 4px 9px;
+    display: none;
+    height: 100%;
+    &.show {
+      display: block;
+    }
+    & > div {
+	    height: 100%; overflow-x: auto; overflow-y:hidden; // force overflow when content is large
+	  }
+  }
+}
+
+// GLOCKIN GROUP TABS
+div.groupsidetabs {
+	border: none;  // reset
+  & > div {
+    padding: @vUiBlock-padding 0 @vUiBlock-padding 0;
+    & > div {
+	    overflow: hidden;
+	  }
+  }
+}
+
+.textselect-area {
+  .user-select(text);
+  cursor: text;
+}
+
+
+div.colorbox {
+  width: @colorPicker-size; height: @colorPicker-size;
+  // border: 1px solid transparent;
+}
+
+// ---------------------------------
+// Math Table
+// ---------------------------------
+.plotmath-cont {
+	height: 100%;
+
+  div.pmathtable-wrap {
+  	position: relative;
+    padding-left: 1px;
+
+    & > table {
+    	position: absolute;
+      cursor: text;
+      border-collapse: separate;
+      border-spacing: 2px 0px;
+
+      label{ display: inline-block;  width: 100%; }
+      .user-select(text);
+      
+      td:nth-child(1), td:nth-child(1) *, th:nth-child(1), th:nth-child(1) * {
+        .user-select(none);
+      }
+      
+      td, th {
+        white-space: pre;
+        padding: 0px;
+        //font-size: @numInputFontSize;
+        &.innertext{
+          overflow: hidden;
+        }
+      }
+      
+      .select-wrap {
+        .user-select(none);
+        display: inline-block;
+        vertical-align: bottom;  // important for corect vertical alignment of inline-block
+        & > label { padding: 0; .user-select(text); }
+        background: none;
+        color: inherit;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+    }
+  }
+}
+
+// ---------------------------------
+// Device & Settings Dialog
+// ---------------------------------
+@dialogDeviceTable-height:          90px;
+@dialogSettingsTable-height:        180px;
+.devsel-dialog {
+  min-width: 750px;
+  max-width: 912px;
+  
+  #seshdialogmessage{
+    // box-shadow: none;
+    white-space: nowrap; 
+  }
+
+  td {
+    overflow: hidden;
+  }
+  
+  
+  .dev-info-wrapper {
+    height: @dialogDeviceTable-height + 2 * (@element-height + @cellHorizontal-padding + @cellVertical-padding);
+  }
+  
+  .ui-name-cont{
+    label{
+      font-size: 30px;
+      //color: #009ee0;
+    }
+  }
+    
+ 
+   .dev-list-wrapper {
+      height: @dialogDeviceTable-height;
+      tr.selectable {
+        .select-wrap { background-color: transparent;}
+        &.read-only {
+          pointer-events: none;
+          background-color: transparent;
+        }
+
+      }
+      .devinterface-sel {
+      	background: none;
+      }
+    }
+    
+  .sesh-cont {
+    overflow: hidden;
+
+    .sesh-datatable-wrapper{
+        height: @dialogSettingsTable-height;
+        overflow: auto;
+        
+        input:not(:focus){
+          background-color: transparent
+        }
+    }
+  }
+  
+  .msg-cont {
+    
+    .msg-wrapper {
+      height: 3 * (@element-height + @cellHorizontal-padding + @cellVertical-padding);
+      //overflow: auto;
+      #dialogDeviceMessages td {
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+// device list dynamic height
+@media screen and (min-height: 750px) {
+  .devsel-dialog .dev-list-wrapper {
+    height: @dialogDeviceTable-height * 1.2;
+  }
+}
+@media screen and (min-height: 850px) {
+  .devsel-dialog .dev-list-wrapper {
+    height: @dialogDeviceTable-height * 1.4;
+  }
+}
+@media screen and (min-height: 950px) {
+  .devsel-dialog .dev-list-wrapper {
+    height: @dialogDeviceTable-height * 1.5;
+  }
+}
+
+
+
+// sortable header
+table th[aria-sort] {
+  & > div:first-child {
+    position: relative;
+    cursor: pointer;
+    line-height: @element-height;
+    &:before{
+      position: absolute; 
+      top: 0; 
+      right: 0;
+      height:100%;
+      padding: 0px 5px;
+      font-size: 10px;
+    }
+  }
+  
+  &[aria-sort=descending] > div:first-child:before { 
+    content: "\25B2";
+  }
+  
+  &[aria-sort=ascending] > div:first-child:before { 
+    content: "\25BC";
+  }
+    
+}
+// ---------------------------------
+
+// ---------------------------------
+// Remote File Manager
+// ---------------------------------
+.rfm-cont {
+	.rfm-jstree .jstree-container-ul {
+		height: 100%;
+	}
+	table.folder-list > tbody > tr > td {
+		padding-left: 2px;
+		padding-right: 8px;
+	}
+	/*.file-preview {
+		width: 100%;
+		height: 100%;
+		padding: 2px 4px;
+		font-size: 10pt;
+		.no-preview {
+			position: relative;
+			top: 50%;
+			text-align: center;
+			line-height: 5pt;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	}*/
+}
+
+// ---------------------------------
+
+
+// -------------------------------------------------
+// SVG cursors
+// -------------------------------------------------
+[data-zicursor=zoomrect] { cursor: crosshair; }
+[data-zicursor=move] { cursor: move; }
+[data-zicursor=zoomrectx] { cursor: e-resize; }
+[data-zicursor=zoomrecty] { cursor: n-resize; }
+
+// Canvas fix
+.canvas-wrapper > .innerBg {
+  pointer-events: none;
+  background-color: transparent;
+}
+
+// -------------------------------------------------
+// Code editor
+// -------------------------------------------------
+.zi_highlighter_editor {
+ 	&.ace_editor {
+		font-size: @numInputFontSize;
+		font-family: liberation_monoregular,monospace,Arial,Helvetica,Sans-Serif;
+	}
+  //.ace_content {
+  //  height: 100% !important;
+  //}
+
+}
+
+// -------------------------------------------------
+// Impedance
+// -------------------------------------------------
+//div[class^="imp-calibimg"] {
+//  background-size: auto 100%;
+//  background-repeat: no-repeat;
+//  background-position: center center;
+//}
+
+// -------------------------------------------------
+// tab fade in (experimental)
+// -------------------------------------------------
+/*@fade-time: 0.15s;
+.pageframe.tab-content.show {
+  animation: fadein @fade-time;
+  -moz-animation: fadein @fade-time;
+  -webkit-animation: fadein @fade-time;
+  animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}*/
+

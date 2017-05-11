@@ -1,0 +1,142 @@
+<div>
+  <table class="w100p ui-cont" border="0">
+    <col class="w10"></col>
+    <col class="w65"></col>
+    <col class="w30"></col>
+    <col class="w10" data-zidevicetype-render="UHF|MF"></col>
+    <col style="width:130px;" data-zidevicetype-render="UHF|MF"></col>
+    <col class="w10"></col>
+    <col class="w80"></col>
+    <col class="w10"></col>
+    <col class="w80"></col>
+    <col class="w100p"></col>
+    <col style="width:80px;" data-zidevicetype-render="UHF"></col><col style="width:86px" data-zidevicetype-render="MF"></col><col style="width:25px" data-zidevicetype-render="HF2"></col>
+    <tr class="hrow">
+      <td colspan="2">
+        <div class="select-wrap no-arrow no-bg w100p flabel">
+          <select class="onsel_show_hide" id="$tab$ao$index$inputother" data-zipath="/$device$/auxouts/$index$/outputselect" data-ziconfig="auxouts-signal-other" readonly="readonly"></select>
+          <label class="pad0 aright"></label>
+        </div>
+      </td>
+      <td colspan="9" data-zidevicetype-render="UHF|MF"></td>
+      <td colspan="7" data-zidevicetype-render="HF2"></td>
+    </tr>
+    <tr class="h2rows">
+      <td class="gli-hwire-double"></td>
+      <td class="gli-hwire-double">
+        <div data-ziinclude="glockin_doublewire_knee.html?width=53&height=25&top=12&left=12&arrow=none" />
+        <div class="prelative">
+          <div class="h2rows w100p"></div>
+          <div class="pabsolute gli-block-polar" style="top:41px;left:0px;"></div>
+          <div class="pabsolute" style="left:55px;top:0px;">X</div>
+          <div class="pabsolute" style="left:55px;top:15px;">Y</div>
+          <div class="pabsolute" style="left:55px;top:38px;">R</div>
+          <div class="pabsolute" style="left:55px;top:54px;">&#920;</div>
+        </div>
+      </td>
+      <td>
+        <div class="hidable other" hidden="hidden" data-ziinclude="glockin_singlewire_down_knee.html?width=100%&height=32&top=-33&left=0&arrow=none" />
+        <div class="hidable demodx" hidden="hidden" data-ziinclude="glockin_singlewire_down_knee.html?width=100%&height=7&top=-8&left=0&arrow=none" />
+        <div class="hidable demody" hidden="hidden" data-ziinclude="glockin_singlewire_up_knee.html?width=100%&height=6&top=0&left=0&arrow=none" />
+        <div class="hidable demodr" hidden="hidden" data-ziinclude="glockin_singlewire_up_knee.html?width=100%&height=29&top=0&left=0&arrow=none" />
+        <div class="hidable demodtheta" hidden="hidden" data-ziinclude="glockin_singlewire_up_knee.html?width=100%&height=45&top=0&left=0&arrow=none" />
+      </td>
+      <td class="gli-hwire-single" data-zidevicetype-render="UHF|MF"><div class="gli-harrow-single h20 w100p"></div></td>
+      <td class="gli-hwire-single" data-zidevicetype-render="UHF|MF"><div class="gli-block-plus"></div></td>
+      <td class="gli-hwire-single"><div class="gli-harrow-single h20 w100p"></div></td>
+      <td class="gli-hwire-single"><div class="gli-block-mult"></div></td>
+      <td class="gli-hwire-single"><div class="gli-harrow-single h20 w100p"></div></td>
+      <td class="gli-hwire-single">
+        <table class="w100p h100p uicont">
+          <col class="w100p"></col>
+          <col style="width:18px"></col>
+          <tr>
+            <td><div class="gli-block-plus"></div></td>
+            <td></td>
+          </tr>
+        </table>
+      </td>
+      <td class="gli-hwire-single">
+        <div class="prelative">
+          <table class="pabsolute" style="top:-20px;right:5px;">
+            <tr>
+              <td><input class="style01030 num w60 no-bg" id="$tab$ao$index$auxvalue" type="text" value="" readonly="readonly" data-zipath="/$device$/auxouts/$index$/value" data-zitooltip="$loc.auxoutValue.tooltip$"/></td>
+              <td><label>V</label></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <td>
+        <div class="w100p h2rows prelative">
+          <div class="gli-block-pin w100p h100p pabsolute" style="top:2px;"></div>
+          <div class="w10 h100p gli-hwire-single pabsolute" style="z-index:1;"></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="h2rows">
+      <td></td>
+      <td></td>
+      <td class="atop"></td>
+      <td data-zidevicetype-render="UHF|MF"></td>
+      <td class="atop" data-zidevicetype-render="UHF|MF">
+        <table class="w100p ui-inputs-cont">
+          <col class="w100p"></col>
+          <col class="w22"></col>
+          <tr>
+            <td colspan="2" class="no-overflow">
+              <label>Preoffset&#8201;</label>
+              <label class="unit dyn-brackets" id="$tab$ao$index$auxouts$index$preoffsetunit" data-zipath="/local/auxouts/$index$/preoffsetunit" data-ziconfig="localstring"></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="style10080 num w100p" id="$tab$ao$index$auxpreoffset" type="text" value="" data-zipath="/$device$/auxouts/$index$/preoffset" data-zitooltip="$loc.auxoutPreoffset.tooltip$"/>
+            </td>
+            <td>
+              <button id="$tab$ao$index$auxouts$index$prezero" class="icon-zeroadjust" data-zipath="/local/auxouts/$index$/prezero" data-zivalue="1" data-zitooltip="$loc.auxoutPreOffsetAutozero.tooltip$"/>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td></td>
+      <td class="atop">
+        <table class="w100p ui-inputs-cont">
+          <col class="w100p"></col>
+          <tr>
+            <td class="no-overflow">
+              <label>Scale&#8201;</label>
+              <label class="unit dyn-brackets" id="$tab$ao$index$auxouts$index$scaleunit" data-zipath="/local/auxouts/$index$/scaleunit" data-ziconfig="localstring"></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="style11130 num w100p" id="$tab$ao$index$auxscale" type="text" value="" data-zipath="/$device$/auxouts/$index$/scale" data-zitooltip="$loc.auxoutScale.tooltip$"/>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td></td>
+      <td>
+        <table class="w100p ui-inputs-cont">
+          <col class="w100p"></col>
+          <col class="w22"></col>
+          <tr>
+            <td colspan="2">
+              <label>Offset&#8201;(V)</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="style01030 num w100p" id="$tab$ao$index$auxoffse" type="text" value="" data-zipath="/$device$/auxouts/$index$/offset" data-zitooltip="$loc.auxoutOffset.tooltip$"/>
+            </td>
+            <td>
+              <button id="$tab$ao$index$auxouts$index$zero" class="icon-zeroadjust" data-zipath="/local/auxouts/$index$/zero" data-zivalue="1" data-zitooltip="$loc.auxoutOffsetAutozero.tooltip$"/>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>

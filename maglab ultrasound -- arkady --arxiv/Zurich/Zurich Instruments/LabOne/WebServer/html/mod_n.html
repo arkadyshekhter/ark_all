@@ -1,0 +1,366 @@
+<tr>
+  <td>
+    <div class="ui-block" style="margin-bottom:5px;">
+      <table>
+        <tr>
+          <td class="atop">
+            <table class="ui-inputs-cont">
+              <tr>
+                <td class="blabel">MOD $alias$</td>
+                <td class="blabel">Oscillators</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="clabel">Enable</td>
+                <td>
+                  <a id="$tab$mod$index$enable" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/mods/$index$/enable" data-zitooltip="$loc.modEnable.tooltip$" />
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="clabel">Mode</td>
+                <td class="clabel">Frequency (Hz)</td>
+              </tr>
+              <tr>
+                <td class="flabel">Carrier</td>
+                <td>
+                  <div class="select-wrap w70" data-zitooltip="$loc.modMode.tooltip$">
+                    <select id="$tab$mod$index$mode" data-zipath="/$device$/mods/$index$/mode">
+                      <option value="0">AM</option>
+                      <option value="1">FM</option>
+                      <option value="2">Manual</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input class="style10081 num w110 aright" id="$tab$mod$index$carrierfreq" type="text" value="" data-zipath="/local/$tab$/mods/$index$/carrierfreq" data-zitooltip="$loc.modCarrierOscFreq.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td class="flabel">Sideband 1</td>
+                <td>
+                  <div class="select-wrap w70" data-zitooltip="$loc.modSideband0Mode.tooltip$">
+                    <select id="$tab$mod$index$sideband0mode" data-zipath="/$device$/mods/$index$/sidebands/0/mode">
+                      <option value="0">Off</option>
+                      <option value="1">C + M</option>
+                      <option value="2">C - M</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input class="style10081 num w110 aright" id="$tab$mod$index$sideband0freq" type="text" value="" data-zipath="/local/$tab$/mods/$index$/sideband0freq" data-zitooltip="$loc.modSideband0OscFreq.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td class="flabel">Sideband 2</td>
+                <td>
+                  <div class="select-wrap w70" data-zitooltip="$loc.modSideband1Mode.tooltip$">
+                    <select id="$tab$mod$index$sideband1mode" data-zipath="/$device$/mods/$index$/sidebands/1/mode">
+                      <option value="0">Off</option>
+                      <option value="1">C + M</option>
+                      <option value="2">C - M</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input class="style10081 num w110 aright" id="$tab$mod$index$sideband1freq" type="text" value="" data-zipath="/local/$tab$/mods/$index$/sideband1freq" data-zitooltip="$loc.modSideband1OscFreq.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="w20"></td><!-- space -->
+          <td class="atop">
+            <table class="ui-inputs-cont">
+              <tr>
+                <td class="blabel" colspan="3">Demodulators</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="tlabel">Reference Frequencies</td>
+              </tr>
+              <tr>
+                <td class="clabel">Osc</td>
+                <td class="clabel">Harm</td>
+                <td class="clabel">Demod Freq (Hz)</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap num w30" data-zitooltip="$loc.modCarOsc.tooltip$">
+                    <select id="$tab$mod$index$carrieroscselect" data-zipath="/$device$/mods/$index$/carrier/oscselect" data-ziconfig="oscselect"></select>
+                  </div>
+                </td>
+                <td>
+                  <input class="w30 num aright" id="$tab$mod$index$carrierharm" type="text" value="" data-zipath="/$device$/mods/$index$/carrier/harmonic" data-ziconfig="int" data-zitooltip="$loc.modCarrierharmonic.tooltip$"/>
+                </td>
+                <td>
+                  <input class="style10081 num w110 aright" id="$tab$mod$index$carrierdemodfreq" type="text" value="" data-zipath="/local/$tab$/mods/$index$/carrierdemodfreq" readonly="readonly" data-zitooltip="$loc.modCarrierDemodFreq.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap num w30" data-zitooltip="$loc.modSideband0.tooltip$">
+                    <select id="$tab$mod$index$sideband0oscselect" data-zipath="/$device$/mods/$index$/sidebands/0/oscselect" data-ziconfig="oscselect"></select>
+                  </div>
+                </td>
+                <td>
+                  <input class="w30 num aright" id="$tab$mod$index$sideband0harm" type="text" value="" data-ziconfig="int" data-zipath="/$device$/mods/$index$/sidebands/0/harmonic" data-zitooltip="$loc.modSidebandharmonic0.tooltip$"/>
+                </td>
+                <td>
+                  <input class="style10081 num w110 aright" id="$tab$mod$index$sideband0demodfreq" type="text" value="" data-zipath="/local/$tab$/mods/$index$/sideband0demodfreq" readonly="readonly" data-zitooltip="$loc.modSideband0DemodFreq.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap num w30" data-zitooltip="$loc.modSideband1.tooltip$">
+                    <select id="$tab$mod$index$sideband1oscselect" data-zipath="/$device$/mods/$index$/sidebands/1/oscselect" data-ziconfig="oscselect"></select>
+                  </div>
+                </td>
+                <td>
+                  <input class="w30 num aright" id="$tab$mod$index$sideband1harm" type="text" value="" data-ziconfig="int" data-zipath="/$device$/mods/$index$/sidebands/1/harmonic" data-zitooltip="$loc.modSidebandharmonic1.tooltip$"/>
+                </td>
+                <td>
+                  <input class="style10081 num w110 aright" id="$tab$mod$index$sideband1demodfreq" type="text" value="" data-zipath="/local/$tab$/mods/$index$/sideband1demodfreq" readonly="readonly" data-zitooltip="$loc.modSideband1DemodFreq.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="wboxspace"></td><!-- space -->
+          <td class="atop">
+            <table class="ui-inputs-cont">
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="tlabel">Input</td>
+              </tr>
+              <tr>
+                <td class="clabel">Signal</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap w75" data-zitooltip="$loc.modCarrierInputselect.tooltip$">
+                    <select id="$tab$mod$index$carrierinputselect" data-zipath="/$device$/mods/$index$/carrier/inputselect" data-ziconfig="demodadcselect" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap w75" data-zitooltip="$loc.modSidebandInputselect.tooltip$">
+                    <select id="$tab$mod$index$sideband0inputselect" data-zipath="/$device$/mods/$index$/sidebands/0/inputselect" data-ziconfig="demodadcselect" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap w75" data-zitooltip="$loc.modSidebandInputselect.tooltip$">
+                    <select id="$tab$mod$index$sideband1inputselect" data-zipath="/$device$/mods/$index$/sidebands/1/inputselect" data-ziconfig="demodadcselect" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+            </table>
+          </td>
+          <td class="wboxspace"></td><!-- space -->
+          <td class="atop">
+            <table class="ui-inputs-cont modphasecol-cont">
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="expcol-cont" data-ziinclude="expcolbtn.html?name=modphasecol&label=Phase&index=$index$" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label class="modphasecol">Phase (deg)</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="style10030 modphasecol w75 num aright" id="$tab$modcPhase$index$" type="text" value="" data-zipath="/$device$/mods/$index$/carrier/phaseshift" data-zitooltip="$loc.modCarrierPhaseShift.tooltip$"/>
+                </td>
+                <td>
+                  <a id="$tab$mod$index$cphasezero" class="icon-zeroadjust modphasecol btn" tabindex="0" data-zichecked="false" data-zipath="/local/$tab$/mods/$index$/carrier/phasezero" data-zitooltip="$loc.modCarrierPhaseZero.tooltip$" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="style10030 modphasecol w75 num aright" id="$tab$mods0Phase$index$" type="text" value="" data-zipath="/$device$/mods/$index$/sidebands/0/phaseshift" data-zitooltip="$loc.modSidebandPhaseShift.tooltip$"/>
+                </td>
+                <td>
+                  <a id="$tab$mod$index$s0phasezero" class="icon-zeroadjust modphasecol btn" tabindex="0" data-zichecked="false" data-zipath="/local/$tab$/mods/$index$/sidebands/0/phasezero" data-zitooltip="$loc.modSidebandPhaseZero.tooltip$" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="style10030 modphasecol w75 num aright" id="$tab$mods1Phase$index$" type="text" value="" data-zipath="/$device$/mods/$index$/sidebands/1/phaseshift" data-zitooltip="$loc.modSidebandPhaseShift.tooltip$"/>
+                </td>
+                <td>
+                  <a id="$tab$mod$index$s1phasezero" class="icon-zeroadjust modphasecol btn" tabindex="0" data-zichecked="false" data-zipath="/local/$tab$/mods/$index$/sidebands/1/phasezero" data-zitooltip="$loc.modSidebandPhaseZero.tooltip$" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="wboxspace"></td><!-- space -->
+          <td class="atop">
+            <table class="ui-inputs-cont">
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+              <tr>
+                <td class="tlabel" colspan="2">Low Pass Filters</td>
+              </tr>
+              <tr>
+                <td class="clabel">Order</td>
+                <td class="clabel">
+                  <div class="select-wrap w85 br-arrow clabel" data-zitooltip="$loc.tcBw.tooltip$">
+                    <select id="$tab$mod$index$tcbw" class="tcbwSel" data-zipath="/local/$tab$/mods/$index$/tcbw">
+                      <option value="0">TC (s)</option>
+                      <option value="1">BW NEP (Hz)</option>
+                      <option value="2">BW 3&#8201;dB (Hz)</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap num" data-zitooltip="$loc.modCarrierOrder.tooltip$">
+                    <select id="$tab$mod$index$carrierorder" data-zipath="/$device$/mods/$index$/carrier/order">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input class="style10130 w85 num" id="$tab$mod$index$carriertimeconstant" type="text" value="" data-zipath="/local/$tab$/mods/$index$/carrier/timeconstant" data-zitooltip="$loc.modCarrierTc.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap num" data-zitooltip="$loc.modSidebandOrder.tooltip$">
+                    <select id="$tab$mod$index$sideband0order" data-zipath="/$device$/mods/$index$/sidebands/0/order">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input class="style10130 w85 num" id="$tab$mod$index$sideband0timeconstant" type="text" value="" data-zipath="/local/$tab$/mods/$index$/sidebands/0/timeconstant" data-zitooltip="$loc.modSidebandTc.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select-wrap num" data-zitooltip="$loc.modSidebandOrder.tooltip$">
+                    <select id="$tab$mod$index$sideband1order" data-zipath="/$device$/mods/$index$/sidebands/1/order">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input class="style10130 w85 num" id="$tab$mod$index$sideband1timeconstant" type="text" value="" data-zipath="/local/$tab$/mods/$index$/sidebands/1/timeconstant" data-zitooltip="$loc.modSidebandTc.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="w20"></td><!-- space -->
+          <td class="atop">
+            <table class="ui-inputs-cont modgencol-cont">
+              <tr>
+                <td class="blabel modgencol" colspan="3">Generation</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <div class="expcol-cont bold" data-ziinclude="expcolbtn.html?name=modgencol&label=Generation&index=$index$" />
+                </td>
+              </tr>
+              <tr>
+                <td class="flabel modgencol">Signal Output</td>
+                <td class="modgencol">
+                  <div class="select-wrap num w60" data-zitooltip="$loc.modOutput.tooltip$">
+                    <select id="$tab$mod$index$outputselect" data-zipath="/$device$/mods/$index$/output" data-ziconfig="mod-outselect" />
+                  </div>
+                </td>
+                <td class="modgencol"></td>
+              </tr>
+              <tr>
+                <td class="flabel modgencol">Carrier (V)</td>
+                <td class="modgencol">
+                  <input class="style10130 num w60 aright" id="$tab$mod$index$carrieramplitude" type="text" value="" data-zipath="/$device$/mods/$index$/carrier/amplitude" data-zitooltip="$loc.modCarrieramp.tooltip$"/>
+                </td>
+                <td class="modgencol">
+                  <a id="$tab$mod$index$carrierenable" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/mods/$index$/carrier/enable" data-zitooltip="$loc.modCarrierenable.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td class="flabel modgencol">
+                  <label id="$tab$mods$index$sideband0label" data-zipath="/local/$tab$/mods/$index$/sideband0label" data-ziconfig="localstring"></label>
+                </td>
+                <td class="modgencol">
+                  <!--input class="style10130 num w60 aright" id="$tab$mod$index$sideband0ampl" type="text" value="" data-zipath="/local/$tab$/mods/$index$/sideband0ampl" data-zitooltip="$loc.localModsidebandamp0.tooltip$"/-->
+                  <input class="style10130 num w60 aright" id="$tab$mod$index$sideband0ampl" type="text" value="" data-zipath="/$device$/mods/$index$/sidebands/0/amplitude" data-zitooltip="$loc.modsidebandamp0.tooltip$"/>
+                  <input class="style10130 num w60 aright" id="$tab$mod$index$index" type="text" value="" data-zipath="/$device$/mods/$index$/index" data-zitooltip="$loc.modFMIndex.tooltip$"/>
+                </td>
+                <td class="modgencol">
+                  <a id="$tab$mod$index$sideband0enable" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/mods/$index$/sidebands/0/enable" data-zitooltip="$loc.modSideband0enable.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td class="flabel modgencol">
+                  <label id="$tab$mods$index$sideband1label" data-zipath="/local/$tab$/mods/$index$/sideband1label" data-ziconfig="localstring"></label>
+                </td>
+                <td class="modgencol">
+                  <!--input class="style10130 num w60 aright" id="$tab$mod$index$sideband1ampl" type="text" value="" data-zipath="/local/$tab$/mods/$index$/sideband1ampl" data-zitooltip="$loc.localModsidebandamp1.tooltip$"/-->
+                  <input class="style10130 num w60 aright" id="$tab$mod$index$sideband1ampl" type="text" value="" data-zipath="/$device$/mods/$index$/sidebands/1/amplitude" data-zitooltip="$loc.modsidebandamp1.tooltip$"/>
+                  <input class="style10130 num w60 aright" id="$tab$mod$index$freqdev" type="text" value="" data-zipath="/$device$/mods/$index$/freqdev" data-zitooltip="$loc.modFMfreqdev.tooltip$"/>
+                </td>
+                <td class="modgencol">
+                  <a id="$tab$mod$index$sideband1enable" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/mods/$index$/sidebands/1/enable" data-zitooltip="$loc.modSideband1enable.tooltip$"/>
+                </td>
+              </tr>
+              <tr>
+                <td class="flabel modgencol" colspan="2"><label id="$tab$mod$index$freqdevenablelabel" data-zipath="/local/$tab$/mods/$index$/freqdevenablelabel" data-ziconfig="localstring">Enable FM Peak Mode</label></td>
+                <td class="modgencol">
+                  <a id="$tab$mod$index$freqdevenable" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/mods/$index$/freqdevenable" data-zitooltip="$loc.modFreqdevenable.tooltip$"/>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </td>
+</tr>

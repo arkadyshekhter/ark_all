@@ -1,0 +1,89 @@
+<tr id="$tab$r$index$" data-ziconfig="auxtab">
+  <td class="flabel w15 aright">$alias$</td>
+  <td>
+    <div class="select-wrap w95" data-zitooltip="$loc.auxoutSourceSelect.tooltip$">
+      <select id="$tab$r$index$outputselect" data-zipath="/$device$/auxouts/$index$/outputselect" data-ziconfig="auxouts-signal-select"></select>
+    </div>
+  </td>
+  <td>
+    <div class="select-wrap num" data-zitooltip="$loc.auxoutChanSelect.tooltip$">
+      <select id="$tab$r$index$demodselect" data-zipath="/$device$/auxouts/$index$/demodselect" data-ziconfig="auxouts-channel-select"></select>
+    </div>
+  </td>
+  <td data-zidevicetype-render="UHF|MF"></td>
+  <td data-zidevicetype-render="UHF|MF">
+    <button id="$tab$r$index$auxouts$index$prezero" class="icon-zeroadjust" data-zipath="/local/auxouts/$index$/prezero" data-zivalue="1" data-zitooltip="$loc.auxoutPreOffsetAutozero.tooltip$"/>
+  </td>
+  <td data-zidevicetype-render="UHF|MF">
+    <input class="style10080 num w110" id="$tab$r$index$auxpreoffset" type="text" value="" data-zipath="/$device$/auxouts/$index$/preoffset" data-zitooltip="$loc.auxoutPreoffset.tooltip$"/>
+  </td>
+  <td data-zidevicetype-render="UHF|MF">
+    <label class="slabel" id="$tab$r$index$auxouts$index$preoffsetunit" data-zipath="/local/auxouts/$index$/preoffsetunit" data-ziconfig="localstring"></label>
+  </td>
+
+  <td></td>
+  <td>
+    <input class="style11130 num w60" id="$tab$r$index$auxscale" type="text" value="" data-zipath="/$device$/auxouts/$index$/scale" data-zitooltip="$loc.auxoutScale.tooltip$"/>
+    <div data-zideviceoption-render="PID" data-zidevicetype-render="HF2">
+      <div id="$tab$r$index$wrapsc0" data-zipath="/local/pids/$index$/monitorscale/0" hidden="hidden">
+        <input class="style11130 num w60" id="$tab$r$index$monscale0" type="text" value="" data-zipath="/$device$/pids/0/monitorscale" data-zitooltip="$loc.auxoutScale.tooltip$"/>
+      </div>
+      <div id="$tab$r$index$wrapsc1" data-zipath="/local/pids/$index$/monitorscale/1" hidden="hidden">
+        <input class="style11130 num w60" id="$tab$r$index$monscale1" type="text" value="" data-zipath="/$device$/pids/1/monitorscale" data-zitooltip="$loc.auxoutScale.tooltip$"/>
+      </div>
+      <div id="$tab$r$index$wrapsc2" data-zipath="/local/pids/$index$/monitorscale/2" hidden="hidden">
+        <input class="style11130 num w60" id="$tab$r$index$monscale2" type="text" value="" data-zipath="/$device$/pids/2/monitorscale" data-zitooltip="$loc.auxoutScale.tooltip$"/>
+      </div>
+      <div id="$tab$r$index$wrapsc3" data-zipath="/local/pids/$index$/monitorscale/3" hidden="hidden">
+        <input class="style11130 num w60" id="$tab$r$index$monscale3" type="text" value="" data-zipath="/$device$/pids/3/monitorscale" data-zitooltip="$loc.auxoutScale.tooltip$"/>
+      </div>
+    </div>
+  </td>
+  <td>
+    <label class="slabel" id="$tab$r$index$auxouts$index$scaleunit" data-zipath="/local/auxouts/$index$/scaleunit" data-ziconfig="localstring"></label>
+  </td>
+  <td></td>
+  <td>
+    <button id="$tab$r$index$auxouts$index$zero" class="icon-zeroadjust" data-zipath="/local/auxouts/$index$/zero" data-zivalue="1" data-zitooltip="$loc.auxoutOffsetAutozero.tooltip$"/>
+  </td>
+  <td>
+    <input class="style01030 num w60" id="$tab$r$index$auxoffse" type="text" value="" data-zipath="/$device$/auxouts/$index$/offset" data-zitooltip="$loc.auxoutOffset.tooltip$"/>
+    <div data-zideviceoption-render="PID" data-zidevicetype-render="HF2">
+      <div id="$tab$r$index$wrapoff0" data-zipath="/local/pids/$index$/monitoroffset/0" hidden="hidden">
+        <input class="style11130 num w60" id="$tab$r$index$monoffset0" type="text" value="" data-zipath="/$device$/pids/0/monitoroffset" data-zitooltip="$loc.auxoutOffset.tooltip$"/>
+      </div>
+      <div id="$tab$r$index$wrapoff1" data-zipath="/local/pids/$index$/monitoroffset/1" hidden="hidden">
+        <input class="style11130 num w60" id="$tab$r$index$monoffset1" type="text" value="" data-zipath="/$device$/pids/1/monitoroffset" data-zitooltip="$loc.auxoutOffset.tooltip$"/>
+      </div>
+      <div id="$tab$r$index$wrapoff2" data-zipath="/local/pids/$index$/monitoroffset/2" hidden="hidden">
+        <input class="style11130 num w60" id="$tab$r$index$monoffset2" type="text" value="" data-zipath="/$device$/pids/2/monitoroffset" data-zitooltip="$loc.auxoutOffset.tooltip$"/>
+      </div>
+      <div id="$tab$r$index$wrapoff3" data-zipath="/local/pids/$index$/monitoroffset/3" hidden="hidden">
+        <input class="style11130 num w60" id="$tab$r$index$monoffset3" type="text" value="" data-zipath="/$device$/pids/3/monitoroffset" data-zitooltip="$loc.auxoutOffset.tooltip$"/>
+      </div>
+    </div>
+  </td>
+  <td>
+    <label class="slabel" for="$tab$auxoffset">V</label>
+  </td>
+  <td></td>
+  <td data-zidevicetype-render="UHF|MF">
+    <input class="style01030 auxoutlimitscol num w60" id="$tab$r$index$auxlimitlow" type="text" value="" data-zipath="/$device$/auxouts/$index$/limitlower" data-zitooltip="$loc.auxoutLimitLower.tooltip$"/>
+  </td>
+  <td data-zidevicetype-render="UHF|MF">
+    <label class="slabel auxoutlimitscol">V</label>
+  </td>
+  <td data-zidevicetype-render="UHF|MF">
+    <input class="style01030 auxoutlimitscol num w60" id="$tab$r$index$auxlimitup" type="text" value="" data-zipath="/$device$/auxouts/$index$/limitupper" data-zitooltip="$loc.auxoutLimitUpper.tooltip$"/>
+  </td>
+  <td data-zidevicetype-render="UHF|MF">
+    <label class="slabel auxoutlimitscol">V</label>
+  </td>
+  <td></td>
+  <td>
+    <input class="style01030 num w60" id="$tab$r$index$auxvalue" type="text" value="" readonly="readonly" data-zipath="/$device$/auxouts/$index$/value" data-zitooltip="$loc.auxoutValue.tooltip$"/>
+  </td>
+  <td>
+    <label class="slabel">V</label>
+  </td>
+</tr>

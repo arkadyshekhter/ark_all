@@ -1,0 +1,10 @@
+html, body { background-color: @innerBg-color; }
+
+body {
+  color: @labelText-color;
+}
+
+#lineNumbersCont{ cursor: default; background-color: @outerBg-color; color: fade(@labelText-color, 50); text-align: right; border-right: 2px solid @windowBorder-color;}
+
+.line-code:nth-child(even) { background: @outerBg-color; }
+//.line-code:nth-child(odd) { background: #FFF }

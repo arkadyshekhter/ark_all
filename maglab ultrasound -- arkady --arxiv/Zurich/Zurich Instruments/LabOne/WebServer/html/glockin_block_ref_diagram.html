@@ -1,0 +1,174 @@
+<table>
+  <col class="w100p"></col>
+  <tbody>
+    <tr class="hrow" data-zideviceoption-render="!DEMODNOMD|IA">
+      <td>
+        <table class="w100p ui-inputs-cont"><!-- Signal input table -->
+          <col class="w100"></col>
+          <col class="w100p"></col>
+          <col class="w75"></col>
+          <tbody>
+            <tr>
+              <td class="blabel">Reference</td>
+              <td class="rlabel blabel"><label>Mode</label></td>
+              <td>
+                <div class="ui-block-hpadding">
+                  <div class="select-wrap w100p" data-zitooltip="$loc.demodsMode.tooltip$"><select id="$tab$$type$usge$index$l" data-ziconfig="demodusage" data-zipath="/local/demods/$index$/demodusage"></select></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table class="w100p">
+          <col style="width:140px"></col>
+          <col class="w25"></col>
+          <col style="width:41px"></col>
+          <col class="w30"></col>
+          <col class="w100"></col>
+          <col class="w100p"></col>
+          <tr>
+            <td colspan="5" class="hrow aright">
+              <table id="$tab$$type$modshtable" data-zipath="/local/$tab$/mods/show" class="w100p" hidden="hidden" data-zideviceoption-render="MOD">
+                <col class="w100p"></col>
+                <col class="w110"></col>
+                <col class="w40"></col>
+                <tr>
+                  <td class="aright"><label class="flabel">Carrier Freq (Hz)</label></td>
+                  <td class="aright flabel">
+                    <input class="style10081 no-bg num w100p aright" id="$tab$$type$modcarrierfreq" type="text" value="" readonly="readonly" data-zipath="/local/$tab$/mods/carrierfreq" data-zitooltip="$loc.modCarrierOscFreq.tooltip$"/>
+                  </td>
+                  <td class="w40">
+                    <div class="h22" style="position:relative;">
+                      <div class="w50p h100p gli-hwire-single" style="position:absolute"></div>
+                      <div class="w100p gli-vwire-single" style="height:14px;top:11px;position:absolute">
+                        <div class="w100p h100p gli-varrow-down-single"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="h2rows">
+            <td class="gli-hwire-single">
+              <div>
+                <div class="select-wrap no-arrow w50" style="display:none;">
+                  <select class="onsel_show_hide" id="$tab$usge" data-ziconfig="oscusage" data-zipath="/local/oscs/$index$/goscusage" readonly="readonly"></select>
+                </div>
+                <div class="gli-block-osc hidable manual" hidden="hidden"></div>
+                <div class="gli-block-pid hidable pid" hidden="hidden"></div>
+                <div class="gli-block-pll hidable pll" hidden="hidden"></div>
+                <div class="gli-block-mod hidable mod" hidden="hidden"></div>
+                <div class="gli-block-extref hidable extref" hidden="hidden"></div>
+                <div class="gli-block-illegal hidable illegal" hidden="hidden"></div>
+              </div>
+            </td>
+            <td class="gli-hwire-single"><div id="$tab$$type$extrefspecific0" data-zipath="/local/$tab$/hf2extrefspecific/hide" class="gli-harrow-single h2rows w100p" data-zideviceoption-render="!DEMODNOMD|IA"></div></td>
+            <td class="gli-hwire-single">
+              <div id="$tab$$type$extrefspecific1" data-zipath="/local/$tab$/hf2extrefspecific/hide" class="gli-block-mult" data-zideviceoption-render="!DEMODNOMD|IA"></div>
+            </td>
+            <td class="gli-hwire-single"><div id="$tab$$type$extrefspecific2" data-zipath="/local/$tab$/hf2extrefspecific/hide" class="gli-harrow-single h2rows w100p" data-zideviceoption-render="!DEMODNOMD|IA"></div></td>
+            <td class="gli-hwire-single">
+              <table class="w100p" data-zideviceoption-render="!DEMODNOMD|IA">
+                <tr>
+                  <td><div id="$tab$$type$extrefspecific3" data-zipath="/local/$tab$/hf2extrefspecific/hide" class="gli-block-phase"></div></td>
+                  <td class="fright">
+                    <table id="$tab$$type$modsharrows" data-zipath="/local/$tab$/mods/show" class="w100p h2rows" hidden="hidden" data-zideviceoption-render="MOD">
+                      <col class="w10"></col>
+                      <col class="w100p"></col>
+                      <tr>
+                        <td><div class="gli-harrow-single h2rows w100p"></div></td>
+                        <td>
+                          <div class="prelative h2rows">
+                            <div class="gswitch gli-block-plus pabsolute w20 h100p" style="top:3px;"></div>
+                            <input class="w100p num pabsolute no-bg" readonly="readonly" id="$tab$$type$sidebandsign" type="text" value="" data-zipath="/local/$tab$/mods/sidebandsign" data-ziconfig="localstring" style="left:-15px;" />
+                          </div>
+                          <!--div id="$tab$$type$modcarrieradd" data-zipath="/local/$tab$/mods/add" class="gswitch gli-block-plus" hidden="hidden"></div>
+                          <div id="$tab$$type$modcarriersub" data-zipath="/local/$tab$/mods/sub" class="gswitch gli-block-minus" hidden="hidden"></div-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="gli-hwire-single"></td>
+          </tr>
+          <tr class="h2rows">
+            <td class="atop" colspan="2">
+              <table class="ui-inputs-cont w100p">
+                <col style="width:32px;"></col>
+                <col class="w110"></col>
+                <col class="w100p"></col>
+                <tr>
+                  <td class="flabel">Osc</td>
+                  <td class="flabel">Freq (Hz)</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><div class="select-wrap num w100p" data-zitooltip="$loc.demodsOscselect.tooltip$"><select class="osc" id="$tab$$type$osc$index$" data-zipath="/$device$/demods/$index$/oscselect" data-ziconfig="oscselect"></select></div></td>
+                  <td><input class="style10081 w100p num" id="$tab$$type$freq$index$" type="text" value="" data-zipath="/local/$tab$/$index$/oscfreq" data-zitooltip="$loc.oscsFreq.tooltip$"/></td>
+                  <td><div class="led positive" id="$tab$$type$lock$index$" data-ziconfig="led" data-zipath="/local/$tab$/$index$/osclocked" data-zitooltip="$loc.pllsLock.tooltip$"></div></td>
+                </tr>
+              </table>
+            </td>
+            <!--td></td-->
+            <td class="atop">
+              <table class="ui-inputs-cont w100p" data-zideviceoption-render="!DEMODNOMD|IA" id="$tab$$type$extrefspecific4" data-zipath="/local/$tab$/hf2extrefspecific/hide">
+                <col class="w100p"></col>
+                <tr>
+                  <td class="flabel">Harm</td>
+                </tr>
+                <tr>
+                  <td><input class="w100p num" id="$tab$$type$harm$index$" type="text" value="" data-ziconfig="int" data-zipath="/$device$/demods/$index$/harmonic" data-zitooltip="$loc.demodsHarmonic.tooltip$"/></td>
+                </tr>
+              </table>
+            </td>
+            <td></td>
+            <td class="atop">
+              <table class="ui-inputs-cont w100p" data-zideviceoption-render="!DEMODNOMD|IA" id="$tab$$type$extrefspecific5" data-zipath="/local/$tab$/hf2extrefspecific/hide">
+                <col class="w100p"></col>
+                <col class="w20"></col>
+                <tr>
+                  <td class="flabel">Phase (deg)</td>
+                  <td class="flabel"></td>
+                </tr>
+                <tr>
+                  <td><input class="style10030 phasecol w100p num" id="$tab$$type$phase$index$" type="text" value="" data-zipath="/$device$/demods/$index$/phaseshift" data-zitooltip="$loc.demodsPhaseshift.tooltip$"/></td>
+                  <td><button id="$tab$$type$phase$index$auto" class="icon-zeroadjust phasecol" data-zipath="/local/phase/$index$/auto" data-zivalue="1" data-zitooltip="$loc.demodsAutozero.tooltip$"/></td>
+                </tr>
+              </table>
+            </td>
+            <td class="prelative">
+              <table class="ui-inputs-cont w125 pabsolute" style="top:0px;right:0px;" id="$tab$$type$extrefspecific6" data-zipath="/local/$tab$/hf2extrefspecific/show" data-zidevicetype-render="HF2">
+                <col class="w100p"></col>
+                <tr>
+                  <td class="flabel">Input Signal</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div id="$tab$$type$phase$index$demod6spec" data-zipath="/local/$tab$/demod/6/specific/show" hidden="hidden">
+                      <div class="select-wrap w100p">
+                        <select id="$tab$$type$phase$index$adcsel0" data-zipath="/$device$/plls/0/adcselect" data-ziconfig="hf2extrefdemodadcselect" data-zitooltip="$loc.demodsAdcSelect.tooltip$"></select>
+                      </div>
+                    </div>
+                    <div id="$tab$$type$phase$index$demod7spec" data-zipath="/local/$tab$/demod/7/specific/show" hidden="hidden">
+                      <div class="select-wrap w100p">
+                        <select id="$tab$$type$phase$index$adcsel1" data-zipath="/$device$/plls/1/adcselect" data-ziconfig="hf2extrefdemodadcselect" data-zitooltip="$loc.demodsAdcSelect.tooltip$"></select>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="figure num-figure">
+  <table class="w100p h100p">
+    <col class="w100p" />
+    <col class="wctrltab" />
+    <tbody>
+    <tr>
+      <td class="atop" style="overflow:hidden;">
+        <div id="$tab$" data-ziconfig="numericalfigure"></div>
+      </td>
+      <td class="ctrlside h100p atop">
+        <div id="$tab$numctrltab" class="sidetabs w100p" style="min-height: 390px" data-ziconfig="divobject" data-zipath="/local/$tab$/ctrltabsel">
+          <ul>
+            <li class="tabbtn selected">
+              <label for="$tab$tabs-1">Presets</label>
+            </li>
+            <li class="tabbtn">
+              <label for="$tab$tabs-2">Tree</label>
+            </li>
+            <li class="tabbtn">
+              <label for="$tab$tabs-0">Settings</label>
+            </li>
+          </ul>
+          <div id="$tab$tabs-1" class="tab-content show" data-ziconfig="divobject">
+            <table class="w100p h100p ui-inputs-cont">
+              <col class="ctrl-col1" />
+              <col class="ctrl-col2" />
+              <col class="ctrl-col3" />
+              <tbody>
+              <tr class="tlabel-space">
+                <td colspan="3" class="tlabel">Select a Preset</td>
+              </tr>
+              <tr style="height:100%;">
+                <td colspan="3" class="h100p">
+                    <select class="w100p" style="height:100%;" size="10" id="$tab$preset" data-zipath="/local/$tab$/preset" data-ziconfig="select-object" data-zitooltip="$loc.numPreset.tooltip$"/>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="$tab$tabs-2" class="tab-content" data-ziconfig="divobject">
+            <table class="w100p h100p ui-inputs-cont">
+              <tr class="tlabel-space">
+                <td class="tlabel">Input Signal</td>
+              </tr>
+              <tr style="height:100%;">
+                <td class="atop h100p">
+                  <div class="w100p h100p lh-tree" id="$tab$signalstree" data-zipath="/local/$tab$/signalselect" data-ziconfig="tree-numeric-signals" />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="$tab$tabs-0" class="tab-content" data-ziconfig="divobject">
+            <table class="w100p ui-inputs-cont">
+              <col class="ctrl-col1" />
+              <col class="ctrl-col2" />
+              <col class="ctrl-col3" />
+              <tbody>
+              <tr class="tlabel-space">
+                <td colspan="3" class="tlabel">Selected Plot</td>
+              </tr>
+              <tr>
+                <td class="flabel">Name</td>
+                <td><input class="w100p" id="$tab$changename" type="text" value="" data-zipath="/local/$tab$/changename" data-ziconfig="localstring" data-zitooltip="$loc.numInpName.tooltip$" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="flabel">Mapping</td>
+                <td>
+                  <div class="select-wrap w100p" data-zitooltip="$loc.numSelMapping.tooltip$">
+                    <select id="$tab$selxmapping" data-zipath="/local/$tab$/selxmapping">
+                      <option disabled="1" value="-1" class="hidden">-</option>
+                      <option value="0">Lin</option>
+                      <option value="1">Log</option>
+                      <option value="2">dB</option>
+                    </select>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="flabel">Scaling</td>
+                <td>
+                  <div class="select-wrap w100p" data-zitooltip="$loc.numSelScaling.tooltip$">
+                    <select class="onsel_show_hide" id="$tab$selxscaling" data-zipath="/local/$tab$/selxscaling">
+                      <option disabled="1" value="-1" data-linked="full_scale" class="hidden">-</option>
+                      <option value="0" data-linked="full_scale">Full Scale</option>
+                      <option value="1" data-linked="manual">Manual</option>
+                      <option value="2" data-linked="auto">Auto</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <button class="icon-zeroadjust" tabindex="0" id="$tab$zoomtolim" type="text" value="" data-zipath="/local/$tab$/zoomtolimits" data-zitooltip="$loc.numZoomToLimits.tooltip$" data-zivalue="1"></button>
+                </td>
+              </tr>
+              <tr class="hidable manual">
+                <td class="flabel">Start</td>
+                <td><input class="style10081 num w100p" id="$tab$nummanstart" type="text" value="" data-zipath="/local/$tab$/numstart" data-zitooltip="$loc.numSelManStart.tooltip$"/></td>
+              </tr>
+              <tr class="hidable manual">
+                <td class="flabel">Stop</td>
+                <td><input class="style10081 num w100p" id="$tab$nummanstop" type="text" value="" data-zipath="/local/$tab$/numstop" data-zitooltip="$loc.numSelManStop.tooltip$"/></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,23 @@
+* {font-family: monospace; font-size: 10pt; font-weight:bold}
+block {display:block;}
+element:before{
+  content: attr(id)": ";
+}
+element {display:block; margin-top: 4px;}
+option:before{
+  content: "  Option value = "attr(value)": ";
+}
+option {display:block; color:#00a000; margin-top: 0;}
+option label {display:inline; color:#00a000; editable:false;}
+label {display:inline; color:#ff0000; editable:false;}
+desc {display:inline; color:#0000a0;}
+custom:before{
+  content: "  Custom: ";
+}
+custom {display:block; color:#00a0a0;}
+custom label {display:inline; color:#00a0a0;}
+range:before{
+  content: "  Range: ";
+}
+range {display:block; color:#00a0a0;}
+range label {display:inline; color:#00a0a0;}

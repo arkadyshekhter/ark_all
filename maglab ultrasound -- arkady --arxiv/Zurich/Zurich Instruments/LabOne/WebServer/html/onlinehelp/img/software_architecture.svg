@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.48.3.1 r9886" sodipodi:docname="software_architecture.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="400px"
+	 viewBox="0 0 600 400" enable-background="new 0 0 600 400" xml:space="preserve">
+<sodipodi:namedview  id="base" inkscape:cy="241.96693" inkscape:cx="225.35609" inkscape:zoom="2.8" showgrid="true" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" inkscape:window-y="1432" inkscape:window-x="239" inkscape:window-height="1024" inkscape:window-width="1920" inkscape:current-layer="layer1" inkscape:document-units="px" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:window-maximized="1" inkscape:snap-global="true" inkscape:snap-nodes="true">
+	
+		<inkscape:grid  type="xygrid" id="grid2985" spacingy="5px" spacingx="5px" empspacing="5" dotted="true" enabled="true" visible="true" snapvisiblegridlinesonly="true">
+		</inkscape:grid>
+</sodipodi:namedview>
+<path id="path3877-8-3-3-3" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M445,260l-175,35"/>
+<path id="path3877-8-3-3-72" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M445,260l-165,35"/>
+<path id="path3877-8-3-3-5" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M130,260l140,35"/>
+<path id="path3877-8-3-3-4" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M130,260l150,35"/>
+<path id="path3877-8-3-3-9" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M445,260l-265,35"/>
+<path id="path3877-8-3-3-0" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M355,260l-175,35"/>
+<path id="path3877-8-3-3-7" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M355,260L85,295"/>
+<path id="path3877-8-3-3-2" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M265,260L85,295"/>
+<path id="path3877-8-3-3-6" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M175,150l-45,35"/>
+<path id="path3877-8-3-3" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M85,150l45,35"/>
+<rect id="rect2987" x="45" y="245" fill="none" stroke="#000000" stroke-width="1" width="440" height="50"/>
+<rect id="rect2987-1" x="45" y="355" fill="none" stroke="#000000" width="80" height="25"/>
+<text transform="matrix(1 0 0 1 75.5466 370)" font-family="'ArialMT'" font-size="10">Device 1</text>
+<rect id="rect2987-1-7" x="140" y="355" fill="none" stroke="#000000" width="80" height="25"/>
+<text transform="matrix(1 0 0 1 170.5466 370)" font-family="'ArialMT'" font-size="10">Device 2</text>
+<rect id="rect2987-1-9" x="235" y="355" fill="none" stroke="#000000" width="80" height="25"/>
+<text transform="matrix(1 0 0 1 265.5466 370)" font-family="'ArialMT'" font-size="10">Device 3</text>
+<rect id="rect2987-1-7-2" x="45" y="135" fill="none" stroke="#000000" stroke-width="1" width="170" height="50"/>
+<rect id="rect2987-1-7-2-4" x="45" y="25" fill="none" stroke="#000000" stroke-width="1" width="80" height="50"/>
+<rect id="rect2987-1-7-2-4-5" x="135" y="25" fill="none" stroke="#000000" stroke-width="1" width="80" height="50"/>
+<rect id="rect2987-1-7-2-4-5-1" x="225" y="25" fill="none" stroke="#000000" stroke-width="1" width="80" height="50"/>
+<rect id="rect2987-1-7-2-4-5-7" x="315" y="25" fill="none" stroke="#000000" stroke-width="1" width="80" height="50"/>
+<rect id="rect2987-1-7-2-4-5-11" x="405" y="25" fill="none" stroke="#000000" stroke-width="1" width="80" height="50"/>
+<text transform="matrix(1 0 0 1 251.3816 90)" font-family="'ArialMT'" font-size="10">ziDAQ API</text>
+<text transform="matrix(1 0 0 1 500.0002 40)" font-family="'ArialMT'" font-size="10">Application Layer</text>
+<text transform="matrix(1 0 0 1 500.0002 90)" font-family="'ArialMT'" font-size="10">API Layer (DLL)</text>
+<text transform="matrix(1 0 0 1 500.0002 170)" font-family="'ArialMT'" font-size="10">Web Server Layer</text>
+<text transform="matrix(1 0 0 1 335.6506 90)" font-family="'ArialMT'" font-size="10">ziPython API</text>
+<text transform="matrix(1 0 0 1 436.9407 90)" font-family="'ArialMT'" font-size="10">ziLV API</text>
+<text transform="matrix(1 0 0 1 55.0828 40)" font-family="'ArialMT'" font-size="10">Web Browser</text>
+<text transform="matrix(1 0 0 1 145.0828 40)" font-family="'ArialMT'" font-size="10">Web Browser</text>
+<text transform="matrix(1 0 0 1 249.9924 40)" font-family="'ArialMT'" font-size="10">MATLAB</text>
+<text transform="matrix(1 0 0 1 339.4338 40)" font-family="'ArialMT'" font-size="10">Python</text>
+<text transform="matrix(1 0 0 1 425.9104 40)" font-family="'ArialMT'" font-size="10">LabVIEW</text>
+<rect id="rect4776" x="75" y="160" fill="#FFFFFF" width="100" height="15"/>
+<text transform="matrix(1 0 0 1 79.5115 170)" font-family="'ArialMT'" font-size="10">LabOne Web Server</text>
+<text transform="matrix(1 0 0 1 67.2117 145)" font-family="'ArialMT'" font-size="10">Session</text>
+<text transform="matrix(1 0 0 1 157.2117 145)" font-family="'ArialMT'" font-size="10">Session</text>
+<path id="path3480" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M85,75v60"/>
+<path id="path3480-7" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M175,75v60"/>
+<path id="path3480-4" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M265,100v145"/>
+<path id="path3480-4-2" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M355,100v145"/>
+<path id="path3480-4-7" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M445,100v145"/>
+<text transform="matrix(1 0 0 1 102.7634 255)" font-family="'ArialMT'" font-size="10">API Session</text>
+<text transform="matrix(1 0 0 1 237.7634 255)" font-family="'ArialMT'" font-size="10">API Session</text>
+<text transform="matrix(1 0 0 1 327.7639 255)" font-family="'ArialMT'" font-size="10">API Session</text>
+<text transform="matrix(1 0 0 1 417.7639 255)" font-family="'ArialMT'" font-size="10">API Session</text>
+<path id="path3480-7-4" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M130,185v60"/>
+<path id="path3480-7-4-8" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M85,295v60"/>
+<path id="path3480-7-4-6" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M180,295v60"/>
+<path id="path3480-7-4-5" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M270,295v60"/>
+<text transform="matrix(1 0 0 1 500.0002 280)" font-family="'ArialMT'" font-size="10">Data Server Layer</text>
+<rect id="rect4776-6" x="225" y="270" fill="#FFFFFF" width="100" height="15"/>
+<text transform="matrix(1 0 0 1 229.1404 280)" font-family="'ArialMT'" font-size="10">LabOne Data Server</text>
+<text transform="matrix(1 0 0 1 500.0002 370)" font-family="'ArialMT'" font-size="10">Devices</text>
+<path id="path3480-7-4-5-3" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="2" d="M280,295v60"/>
+<text transform="matrix(0 -1 1 0 80.0002 335.2813)" font-family="'ArialMT'" font-size="10">USB</text>
+<text transform="matrix(0 -1 1 0 175.0002 335.2813)" font-family="'ArialMT'" font-size="10">USB</text>
+<text transform="matrix(0 -1 1 0 265.0002 350.2012)" font-family="'ArialMT'" font-size="10">TCP : 8010</text>
+<text transform="matrix(0 -1 1 0 290.0002 350.7578)" font-family="'ArialMT'" font-size="10">UDP : 8013</text>
+<text transform="matrix(0 -1 1 0 125.0002 240.2012)" font-family="'ArialMT'" font-size="10">TCP : 8004</text>
+<text transform="matrix(0 -1 1 0 80.0002 130.2012)" font-family="'ArialMT'" font-size="10">TCP : 8006</text>
+<text transform="matrix(0 -1 1 0 170.0002 130.2012)" font-family="'ArialMT'" font-size="10">TCP : 8006</text>
+<path id="path3877" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-dasharray="2,4" d="M180,110h400"/>
+<path id="path3877-7" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-dasharray="2,4" d="M135,215h445"/>
+<path id="path3877-8" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,4" d="
+	M25,325h40"/>
+<path id="path3877-8-8" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,4" d="
+	M90,325h70"/>
+<path id="path3877-8-2" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,4" d="
+	M185,325h65"/>
+<path id="path3877-8-9" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,4" d="
+	M300,325h280"/>
+<path id="path3877-8-1" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-dasharray="2,4" d="M25,215h85"/>
+<path id="path3877-8-3" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,4" d="
+	M95,110h60"/>
+<path id="path3877-8-5" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,4" d="
+	M25,110h40"/>
+<text transform="matrix(0 -1 1 0 260.0002 190.2012)" font-family="'ArialMT'" font-size="10">TCP : 8004</text>
+<text transform="matrix(0 -1 1 0 350.0002 190.2012)" font-family="'ArialMT'" font-size="10">TCP : 8004</text>
+<text transform="matrix(0 -1 1 0 440.0002 190.2012)" font-family="'ArialMT'" font-size="10">TCP : 8004</text>
+<path id="path3877-8-3-3-1" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-dasharray="1,2" d="
+	M130,260l-45,35"/>
+<text transform="matrix(1 0 0 1 419.4377 275)" font-family="'ArialMT'" font-size="10">Data</text>
+<path id="path3877-8-3-6" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,4" d="
+	M495,75h85"/>
+<g id="g3" transform="matrix(0.27927655,0,0,0.27927655,47.211983,806.88406)">
+	<g id="g5" transform="translate(1175,175)">
+		<polygon id="polygon7" fill="#172983" points="-1140.493,-2484.66 -1143.71,-2481.443 -1129.923,-2467.657 -1131.762,-2465.819 
+			-1145.55,-2479.605 -1148.767,-2476.388 -1174.499,-2502.125 -1166.229,-2510.396 		"/>
+	</g>
+	<g id="g9" transform="translate(1175,225)">
+		<polygon id="polygon11" fill="#172983" points="-1148.767,-2495.405 -1145.55,-2492.188 -1131.762,-2505.974 -1129.923,-2504.135 
+			-1143.71,-2490.349 -1140.493,-2487.132 -1166.229,-2461.396 -1174.499,-2469.667 		"/>
+	</g>
+	<g id="g13" transform="translate(25,175)">
+		<polygon id="polygon15" fill="#172983" points="48.765,-2476.388 45.548,-2479.605 31.76,-2465.819 29.921,-2467.657 
+			43.708,-2481.443 40.491,-2484.66 66.227,-2510.396 74.501,-2502.125 		"/>
+	</g>
+	<g id="g17" transform="translate(25,225)">
+		<polygon id="polygon19" fill="#172983" points="40.491,-2487.132 43.708,-2490.349 29.921,-2504.135 31.76,-2505.974 
+			45.548,-2492.188 48.765,-2495.405 74.501,-2469.667 66.227,-2461.396 		"/>
+	</g>
+</g>
+<g id="g3-8" transform="matrix(0.2090711,0,0,0.2090711,227.57766,729.6697)">
+	<g id="g5-38" transform="translate(1175,175)">
+		<polygon id="polygon7-3" fill="#172983" points="-1145.546,-3263.999 -1148.765,-3260.783 -1174.502,-3286.517 
+			-1166.229,-3294.79 -1140.492,-3269.055 -1143.711,-3265.837 -1129.922,-3252.05 -1131.762,-3250.212 		"/>
+	</g>
+	<g id="g9-7" transform="translate(1175,225)">
+		<polygon id="polygon11-1" fill="#172983" points="-1143.711,-3274.744 -1140.492,-3271.526 -1166.229,-3245.791 
+			-1174.502,-3254.061 -1148.765,-3279.798 -1145.546,-3276.582 -1131.762,-3290.368 -1129.922,-3288.528 		"/>
+	</g>
+	<g id="g13-07" transform="translate(25,175)">
+		<polygon id="polygon15-3" fill="#172983" points="43.708,-3265.837 40.49,-3269.055 66.227,-3294.79 74.499,-3286.517 
+			48.767,-3260.783 45.549,-3263.999 31.76,-3250.212 29.92,-3252.05 		"/>
+	</g>
+	<g id="g17-4" transform="translate(25,225)">
+		<polygon id="polygon19-9" fill="#172983" points="45.549,-3276.582 48.767,-3279.798 74.499,-3254.061 66.227,-3245.791 
+			40.49,-3271.526 43.708,-3274.744 29.92,-3288.528 31.76,-3290.366 		"/>
+	</g>
+</g>
+<g id="g3-8-6" transform="matrix(0.2090711,0,0,0.2090711,317.57766,729.6697)">
+	<g id="g5-38-5" transform="translate(1175,175)">
+		<polygon id="polygon7-3-1" fill="#172983" points="-1129.922,-3252.05 -1131.762,-3250.212 -1145.551,-3263.999 
+			-1148.764,-3260.783 -1174.501,-3286.517 -1166.229,-3294.79 -1140.497,-3269.055 -1143.71,-3265.837 		"/>
+	</g>
+	<g id="g9-7-0" transform="translate(1175,225)">
+		<polygon id="polygon11-1-9" fill="#172983" points="-1131.762,-3290.368 -1129.922,-3288.528 -1143.71,-3274.744 
+			-1140.497,-3271.526 -1166.229,-3245.791 -1174.501,-3254.061 -1148.764,-3279.798 -1145.551,-3276.582 		"/>
+	</g>
+	<g id="g13-07-9" transform="translate(25,175)">
+		<polygon id="polygon15-3-6" fill="#172983" points="31.76,-3250.212 29.92,-3252.05 43.709,-3265.837 40.49,-3269.055 
+			66.227,-3294.79 74.5,-3286.517 48.767,-3260.783 45.544,-3263.999 		"/>
+	</g>
+	<g id="g17-4-8" transform="translate(25,225)">
+		<polygon id="polygon19-9-3" fill="#172983" points="29.92,-3288.528 31.76,-3290.366 45.544,-3276.582 48.767,-3279.798 
+			74.5,-3254.061 66.227,-3245.791 40.49,-3271.526 43.709,-3274.744 		"/>
+	</g>
+</g>
+<g id="g3-8-4" transform="matrix(0.2090711,0,0,0.2090711,407.5174,729.32215)">
+	<g id="g5-38-8" transform="translate(1175,175)">
+		<polygon id="polygon7-3-4" fill="#172983" points="-1174.503,-3286.518 -1166.23,-3294.79 -1140.494,-3269.053 
+			-1143.712,-3265.837 -1129.923,-3252.051 -1131.764,-3250.213 -1145.547,-3263.999 -1148.766,-3260.781 		"/>
+	</g>
+	<g id="g9-7-9" transform="translate(1175,225)">
+		<polygon id="polygon11-1-92" fill="#172983" points="-1166.23,-3245.789 -1174.503,-3254.061 -1148.766,-3279.798 
+			-1145.547,-3276.58 -1131.764,-3290.369 -1129.923,-3288.528 -1143.712,-3274.742 -1140.494,-3271.526 		"/>
+	</g>
+	<g id="g13-07-5" transform="translate(25,175)">
+		<polygon id="polygon15-3-5" fill="#172983" points="66.226,-3294.79 74.498,-3286.518 48.766,-3260.781 45.548,-3263.999 
+			31.759,-3250.213 29.923,-3252.051 43.707,-3265.837 40.489,-3269.053 		"/>
+	</g>
+	<g id="g17-4-3" transform="translate(25,225)">
+		<polygon id="polygon19-9-33" fill="#172983" points="74.498,-3254.061 66.226,-3245.789 40.489,-3271.526 43.707,-3274.742 
+			29.923,-3288.528 31.759,-3290.366 45.548,-3276.58 48.766,-3279.798 		"/>
+	</g>
+</g>
+<g id="g3-7" transform="matrix(0.27927655,0,0,0.27927655,47.808152,916.57416)">
+	<g id="g5-4" transform="translate(1175,175)">
+		<polygon id="polygon7-38" fill="#172983" points="-1148.765,-2476.387 -1174.501,-2502.124 -1166.228,-2510.397 
+			-1140.495,-2484.661 -1143.708,-2481.444 -1129.924,-2467.659 -1131.764,-2465.82 -1145.548,-2479.604 		"/>
+	</g>
+	<g id="g9-0" transform="translate(1175,225)">
+		<polygon id="polygon11-8" fill="#172983" points="-1140.495,-2487.133 -1166.228,-2461.397 -1174.501,-2469.67 
+			-1148.765,-2495.406 -1145.548,-2492.189 -1131.764,-2505.973 -1129.924,-2504.134 -1143.708,-2490.35 		"/>
+	</g>
+	<g id="g13-8" transform="translate(25,175)">
+		<polygon id="polygon15-0" fill="#172983" points="40.49,-2484.661 66.226,-2510.397 74.499,-2502.124 48.767,-2476.387 
+			45.546,-2479.604 31.758,-2465.82 29.923,-2467.659 43.71,-2481.444 		"/>
+	</g>
+	<g id="g17-6" transform="translate(25,225)">
+		<polygon id="polygon19-8" fill="#172983" points="48.767,-2495.406 74.499,-2469.67 66.226,-2461.397 40.49,-2487.133 
+			43.71,-2490.35 29.923,-2504.134 31.758,-2505.973 45.546,-2492.189 		"/>
+	</g>
+</g>
+<g id="g3-8-1" transform="matrix(0.2090711,0,0,0.2090711,46.9985,1009.5596)">
+	<g id="g5-38-9" transform="translate(1175,175)">
+		<polygon id="polygon7-3-8" fill="#172983" points="-1140.492,-3269.054 -1143.71,-3265.836 -1129.921,-3252.052 
+			-1131.762,-3250.211 -1145.546,-3264 -1148.764,-3260.782 -1174.501,-3286.519 -1166.229,-3294.791 		"/>
+	</g>
+	<g id="g9-7-97" transform="translate(1175,225)">
+		<polygon id="polygon11-1-2" fill="#172983" points="-1148.764,-3279.799 -1145.546,-3276.581 -1131.762,-3290.37 
+			-1129.921,-3288.529 -1143.71,-3274.74 -1140.492,-3271.527 -1166.229,-3245.79 -1174.501,-3254.062 		"/>
+	</g>
+	<g id="g13-07-2" transform="translate(25,175)">
+		<polygon id="polygon15-3-8" fill="#172983" points="48.768,-3260.782 45.549,-3264 31.761,-3250.216 29.92,-3252.052 
+			43.709,-3265.836 40.491,-3269.054 66.228,-3294.791 74.5,-3286.519 		"/>
+	</g>
+	<g id="g17-4-2" transform="translate(25,225)">
+		<polygon id="polygon19-9-8" fill="#172983" points="40.491,-3271.527 43.709,-3274.74 29.92,-3288.529 31.761,-3290.37 
+			45.549,-3276.581 48.768,-3279.799 74.5,-3254.062 66.228,-3245.79 		"/>
+	</g>
+</g>
+<g id="g3-8-1-9" transform="matrix(0.2090711,0,0,0.2090711,142.06349,1009.3983)">
+	<g id="g5-38-9-0" transform="translate(1175,175)">
+		<polygon id="polygon7-3-8-7" fill="#172983" points="-1174.499,-3286.518 -1166.227,-3294.79 -1140.494,-3269.053 
+			-1143.708,-3265.84 -1129.924,-3252.051 -1131.76,-3250.21 -1145.548,-3263.999 -1148.767,-3260.781 		"/>
+	</g>
+	<g id="g9-7-97-8" transform="translate(1175,225)">
+		<polygon id="polygon11-1-2-1" fill="#172983" points="-1166.227,-3245.789 -1174.499,-3254.062 -1148.767,-3279.798 
+			-1145.548,-3276.58 -1131.76,-3290.369 -1129.924,-3288.529 -1143.708,-3274.744 -1140.494,-3271.526 		"/>
+	</g>
+	<g id="g13-07-2-5" transform="translate(25,175)">
+		<polygon id="polygon15-3-8-8" fill="#172983" points="66.225,-3294.79 74.502,-3286.518 48.765,-3260.781 45.547,-3263.999 
+			31.758,-3250.21 29.922,-3252.051 43.711,-3265.84 40.493,-3269.053 		"/>
+	</g>
+	<g id="g17-4-2-6" transform="translate(25,225)">
+		<polygon id="polygon19-9-8-1" fill="#172983" points="74.502,-3254.062 66.225,-3245.789 40.493,-3271.526 43.711,-3274.744 
+			29.922,-3288.529 31.758,-3290.364 45.547,-3276.58 48.765,-3279.798 		"/>
+	</g>
+</g>
+<g id="g3-8-1-2" transform="matrix(0.2090711,0,0,0.2090711,236.72283,1009.2786)">
+	<g id="g5-38-9-4" transform="translate(1175,175)">
+		<polygon id="polygon7-3-8-2" fill="#172983" points="-1131.76,-3250.212 -1145.549,-3263.996 -1148.763,-3260.783 
+			-1174.5,-3286.52 -1166.228,-3294.787 -1140.495,-3269.05 -1143.709,-3265.837 -1129.925,-3252.048 		"/>
+	</g>
+	<g id="g9-7-97-5" transform="translate(1175,225)">
+		<polygon id="polygon11-1-2-8" fill="#172983" points="-1129.925,-3288.53 -1143.709,-3274.741 -1140.495,-3271.528 
+			-1166.228,-3245.791 -1174.5,-3254.059 -1148.763,-3279.796 -1145.549,-3276.582 -1131.76,-3290.371 		"/>
+	</g>
+	<g id="g13-07-2-6" transform="translate(25,175)">
+		<polygon id="polygon15-3-8-2" fill="#172983" points="29.922,-3252.048 43.71,-3265.837 40.492,-3269.05 66.229,-3294.787 
+			74.501,-3286.52 48.764,-3260.783 45.546,-3263.996 31.762,-3250.212 		"/>
+	</g>
+	<g id="g17-4-2-65" transform="translate(25,225)">
+		<polygon id="polygon19-9-8-3" fill="#172983" points="31.762,-3290.366 45.546,-3276.582 48.764,-3279.796 74.501,-3254.059 
+			66.229,-3245.791 40.492,-3271.528 43.71,-3274.741 29.922,-3288.53 		"/>
+	</g>
+</g>
+<path id="path3565" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M50,135v15h70v-15"/>
+<path id="path3565-1" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M140,135v15h70v-15"/>
+<path id="path3565-7" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M95,245v15h70v-15"/>
+<path id="path3565-4" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M230,245v15h70v-15"/>
+<path id="path3565-0" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M320,245v15h70v-15"/>
+<path id="path3565-9" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M410,245v15h70v-15"/>
+<path id="path3565-48" inkscape:connector-curvature="0" sodipodi:nodetypes="cccc" fill="none" stroke="#000000" d="M225,75v25h80
+	V75"/>
+<path id="path3565-48-8" inkscape:connector-curvature="0" sodipodi:nodetypes="cccc" fill="none" stroke="#000000" d="M315,75v25
+	h80V75"/>
+<path id="path3565-48-2" inkscape:connector-curvature="0" sodipodi:nodetypes="cccc" fill="none" stroke="#000000" d="M405,75v25
+	h80V75"/>
+<image overflow="visible" width="125" height="125" xlink:href="C79FD743.jpg"  transform="matrix(0.2147 0 0 0.2147 55.3533 45.9849)">
+</image>
+<image overflow="visible" width="133" height="133" xlink:href="C79FD741.jpg"  transform="matrix(0.2153 0 0 0.2153 140.0003 44.088)">
+</image>
+</svg>

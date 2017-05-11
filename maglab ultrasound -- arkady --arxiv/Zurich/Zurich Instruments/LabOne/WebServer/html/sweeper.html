@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="$tab$" class="figure" data-ziconfig="sweepfigure">
+<table class="w100p h100p">
+  <col class="w100p" />
+  <col class="wctrltab" />
+  <tbody>
+  <tr>
+    <td class="atop">
+      <div class="svgplotborder" id="$tab$spb0">
+        <div id="$tab$p0" data-ziconfig="placeholder"></div>
+      </div>
+      <div class="svgplotborder" id="$tab$spb1">
+        <div id="$tab$p1" data-ziconfig="placeholder"></div>
+      </div>
+      <div class="svgplotborder" id="$tab$spb2">
+        <div id="$tab$p2" data-ziconfig="placeholder"></div>
+      </div>
+    </td>
+    <td class="ctrlside h100p atop">
+      <div id="$tab$sweepctrltab" class="sidetabs w100p hctrltab" data-ziconfig="divobject" data-zipath="/local/$tab$/ctrltabsel">
+        <ul>
+          <li class="tabbtn">
+            <label for="$tab$tabs-1">Control</label>
+          </li>
+          <li class="tabbtn">
+            <label for="$tab$tabs-4">Settings</label>
+          </li>
+          <li class="tabbtn">
+            <label for="$tab$tabs-3">History</label>
+          </li>
+          <!--li class="tabbtn">
+            <label for="$tab$tabs-5">Param</label>
+          </li-->
+          <li class="tabbtn">
+            <label for="$tab$tabs-2">Math</label>
+          </li>
+        </ul>
+        <div id="$tab$tabs-1" class="tab-content" data-ziconfig="divobject">
+          <table class="w100p h100p ui-inputs-cont">
+          <col class="ctrl-col1" />
+          <col style="width:40%;" />
+          <col style="width:30%;" />
+          <col class="ctrl-col3" />
+          <tbody>
+            <tr>
+              <td colspan="4" class="btn-group">
+                <a id="$tab$sweep_run-1" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.sweepRun.tooltip$"><label>Run/Stop</label></a>
+                <a id="$tab$sweep_single-1" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.sweepSingle.tooltip$"><label>Single</label></a>
+              </td>
+            </tr>
+            <!--tr>
+              <td class="flabel">Plot Type</td>
+              <td colspan="2"><select class="w100p" id="$tab$twoplots" data-zipath="/local/$tab$/plottype"><option value="0">Amplitude</option><option value="1">Bode</option></select></td>
+              <td></td>
+            </tr-->
+            <tr class="tlabel-space">
+              <td class="tlabel">Horizontal</td>
+              <td colspan="2">
+                <button id="$tab$sweep_copyfp" class="w100p" data-zivalue="1" data-zipath="/local/$tab$/copyrange" data-zitooltip="$loc.sweepCopyrange.tooltip$">Copy&#160;From&#160;Range</button>
+              </td>
+              <td/>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="flabel" for="$tab$sweepstart">Start&#160;</label>
+                <label class="unit dyn-brackets" id="$tab$gridunitstart" data-zipath="/local/$tab$/gridunit" data-ziconfig="localstring"></label>
+              </td>
+              <td colspan="2">
+                <input class="style10081 num w100p" id="$tab$sweepstart" type="text" value="" data-zipath="/module/$tab$/sweep/start" data-zitooltip="$loc.sweepStart.tooltip$"/>
+              </td>
+              <td/>
+            </tr>
+            <tr>
+              <td>
+                <label class="flabel" for="$tab$sweepstop">Stop&#160;</label>
+                <label class="unit dyn-brackets" id="$tab$gridunitstop" data-zipath="/local/$tab$/gridunit" data-ziconfig="localstring"></label>
+              </td>
+              <td colspan="2">
+                <input class="style10081 num w100p" id="$tab$sweepstop" type="text" value="" data-zipath="/module/$tab$/sweep/stop" data-zitooltip="$loc.sweepStop.tooltip$"/>
+              </td>
+              <td/>
+            </tr>
+
+            <tr>
+              <td class="flabel">Length (pts)</td>
+              <td colspan="2">
+              <div class="w100p numinput-wrap">
+                <input class="style00000 num w100p" id="$tab$sweep_points" data-zipath="/module/$tab$/sweep/samplecount" type="text" pattern="[0-9]*" min="2" max="100000" step="100" value="" data-zitooltip="$loc.sweepSamplecount.tooltip$"/>
+                <button class="spinner btn-up" tabindex="-1" data-action="+"></button>
+                <button class="spinner btn-down" tabindex="-1" data-action="-"></button>
+              </div>
+              </td>
+              <td>
+                <div class="hproggress w100p" id="$tab$sweepprogress" data-zipath="/local/$tab$/progress" data-zitooltip="$loc.sweepProgress.tooltip$">
+                  <div class="bar" style="width:0%;"></div>
+                  <label class="num"></label>
+                </div>
+                <!--input class="sweepprogress w35 aright" id="$tab$sweepprogress" data-zipath="/local/$tab$/progress" readonly="readonly" type="text" value=""/>
+                <label class="slabel" for="$tab$sweepprogress">%</label-->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="flabel">Sweep&#160;Param</td>
+              <td colspan="3" class="pad0">
+                <div class="single-tree-cont">
+                  <div id="$tab$gridnodetree" data-zipath="/local/$tab$/treegridnode" data-ziconfig="sweeper-gridnode-select" data-zitooltip="$loc.sweepGridnode.tooltip$" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Sweep&#160;Mode</td>
+              <td colspan="2">
+                <div class="select-wrap w100p" data-zitooltip="$loc.sweepScan.tooltip$">
+                  <select id="$tab$sweep_scan" data-zipath="/module/$tab$/sweep/scan">
+                    <option value="0">Sequential</option>
+                    <option value="1">Binary</option>
+                    <option value="2">Bidirectional</option>
+                    <option value="3">Reverse</option>
+                  </select>
+                </div>
+              </td>
+              <td class="rlabel">
+                <label class="rlabel">Log</label>
+                <a id="$tab$sweep_mapping" class="icon-toggle btn" tabindex="0" data-zipath="/module/$tab$/sweep/xmapping" data-zitooltip="$loc.sweepXmapping.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Remaining (s)</td>
+              <td colspan="2">
+                <input class="style00000 num w100p" id="$tab$remainingtime" type="text" value="" data-zipath="/module/$tab$/sweep/remainingtime" readonly="readonly" data-zitooltip="$loc.sweepRemainingTime.tooltip$"/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <td colspan="2" class="aright">
+                <label class="rlabel">Dual&#160;Plot</label>
+                <a id="$tab$dualplot" class="icon-toggle btn" tabindex="0" data-zipath="/local/$tab$/dualplot" data-zitooltip="$loc.sweepDualplot.tooltip$"/>
+              </td>
+            </tr>
+            <tr style="height:100%;">
+              <td colspan="4" class="pad0">
+                <table class="w100p h100p ui-inputs-cont" data-ziinclude="verticalAxisGroups.html?name=sweeper&height=170" />
+              </td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <div id="$tab$tabs-3" class="tab-content" data-ziconfig="divobject">
+          <table class="w100p h100p ui-inputs-cont">
+          <col style="width:65px;" />
+          <col style="width:70%;" />
+          <col style="width:30%;" />
+          <tbody class="histlist-wrapper">
+            <tr>
+              <td colspan="3" class="btn-group">
+                <a id="$tab$sweep_run-3" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.sweepRun.tooltip$"><label>Run/Stop</label></a>
+                <a id="$tab$sweep_single-3" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.sweepSingle.tooltip$"><label>Single</label></a>
+              </td>
+            </tr>
+            <tr class="tlabel-space">
+              <td class="tlabel" colspan="3"><label data-zitooltip="$loc.sweepHlistHistory.tooltip$">History</label></td>
+            </tr>
+            <tr style="height:100%;">
+              <td class="pad0 atop">
+                <table class="w100p">
+                  <tr>
+                    <td><button class="clear_swtrigger w100p" id="$tab$hlclearsweep" data-zipath="/module/$tab$/sweep/clearhistory" data-zivalue="1" data-zitooltip="$loc.sweepHlistClear.tooltip$">Clear All</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="list-action-btn w100p" data-action="sel-all" data-zitooltip="$loc.sweepHlistAll.tooltip$">All</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="list-action-btn w100p" data-action="sel-none" data-zitooltip="$loc.sweepHlistNone.tooltip$">None</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="w100p" id="$tab$referencewave" data-zipath="/local/$tab$/setasreference" data-zivalue="1" data-zitooltip="$loc.sweepHlistRef.tooltip$">Reference</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="clabel" height="20px">Length</td>
+                  </tr>
+                  <tr>
+                    <td class="atop">
+                      <input class="num w100p" id="$tab$hlhistroylength" data-zipath="/module/$tab$/sweep/historylength" type="text" value="" data-zitooltip="$loc.sweepHlistLength.tooltip$" data-ziconfig="historylength"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h20">
+                      <!--button class="list-action-btn w100p" data-action="group">Group</button-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h20">
+                      <!--button class="list-action-btn w100p" data-action="ungroup">Ungroup</button-->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td colspan="2" class="h100p">
+                <div class="histlist-cont w100p custom-io">
+                  <table class="hlist_table w100p">
+                    <col class="w20" />
+                    <col class="w100p" />
+                    <col class="w20" />
+                    <col style="width:1px" />
+                    <tbody class="histlist-body" id="$tab$sweephistorylist" data-zipath="/local/$tab$/sweep/historylist" data-ziconfig="historylist"></tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Reference</td>
+              <td colspan="2">
+                <table class="w100p">
+                  <col class="w22" />
+                  <col class="w100p" />
+                    <tr>
+                      <td>
+                        <a id="$tab$hlsweepenableref" class="icon-toggle btn" tabindex="0" data-zipath="/local/$tab$/enableref" data-zitooltip="$loc.sweepHlistRefEnable.tooltip$"/>
+                      </td>
+                      <td>
+                        <input class="w100p" id="$tab$hlsweeprefname" type="text" value="" data-zipath="/local/$tab$/refname" readonly="readonly" data-zitooltip="$loc.sweepHlistRefName.tooltip$" data-ziconfig="localstring"/>
+                      </td>
+                    </tr>
+                </table>
+              </td>
+              <!--td><button id="$tab$hlsweeploadref" class="btn w100p" data-zipath="/local/$tab$/loadref" data-zitooltip="" data-zivalue="1">Load</a></td-->
+            </tr>
+            <tr class="tlabel-space">
+              <td colspan="3" class="tlabel">Save</td>
+            </tr>
+            <tr>
+              <td class="flabel">File&#160;Name</td>
+              <td>
+                <input class="w100p" id="$tab$hlsweepfilename" type="text" value="" data-zipath="/local/$tab$/filename" data-ziconfig="localstring"/>
+              </td>
+              <td>
+                <button id="$tab$hlsweepsave" class="w100p" tabindex="0" data-zivalue="1" data-zipath="/local/$tab$/save" data-zitooltip="$loc.sweepHlistSave.tooltip$">Save</button>
+              </td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <div id="$tab$tabs-2" class="tab-content" data-ziconfig="divobject">
+          <table class="w100p h100p ui-inputs-cont">
+            <col class="ctrl-col1" />
+            <col style="width: 40%;"/>
+            <col style="width: 60%;" />
+            <tbody>
+            <tr>
+              <td colspan="3" class="btn-group">
+                <span class="fleft">
+                  <a id="$tab$sweep_run-2" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.sweepRun.tooltip$"><label>Run/Stop</label></a>
+                  <a id="$tab$sweep_single-2" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.sweepSingle.tooltip$"><label>Single</label></a>
+                </span>
+              </td>
+            </tr>
+            <tr style="height:100%;">
+              <td colspan="3">
+                <table id="$tab$plotmath" class="w100p plotmath-cont" data-ziconfig="plotmath" data-ziinclude="plotmath.html" />
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="$tab$tabs-4" class="tab-content" data-ziconfig="divobject">
+          <table class="w100p ui-inputs-cont">
+            <col class="ctrl-col1" />
+            <col style="width:40%;" />
+            <col style="width:30%;" />
+            <col class="ctrl-col3" />
+            <tbody>
+            <tr>
+              <td colspan="4" class="btn-group">
+                <span class="fleft">
+                  <a id="$tab$sweep_run-4" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.sweepRun.tooltip$"><label>Run/Stop</label></a>
+                  <a id="$tab$sweep_single-4" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.sweepSingle.tooltip$"><label>Single</label></a>
+                </span>
+              </td>
+            </tr>
+            <tr class="tlabel-space">
+              <td class="tlabel">Filter</td>
+              <td colspan="3">
+                <div class="select-wrap w100p" data-zitooltip="$loc.sweepFiltermode.tooltip$">
+                  <select id="$tab$sweep_filtermode" data-zipath="/local/$tab$/filtermode">
+                    <option value="0">Application Mode</option>
+                    <option value="1">Advanced Mode</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <table class="w100p ui-inputs-cont" id="$tab$applicationtable" data-zipath="/local/$tab$/applicationtable">
+            <col class="ctrl-col1" />
+            <col style="width:40%;" />
+            <col style="width:30%;" />
+            <col class="ctrl-col3" />
+            <tbody>
+            <tr>
+              <td class="flabel">Application</td>
+              <td colspan="3">
+                <div class="select-wrap w100p" data-zitooltip="$loc.sweepApplication.tooltip$">
+                  <select id="$tab$sweep_selapp" data-zipath="/local/$tab$/application">
+                    <option value="0">Parameter Sweep</option>
+                    <option value="1">Parameter Sweep Averaged</option>
+                    <option value="2">Noise Amplitude Sweep</option>
+                    <option value="3">Freq Response Analyzer</option>
+                    <option value="4">3-Omega Sweep</option>
+                    <option value="5">FRA (Sinc Filter)</option>
+                    <option value="6">Impedance</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="4"></td>
+              </tr>
+            <tr>
+              <td class="flabel">Precision</td>
+              <td colspan="3">
+                <div class="select-wrap w100p" data-zitooltip="$loc.sweepPrecision.tooltip$">
+                  <select id="$tab$sweep_selprec" data-zipath="/local/$tab$/precision">
+                    <option value="0">Low &#8594; fast sweep</option>
+                    <option value="1">High &#8594; slow sweep</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel atop wwrap">Application Description</td>
+              <td colspan="3">
+                <textarea class="w100p" style="height:240px;resize:none;" cols="3" id="$tab$appinfo" readonly="readonly" data-zipath="/local/$tab$/applicationinfo"/>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <table class="w100p ui-inputs-cont" id="$tab$advancedtable" data-zipath="/local/$tab$/advancedtable">
+            <col class="ctrl-col1" />
+            <col style="width:40%;" />
+            <col style="width:30%;" />
+            <col class="ctrl-col3" />
+            <tbody>
+            <tr>
+              <td class="flabel">Bandwidth Mode</td>
+              <td colspan="2">
+                <div class="select-wrap w100p" data-zitooltip="$loc.sweepBandwidthmode.tooltip$">
+                  <select class="onsel_show_hide" id="$tab$sweep_bandwidthmode" data-zipath="/local/$tab$/bandwidthmode">
+                    <option value="0" data-linked="autobw">Auto</option>
+                    <option value="1" data-linked="fixedbw">Fixed</option>
+                    <option value="2" data-linked="manualbw">Manual</option>
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="hidable fixedbw">
+                  <div class="select-wrap w100p br-arrow clabel" data-zitooltip="$loc.sweeptcBwSelect.tooltip$">
+                    <select id="$tab$selecttcbw" class="tcbwSel" data-zipath="/local/$tab$/tcbw">
+                      <option value="0">TC</option>
+                      <option value="1">Bandwidth NEP</option>
+                      <option value="2">Bandwidth 3&#8201;dB</option>
+                    </select>
+                  </div>                  
+                </div>
+              </td>
+              <td>
+                <div class="hidable fixedbw">
+                  <input class="style10130 num w100p" id="$tab$sweep_bandwidth" data-zipath="/local/$tab$/bandwidth" type="text" value="" data-zitooltip="$loc.sweepBandwidth.tooltip$"/>
+                </div>
+              </td>
+              <td><div class="slabel hidable fixedbw"><label class="slabel" id="$tab$tcbwunit" data-zipath="/local/$tab$/tcbwunit" data-ziconfig="localstring">Hz</label></div></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel hidable fixedbw autobw"><label>Order</label></td>
+              <td>
+                <div class="hidable fixedbw autobw">
+                  <div class="select-wrap num w100p" data-zitooltip="$loc.sweepFilterOrder.tooltip$">
+                    <select id="$tab$sweep_order" data-zipath="/module/$tab$/sweep/order" data-ziconfig="int">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                  </div>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel"><label class="hidable autobw">Max Bandwidth</label></td>
+              <td>
+                <div class="hidable autobw">
+                  <input class="style10130 num w100p" id="$tab$sweep_maxBandwidth" data-zipath="/module/$tab$/sweep/maxbandwidth" type="text" value="" data-zitooltip="$loc.sweepMaxBandwidth.tooltip$"/>
+                </div>
+              </td>
+              <td><label class="slabel hidable autobw">Hz</label></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel"><label class="hidable autobw">BW Overlap</label></td>
+              <td>
+                <div class="hidable autobw">
+                  <a id="$tab$sweep_bandwidthOverlap" class="icon-toggle btn" tabindex="0" data-zipath="/module/$tab$/sweep/bandwidthoverlap" data-zitooltip="$loc.sweepBandwidthOverlap.tooltip$"/>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel"><label class="hidable autobw">&#969; Suppression</label></td>
+              <td>
+                <div class="hidable autobw">
+                  <input class="style00000 num w100p" id="$tab$sweep_suppression" data-zipath="/module/$tab$/sweep/omegasuppression" type="text" value="" data-zitooltip="$loc.sweepOmegaSuppression.tooltip$"/>
+                </div>
+              </td>
+              <td><label class="slabel hidable autobw">dB</label></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="tlabel">Settling</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr>
+              <td class="flabel">Min Time</td>
+              <td>
+                <input class="style10130 num w100p" id="$tab$sweepsettlingtime" data-zipath="/module/$tab$/sweep/settling/time" type="text" value="" data-zitooltip="$loc.sweepSettlingtime.tooltip$"/>
+              </td>
+              <td><label class="slabel">s</label></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Inaccuracy</td>
+              <td>
+                <input class="style10130 num w100p" id="$tab$sweepinaccuracy" type="text" value="" data-zipath="/module/$tab$/sweep/settling/inaccuracy" data-zitooltip="$loc.sweepSettlinginaccuracy.tooltip$"/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="hidable autobw fixedbw"><input class="style00000 num w100p" id="$tab$sweepsettlingtc" type="text" readonly="readonly" value="" data-zipath="/module/$tab$/sweep/settling/tc" data-zitooltip="$loc.sweepSettlingtc.tooltip$" /></div>
+              </td>
+              <td><label class="slabel hidable autobw fixedbw">&#215;&#160;TC</label></td>
+              <td></td>
+            </tr>
+            <tr class="tlabel-space">
+              <td class="tlabel" colspan="1">Statistics</td>
+              <td colspan="3"></td>
+            </tr>
+            <tr>
+              <td class="flabel">Algorithm</td>
+              <td colspan="2">
+                <div class="select-wrap w100p" data-zitooltip="$loc.sweeperRms.tooltip$">
+                  <select id="$tab$sweep_avg" data-zipath="/local/$tab$/rms">
+                    <option value="0">Averaging</option>
+                    <option value="1">Standard Deviation</option>
+                    <option value="2">Average Power</option>
+                  </select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Count</td>
+              <td>
+                <input class="style00000 num w100p" id="$tab$sweep_averagingsample" data-zipath="/module/$tab$/sweep/averaging/sample" type="text" value="" data-zitooltip="$loc.sweepAveragingsample.tooltip$"/>
+              </td>
+              <td><label class="slabel">Sample</label></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="select-wrap num w100p" data-zitooltip="$loc.sweepAveragingtc.tooltip$">
+                  <select id="$tab$sweep_averagingtc" data-zipath="/module/$tab$/sweep/averaging/tc">
+                    <option value="0">0</option>
+                    <option value="5">5</option>
+                    <option value="15">15</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                </div>
+              </td>
+              <td><label class="slabel">&#215;&#160;TC</label></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Phase Unwrap</td>
+              <td colspan="3">
+                <a id="$tab$sweep_unwrap" class="icon-toggle btn" tabindex="0" data-zipath="/module/$tab$/sweep/phaseunwrap" data-zitooltip="$loc.sweepPhaseunwrap.tooltip$"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="flabel">Spectral Density</td>
+              <td colspan="2">
+                <a id="$tab$specdens" class="icon-toggle btn" tabindex="0" data-zipath="/local/$tab$/spectraldensity" data-zitooltip="$loc.sweepSpectraldensity.tooltip$" />
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">Sinc Filter</td>
+              <td colspan="2">
+                <a id="$tab$sincfilter" class="icon-toggle btn" tabindex="0" data-zipath="/module/$tab$/sweep/sincfilter" data-zitooltip="$loc.sweepSincfilter.tooltip$" />
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="flabel">AWG control</td>
+              <td colspan="2">
+                <a id="$tab$awgcontrol" class="icon-toggle btn" tabindex="0" data-zipath="/module/$tab$/sweep/awgcontrol" data-zitooltip="$loc.sweepAwgControl.tooltip$" />
+              </td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--div id="$tab$tabs-5" class="tab-content" data-ziconfig="divobject">
+          <table class="w100p h100p ui-inputs-cont">
+            <col class="ctrl-col1" />
+            <col style="width: 40%;"/>
+            <col style="width: 60%;" />
+            <tbody>
+            <tr>
+              <td colspan="3" class="btn-group">
+                <span class="fleft">
+                  <a id="$tab$sweep_run-5" class="btn w70" tabindex="0" data-zipath="/local/$tab$/run" data-zitooltip="$loc.sweepRun.tooltip$"><label>Run/Stop</label></a>
+                  <a id="$tab$sweep_single-5" class="btn w70" tabindex="0" data-zipath="/local/$tab$/single" data-zitooltip="$loc.sweepSingle.tooltip$"><label>Single</label></a>
+                </span>
+              </td>
+            </tr>
+            <tr style="height:100%;">
+              <td colspan="3">
+
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div-->
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>

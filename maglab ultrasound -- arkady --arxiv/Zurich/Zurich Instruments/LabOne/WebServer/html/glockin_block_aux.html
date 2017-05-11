@@ -1,0 +1,39 @@
+<div id="$tab$ao$index$" data-ziconfig="auxtab">
+	<table class="w100p ui-cont">
+	  <col class="w100p"></col>
+	  <col style="width:195px;"></col>
+	  <tr>
+	    <td><label class="blabel ui-block-hpadding">Aux Output $alias$</label></td>
+	    <td class="ui-block-hpadding">
+	      <table class="w100p ui-inputs-cont">
+	        <col class="w45"></col>
+	        <col class="w100"></col>
+	        <col class="w100p"></col>
+	        <tr>
+	          <td><label class="blabel">Signal</label></td>
+	          <td>
+	            <div class="select-wrap w100p" data-zitooltip="$loc.auxoutSourceSelect.tooltip$">
+	              <select id="$tab$ao$index$outputselect" data-zipath="/$device$/auxouts/$index$/outputselect" data-ziconfig="auxouts-signal-select"></select>
+	            </div>
+	          </td>
+	          <td>
+	            <div class="select-wrap num w100p" data-zitooltip="$loc.auxoutChanSelect.tooltip$">
+	              <select id="$tab$ao$index$demodselect" data-zipath="/$device$/auxouts/$index$/demodselect" data-ziconfig="auxouts-channel-select"></select>
+	            </div>
+	          </td>
+	        </tr>
+	      </table>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td colspan="2">
+			  <div id="$tab$aux$index$box" class="ui-block-hpadding" data-zipath="/local/$tab$/block/aux/box" hidden="hidden">
+			    <div class="w100p" data-ziinclude="glockin_block_aux_boxes.html?index=$index$&alias=$alias$&type=box" />
+			  </div>
+			  <div id="$tab$aux$index$diag" data-zipath="/local/$tab$/block/aux/diagram" hidden="hidden">
+			    <div class="w100p" data-ziinclude="glockin_block_aux_diagram.html?index=$index$&alias=$alias$&type=diagram"/>
+			  </div>
+	    </td>
+		</tr>
+	</table>
+</div>

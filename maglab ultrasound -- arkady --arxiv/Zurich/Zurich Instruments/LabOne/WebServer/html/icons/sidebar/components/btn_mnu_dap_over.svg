@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--generated document-->
+<!--Copyright (c) 2012 Zurich Instruments AG, www.zhinst.com-->
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="64px" height="64px" color-rendering="optimizeQuality" shape-rendering="geometricPrecision">
+<g><path style="fill:none;stroke:#009ee0;stroke-width:2;" d="M12,12 l12,12 m0,-12 l-12,12"/><path style="fill:none;stroke:#009ee0;stroke-width:2;" d="M39,18 h14"/><path style="fill:#009ee0;stroke:none;" d="M44,13 h4 v-4 h-4 v4"/><path style="fill:#009ee0;stroke:none;" d="M44,23 h4 v4 h-4 v-4"/><path style="fill:none;stroke:#009ee0;stroke-width:2;" d="M10,46 h16 m-8,-8 v16"/><path style="fill:none;stroke:#009ee0;stroke-width:2;" d="M39,46 h14"/></g>        
+</svg>

@@ -1,0 +1,79 @@
+<table>
+  <col style="width:33%"></col>
+  <col style="width:27%"></col>
+  <col style="width:17%"></col>
+  <col style="width:23%"></col>
+  <tr>
+    <td>
+      <div class="select-wrap w100p">
+        <select id="$tab$pmathselsignal" data-zipath="/local/$tab$/math/signalsel" data-zitooltip="$loc.mathSignalSel.tooltip$">
+          <option value="0">Cursor Loc</option>
+          <option value="1">Cursor Area</option>
+          <option value="2">Tracking</option>
+          <option value="3">Plot Area</option>
+          <option value="4">Peak</option>
+          <option value="5">Histogram</option>
+        </select>
+        <label></label>
+      </div>
+    </td>
+    <td>
+      <div class="select-wrap w100p">
+        <select id="$tab$pmathopsel" data-zipath="/local/$tab$/math/operationsel" data-zitooltip="$loc.mathOperationSel.tooltip$" data-ziconfig="select-object"></select>
+        <label></label>
+      </div>
+    </td>
+    <td><button id="$tab$pmathaddsig" class="w100p" data-zivalue="1" data-zipath="/local/$tab$/math/add" data-zitooltip="$loc.mathAddSignal.tooltip$">Add</button></td>
+    <td><button id="$tab$pmathaddallsigs" class="w100p" data-zivalue="1" data-zipath="/local/$tab$/math/addall" data-zitooltip="$loc.mathAddAllSignals.tooltip$">Add All</button></td>
+  </tr>
+  <tr style="height:100%;"><!-- Curors Table -->
+    <td colspan="4" class="h100p">
+      <div class="pmathtable-wrap custom-io w100p h100p prelative" style="min-height:280px" tabindex="0">
+        <table id="$tab$cstatstable" class="ui-inputs-cont w100p pabsolute">
+          <col style="width:17px;"></col>
+          <col class="w70"></col>
+          <col style="width:42px;"></col>
+          <col style="width:101px;"></col>
+          <col class="w65"></col>
+          <col class="w40"></col>
+          <col style="width:290px"></col>
+          <col style="width:200px"></col>
+          <thead>
+            <tr>
+              <th></th>
+              <th class="tlabel">Source</th>
+              <th class="tlabel">Op</th>
+              <th class="tlabel">Value</th>
+              <th class="tlabel">Unit</th>
+              <th class="tlabel">#</th>
+              <th class="tlabel">Description</th>
+              <th class="tlabel">Node</th>
+            </tr>
+          </thead>
+          <tbody id="$tab$plotmathbody"></tbody>
+        </table>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="btn-group">
+      <button id="$tab$curselall" class="w85" data-linked="$tab$cstatstable" data-action="selectall" data-zitooltip="$loc.mathSelectAll.tooltip$">Select All</button>
+      <button id="$tab$pmathclearsel" class="w85" data-linked="$tab$cstatstable" data-action="clearselected" data-zitooltip="$loc.mathClearSelected.tooltip$">Clear Selected</button>
+    </td>
+    <td colspan="2" class="aright">
+      <a id="$tab$pmathsiunits" class="btn w70" tabindex="0" data-zipath="/local/$tab$/pmath/siunits" data-zitooltip="$loc.mathSiUnits.tooltip$">Unit Prefix</a>
+    </td>
+
+  </tr>
+  <tr>
+    <td colspan="2" class="blabel">Save</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="btn-group" colspan="4">
+      <button id="$tab$pmathsavecsv" class="download dragout w85" data-eventhandler="$tab$plotmath" data-action="savedata" data-downloadurl="application/txt:math_meas_$tab$plotmath__ziTimestamp_.txt:_ziBaseURL_/download?action=savedata&id=$tab$plotmath&ziSessionId=_ziSessionId_" draggable="true" data-zitooltip="$loc.mathCsv.tooltip$">CSV</button>
+      <a id="$tab$pmathlinkbtn" class="btn w85" data-zipath="/local/$tab$/math/setnetlink" data-zitooltip="$loc.mathNetLink.tooltip$"><label>Link</label></button>
+    </td>
+  </tr>
+</table>

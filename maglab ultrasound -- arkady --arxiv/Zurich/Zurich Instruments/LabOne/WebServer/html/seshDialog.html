@@ -1,0 +1,314 @@
+<div id="$dialog$" style="display:none">
+  <input class="dialog_title hidden" id="$dialog$title" data-linked="seshDialog" data-zipath="/local/seshdialog/title" data-ziconfig="localstring"></input>
+  <table class="seshDialog_show w100p dialog-table" id="$dialog$Table" data-zipath="/local/seshdialog/show">
+    <col class="w100p"/>
+    <col class="w50"/><!--space-->
+    <col style="width:204px"/>
+    <tbody id="$dialog$DevAndSettings">
+    <tr>
+      <td class="atop">
+        <table class="w100p">
+          <tr>
+            <td>
+              <img src="icons/devicesel/title.png?$websrvrev$" alt="LabOne User Interface" width="390" height="30" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="$dialog$laboneversion" class="faded-label" data-zipath="/local/laboneversion" data-ziconfig="localstring" style="font-size:10px;display:inline-block;">Version</label>
+            </td>
+          </tr>
+          <tr style="height:20px;"><td></td></tr>
+          <tr style="display:none"> <!-- Needed to get the theme from the preferences to be used. Hence not displayed-->
+            <td>
+              <div class="w100p select-wrap">
+                <select id="$tab$theme" class="themeSel" data-zipath="/local/theme">
+                  <option data-linked="ziWhite" value="0">Light</option>
+                  <option data-linked="ziBlack" value="1">Dark</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr class="dialog-row dataserver-row">
+            <td>
+              <table class="w100p ui-inputs-cont">
+                <col class="w110"></col>
+                <col class="w95"></col>
+                <col class="w100p"></col>
+                <col class="w90"></col>
+                <col class="w95"></col>
+                <col class="w90"></col>
+                <tr>
+                  <td colspan="2" class="tlabel">Web Server Connectivity</td>
+                  <td></td>
+                  <td colspan="3" class="tlabel">Data Server Connectivity</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input class="w100p" id="$dialog$lh" type="text" value="" readonly="readonly" data-zipath="/local/webserver/ipaddress" data-zitooltip="$loc.webserverHost.tooltip$" data-ziconfig="localstring" tabindex="-1"/>
+                  </td>
+                  <td>
+                    <input class="w100p" id="$dialog$port" type="text" value="" readonly="readonly" data-zipath="/local/webserver/port" data-zitooltip="$loc.webserverPort.tooltip$" data-ziconfig="localstring" tabindex="-1"/>
+                  </td>
+                  <td>
+                    <!-- button id="$dialog$lhdisconnect" class="btn w100p" data-zivalue="1" data-zipath="/local/dataserver/disconnect" data-zitooltip="$loc.localHostDisconnect.tooltip$" tabindex="-1">Change...</! -->
+                  </td>
+                  <td>
+                    <input class="w100p num" id="$dialog$lhinput1" autocomplete="on" type="text" value="" data-zipath="/local/dataserver/current/host" data-zitooltip="$loc.dataserverHostChange.tooltip$" readonly="readonly" data-ziconfig="localstring"/>
+                  </td>
+                  <td>
+                    <input class="w100p num" id="$dialog$portinput1" type="text" value="" data-zipath="/local/dataserver/current/port" readonly="readonly" data-zitooltip="$loc.dataserverPort.tooltip$" data-ziconfig="localstring"/>
+                  </td>
+                  <td>
+                    <button id="$dialog$dstoggle" class="w100p" data-zivalue="1" data-zipath="/local/dataserver/current/toggleconnection" data-zitooltip="$loc.dataserverConnectDisconnect.tooltip$"><label id="$dialog$dstogglelabel" data-zipath="/local/dataserver/current/toggleconnectionlabel" data-ziconfig="localstring" tabindex="-1"></label></button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr class="dialog-row dataserver-row" style="height:20px;"><td></td></tr><!--space-->
+          <tr class="dialog-row e1000-row"><!-- e1000 -->
+            <td>
+              <table class="w100p ui-inputs-cont">
+                <col class="w110"></col>
+                <col class="w10"></col>
+                <col class="w95"></col>
+                <col class="w100p"></col>
+                <tr>
+                  <td class="clabel">Host Name</td>
+                  <td></td>
+                  <td class="clabel">Port Number</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><input class="w100p num border-box" id="$dialog$lhinput" autocomplete="on" type="text" value="" data-zipath="/local/seshdialog/selected/host" data-zitooltip="$loc.dataserverHostChange.tooltip$" data-ziconfig="localstring"/></td>
+                  <td></td>
+                  <td><input class="w100p num border-box" id="$dialog$portinput" type="text" value="" data-zipath="/local/seshdialog/selected/port" data-zitooltip="$loc.dataserverPort.tooltip$" data-ziconfig="localstring"/></td>
+                  <td></td>
+                </tr>
+              </table>
+            </td>
+          </tr> <!-- / e1000 -->
+          <tr class="dialog-row e1000-row" style="height:20px;"><td></td></tr><!--space-->
+          <tr class="dialog-row devsettings-row">
+            <td>
+              <table class="w100p"><!-- device and settngs table container -->
+                <col class="w100p"></col>
+                <col></col>
+                <col></col>
+                <tbody>
+                  <tr>
+                    <td class="atop ui-block">
+                      <table class="w100p ui-inputs-cont" id="dialogDevices" data-ziconfig="seshdialog"><!-- devices table -->
+                        <colgroup>
+                          <col class="w100p"/>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="pad0">
+                              <table class="w100p" border="0">
+                                <col style="width:120px"></col>
+                                <col class="w25"></col>
+                                <col class="w100p"></col>
+                                <col class="w80"></col>
+                                <col class="w22"></col>
+                                <tr>
+                                  <td class="blabel">Available Devices</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>
+                                    <div class="ziSpinner" id="$dialog$discmsg" data-zipath="/local/seshdialog/discoveringmsg" data-zitooltip="$loc.sessionDialogDiscoveringIndicator.tooltip$" data-ziinclude="ziSpinner.html?id=$dialog$disc&size=20&scale=13&translate=4"/>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="w100p ui-inputs-cont cellspacing2">
+                                <col class="w22"></col><!--en-->
+                                <col class="w85"></col><!--device-->
+                                <col class="w70"></col><!--type-->
+                                <col style="width:160px;"></col><!--data server-->
+                                <col class="w75"></col><!--interface-->
+                                <col class="w100p"></col><!--status-->
+                                <thead id="dialogDevicesHeader">
+                                  <tr>
+                                    <th>En</th>
+                                    <th>Device</th>
+                                    <th>Type</th>
+                                    <th>Local Data Server</th>
+                                    <th>Interface</th>
+                                    <th>Status</th>
+                                  </tr>
+                                </thead>
+                              </table>
+                              <div class="dev-list-wrapper custom-io">
+                                <table class="w100p ui-inputs-cont cellspacing2">
+                                  <col class="w22"></col><!--en-->
+                                  <col class="w85"></col><!--device-->
+                                  <col class="w70"></col><!--type-->
+                                  <col style="width:160px;"></col><!--data server-->
+                                  <col class="w75"></col><!--interface-->
+                                  <col class="w100p"></col><!--status-->
+                                  <tbody id="dialogDevicesBody"></tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td></td><!-- space-->
+                    <td class="atop"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <!--td></td-->
+            <!--td></td-->
+          </tr>
+          <tr class="dialog-row loadingui-row"><!-- loading -->
+            <td>
+              <table class="w100p ui-inputs-cont">
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                  <td class="acenter">
+                    <div class="ziSpinner animate inf" data-ziinclude="ziSpinner.html?id=$dialog$loading&size=42&scale=25&translate=9" style="display:inline-block;" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr> <!-- / loading -->
+        </table>
+
+      </td>
+      <td></td>
+      <td class="ui-name-cont atop">
+        <img src="icons/devicesel/zi_logo.png?$websrvrev$" alt="ZI Logo" width="204" height="234" />
+        <div class="w100p drop2upload h2rows" data-action="swupdate_settings" data-linked="dialogDevices" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <table class="w100p">
+          <tr class="dialog-row devsettings-row" style="height:20px;"><td colspan="3"></td></tr><!--space-->
+          <tr class="dialog-row devsettings-row">
+            <td class="sesh-cont atop ui-block" colspan="3">
+              <table class="w100p ui-inputs-cont">
+                <tr>
+                  <td class="tlabel">Saved Settings</td>
+                  <td class="aright pad0">
+                    <table class="w100p">
+                      <col class="w100p" />
+                      <col class="w22" />
+                      <tr>
+                        <td class="aright">Auto Start</td>
+                        <td><a id="$tab$autostart" class="icon-toggle btn" tabindex="0" data-zipath="/local/autostart" data-zitooltip="$loc.configAutoStart.tooltip$" /></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <table class="w100p header-table cellspacing2">
+                      <col class="w22"/>
+                      <col style="width:230px" />
+                      <col style="width:140px" />
+                      <col class="w100p" />
+                      <thead id="dialogSettingsHeader">
+                        <tr>
+                          <th></th>
+                          <th>Name</th>
+                          <th>Date</th>
+                          <th>Comment</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="sesh-datatable-wrapper custom-io drop2upload" data-action="swupdate_settings" data-linked="dialogDevices">
+                      <table class="w100p cellspacing2">
+                        <col class="w22"/>
+                        <col style="width:230px" />
+                        <col style="width:140px" />
+                        <col class="w100p" />
+                        <tbody id="dialogSettingsBody"></tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr class="dialog-row devsettings-row" style="height:20px;"><td colspan="3"></td></tr><!--space-->
+        </table>
+      </td>
+    </tr>
+
+
+    <tr class="dialog-row message-row"><!-- info message -->
+      <td colspan="3">
+        <table class="w100p ui-inputs-cont">
+          <tr>
+            <td>
+              <textarea id="$dialog$message" wrap="off" class="w100p no-bg noResize pad0" readonly="readonly" data-zipath="/local/seshdialog/message" tabindex="-1" rows="2" cols="1" data-ziconfig="localstring" style="height:100%;"></textarea>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr><!-- /info message -->
+
+    <tr class="h20"><td colspan="3"></td></tr>
+
+    <!-- action buttons -->
+    <tr class="dialog-row devsettings-row">
+      <td colspan="3" class="btn-group">
+        <div class="fleft">
+          <button id="$dialog$Help" class="internallink no-sessionid w90" target="_blank" data-zilink="help?section=deviceAandSettingsSelDialog" data-zitooltip="$loc.seshDialogHelp.tooltip$">Help</button>
+          <button id="$dialog$Cancel" class="cancel-btn w90" data-zivalue="0" data-zipath="/local/seshdialog/show">Cancel</button>
+        </div>
+        <div class="fright btn-group">
+        	<label class="flabel">New session with settings</label>
+          <button id="$dialog$startdeviceui" class="w90" data-zivalue="0,1" data-action="startui" data-zipath="/local/sessiondialog/start,/local/sessiondialog/startdevnuiro" data-zitooltip="$loc.sessionDialogStartDeviceAndUI.tooltip$">Device &amp; UI</button>
+
+          <button id="$dialog$startuionly" class="w90" data-zivalue="1,1" data-action="startui" data-zipath="/local/sessiondialog/start,/local/sessiondialog/startuiro" data-zitooltip="$loc.sessionDialogStartUIOnly.tooltip$">UI Only</button>
+
+          <button id="s$dialog$Startdefault" class="w90" data-zivalue="2,1" data-action="startui" data-zipath="/local/sessiondialog/start,/local/sessiondialog/startdefaultro" data-zitooltip="$loc.sessionDialogStartDefaultUI.tooltip$" tabindex="0" autofocus="autofocus">Default UI</button>
+        </div>
+
+      </td>
+    </tr>
+    <tr class="dialog-row e404-row">
+      <td colspan="3">
+        <div class="fleft">
+          <button class="w90" id="$dialog$Cancel404" data-action="cancel" data-zivalue="0" data-zipath="/local/seshdialog/show">Cancel</button>
+        </div>
+        <div class="fright btn-group">
+          <button class="w90" data-action="retry">Retry</button>
+          <button class="w90" data-action="reload">Reload</button>
+        </div>
+      </td>
+    </tr>
+    <tr class="dialog-row e500-row">
+      <td colspan="3">
+        <!--div class="fleft">
+          <button class="internallink no-sessionid w100" target="_blank" data-zilink="help?section=error500" data-zitooltip="$loc.seshDialogHelp.tooltip$">Help</button>
+        </div-->
+      </td>
+    </tr>
+    <tr class="dialog-row e1000-row">
+      <td colspan="3">
+        <div class="fleft btn-group">
+          <button class="internallink no-sessionid w90" target="_blank" data-zilink="help?section=deviceAndSettingsDialog#deviceAndSettingsDialog.server" data-zitooltip="$loc.seshDialogHelp.tooltip$">Help</button>
+          <button class="w90 cancel-btn" id="$dialog$Cancel1001" data-action="cancel" data-zivalue="0" data-zipath="/local/seshdialog/show">Cancel</button>
+        </div>
+        <div class="fright">
+          <button id="$dialog$lhConnect" class="btn w90" data-zivalue="1" data-zipath="/local/dataserver/connect" data-zitooltip="$loc.localHostConnect.tooltip$">Connect</button>
+        </div>
+      </td>
+    </tr>
+      <!-- / action buttons -->
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,32 @@
+{
+  "name": "Zurich Instruments LabOne",
+  "description": "Connection to the Zurich Instruments LabOne Web Server",
+  "version": "1",
+  "manifest_version": 2,
+  "app": {
+    "urls": [
+      "http://127.0.0.1:8006"
+    ],
+    "launch": {
+      "web_url": "http://127.0.0.1:8006",
+      "container": "panel"
+    }
+  },
+  "icons": {
+    "64": "icons/favicon.ico",
+    "128": "icons/favicon.ico",
+    "16": "icons/zi_16x16.png",
+    "57": "icons/zi_57x57.png",
+    "72": "icons/zi_72x72.png",
+    "114": "icons/zi_114x114.png"
+  },
+  "offline_enabled": true,
+  "permissions": [
+    "http://127.0.0.1/*",
+    "unlimitedStorage",
+    "notifications",
+    "background",
+    "clipboardRead",
+    "clipboardWrite"
+  ]
+}

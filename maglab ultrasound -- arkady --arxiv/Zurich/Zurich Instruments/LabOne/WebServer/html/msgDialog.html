@@ -1,0 +1,44 @@
+<div>
+    <input class="dialog_title hidden" id="$dialog$title" data-linked="$dialog$" data-zipath="/local/$dialog$/title" data-ziconfig="localstring"></input>
+    <table class="w100p dialog-table">
+        <tr>
+            <td>
+                <table class="w100p ui-inputs-cont">
+                    <tr style="height:10px;">
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="pad0">
+                            <textarea class="msgdialog_text w100p no-bg" style="height:100px;resize:none;" cols="5" id="$dialog$Message" type="text" value="" readonly="readonly" data-zipath="/local/$dialog$/text" data-ziconfig="localstring"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="h20"></tr>
+        <!-- Space -->
+        <tr>
+            <td class="hrow">
+                <table class="dialogctrl-regular w100p">
+                    <tr>
+                        <td>
+                            <button id="$dialog$cancel" class="w100" data-action="cancel" data-zipath="/local/$dialog$/cancel" data-zivalue="1">Cancel</button>
+                        </td>
+                        <td class="aright">
+                            <button id="$dialog$ok" class="w100" data-action="ok" data-zipath="/local/$dialog$/confirm" data-zivalue="1">OK</button>
+                        </td>
+                    </tr>
+                </table>
+                <table class="dialogctrl-upload w100p">
+                    <tr>
+                        <td>
+                            <button id="$dialog$cancelupload" class="w100" data-action="cancel">Cancel</button>
+                        </td>
+                        <td class="aright">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>

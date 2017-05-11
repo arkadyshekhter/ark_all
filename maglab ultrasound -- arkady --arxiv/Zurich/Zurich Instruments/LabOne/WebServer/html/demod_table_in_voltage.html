@@ -1,0 +1,80 @@
+<tr>
+  <td class="atop">
+    <table class="w100p ui-inputs-cont" style="min-width:217px;" id="$tab$$type$siginctrl$index$" data-ziconfig="siginctrl">
+      <col class="w45"></col>
+      <col class="w70"></col>
+      <col class="w55"></col>
+      <col class="w100p"></col>
+      <tr>
+        <td class="clabel bold" colspan="3"><label data-zidevicetype-render="MF">Voltage&#160;</label><label>Input&#160;$alias$</label></td>
+        <td rowspan="5" class="atop">
+          <div class="progressbar1 fright" id="$tab$$type$mainpb$index$" data-zidevicetype-render="HF2">
+            <span class="progressbar-cover1" id="$tab$$type$mainpb_cov$index$hf2">
+              <em class="progressbar_value" id="$tab$$type$mainpb_val$index$hf2" data-zipath="/$device$/status/adc$index$max" data-type="max" style="bottom: 50%;"></em>
+              <em class="progressbar_value" id="$tab$$type$mainpb_val2$index$hf2" data-zipath="/$device$/status/adc$index$min" data-type="min" style="top: 50%;"></em>
+            </span>
+          </div>
+          <div class="progressbar1 fright" id="$tab$$type$mainpb$index$etzel" data-zidevicetype-render="MF|UHF">
+            <span class="progressbar-cover1" id="$tab$$type$mainpb_cov$index$">
+              <em class="progressbar_value" id="$tab$$type$mainpb_val$index$" data-zipath="/$device$/sigins/$index$/max" data-type="max_new" style="bottom: 50%;"></em>
+              <em class="progressbar_value" id="$tab$$type$mainpb_val2$index$" data-zipath="/$device$/sigins/$index$/min" data-type="min_new" style="top: 50%;"></em>
+            </span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="flabel"><label for="$tab$$type$range$index$">Range</label></td>
+        <td>
+          <input class="style10010 w100p num" id="$tab$$type$range$index$" type="text" value="" data-zipath="/$device$/sigins/$index$/range" data-zitooltip="$loc.siginsRange.tooltip$"/>
+        </td>
+        <td>
+          <button class="icon-autorange btn" tabindex="0" id="$tab$$type$auto$index$0" data-zipath="/local/sigins/$index$/auto" data-zivalue="1" data-zitooltip="$loc.siginsAutoRange.tooltip$" data-zidevicetype-render="HF2"></button>
+          <a class="btn icon-autorange" tabindex="0" id="$tab$$type$auto$index$1" data-zipath="/$device$/sigins/$index$/autorange" data-zitooltip="$loc.siginsAutoRange.tooltip$" data-zidevicetype-render="MF|UHF"></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="flabel"><label for="$tab$$type$scaling$index$">Scaling</label></td>
+        <td>
+          <input id="$tab$$type$scaling$index$" data-zipath="/$device$/sigins/$index$/scaling" class="style10010 w100p num" type="text" value="1" data-zitooltip="$loc.siginsScaling.tooltip$" data-zidevicetype-readonly="HF2"/>
+        </td>
+        <td>
+          <input id="$tab$$type$unit$index$" class="w35 aright" type="text" value="V" data-zipath="/local/sigins/$index$/scaling/unit" data-ziconfig="localstring" data-zitooltip="$loc.siginsUnit.tooltip$"/>
+          <label class="slabel">/&#8201;V</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <span class="btn-group flabel">
+            <label>AC</label><a id="$tab$$type$checkin$index$AC" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/sigins/$index$/ac" data-zitooltip="$loc.siginsAc.tooltip$"/>
+            <label>50&#8201;&#937;</label><a id="$tab$$type$checkin$index$50" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/sigins/$index$/imp50" data-zitooltip="$loc.siginsImp50.tooltip$"/>
+            <label data-zidevicetype-render="HF2|MF">Diff</label><a id="$tab$$type$checkin$index$Diff" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/sigins/$index$/diff" data-zidevicetype-render="HF2|MF" data-zitooltip="$loc.siginsDiff.tooltip$"/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" data-zidevicetype-render="MF">
+          <span class="btn-group flabel">
+            <label>Float</label><a id="$tab$$type$checkin$index$Float" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/sigins/$index$/float" data-zitooltip="$loc.siginsFloat.tooltip$"/>
+          </span>
+        </td>
+        <td class="pad0" data-zidevicetype-render="UHF">
+          <table class="w100p" border="0">
+            <col class="w45"></col>
+            <col style="width:107px;"></col>
+            <col class="w100p"></col>
+            <tr>
+              <td class="flabel">Diff</td>
+              <td>
+                <div class="select-wrap w100p" data-zitooltip="$loc.siginsDiff.tooltip$">
+                  <select id="$tab$$type$diff$index$" data-zipath="/$device$/sigins/$index$/diff" data-ziconfig="sigin-diffselect$index$"></select>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr data-zideviceoption-render="DEMOD|DEMODNOMD" style="height:10px;"><td colspan="3"/></tr>
+    </table>
+  </td>
+</tr>

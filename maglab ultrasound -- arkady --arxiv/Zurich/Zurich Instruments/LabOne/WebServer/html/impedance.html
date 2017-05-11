@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<div id="$tab$" class="figure" data-ziconfig="imptab">
+    <div id="$tab$iactrltab-0" class="sidetabs w100p" data-ziconfig="divobject" data-zipath="/local/$tab$/ctrltabsel">
+        <ul>
+            <li class="tabbtn">
+                <label for="$tab$tabs-1">Control</label>
+            </li>
+            <li class="tabbtn">
+                <label for="$tab$tabs-2">Settings</label>
+            </li>
+            <!--li class="tabbtn">
+                <label for="$tab$tabs-4">Display</label>
+            </li-->
+        </ul>
+        <div id="$tab$tabs-1" class="tab-content" data-ziconfig="divobject">
+            <table class="w100p h100p">
+                <col style="width:300px;"></col>
+                <col class="w15"></col>
+                <col style="width:255px;"></col>
+                <col class="w15"></col>
+                <col style="width:250px;"></col>
+                <col class="w15"></col>
+                <col style="width:200px;"></col>
+                <col class="w100p"></col>
+                <tr>
+                    <td class="atop pad0">
+                        <table class="ui-inputs-cont w100p">
+                            <col class="w105"></col>
+                            <col class="w100p"></col>
+                            <col class="w22"></col>
+                            <tr>
+                                <td class="flabel">Enable</td>
+                                <td colspan="2">
+                                    <a id="$tab$imp$index$enable-0" class="btn icon-toggle" tabindex="0" data-zipath="/$device$/imps/$index$/enable" data-zitooltip="$loc.impEnable.tooltip$" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Mode</td>
+                                <td>
+                                    <div class="select-wrap w100p" data-zitooltip="$loc.impMode.tooltip$">
+                                        <select class="onsel_show_hide" id="$tab$imp$index$mode" data-zipath="/$device$/imps/$index$/mode" data-linked="$tab$tabs-1">
+                                            <option value="0" data-linked="sh_impmode_4pt">4 Terminal</option>
+                                            <option value="1" data-linked="sh_impmode_2pt">2 Terminal</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Representation</td>
+                                <td>
+                                    <div class="select-wrap w100p" data-zitooltip="$loc.impRepresentation.tooltip$">
+                                        <select class="onsel_show_hide" id="$tab$imp$index$representation" data-zipath="/$device$/imps/$index$/model" data-ziconfig="imp-representation-select" data-linked="$tab$tabs-1"></select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Parameter 1</td>
+                                <td>
+                                    <div class="select-wrap no-arrow w100p" data-zitooltip="$loc.impRepresentationParameter1.tooltip$">
+                                        <select id="$tab$imp$index$p1" data-zipath="/local/imps/$tab$/parameter/0" data-ziconfig="imp-representation-parametername" readonly="readonly"></select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Parameter 2</td>
+                                <td>
+                                    <div class="select-wrap no-arrow w100p" data-zitooltip="$loc.impRepresentationParameter2.tooltip$">
+                                        <select id="$tab$imp$index$p2" data-zipath="/local/imps/$tab$/parameter/1" data-ziconfig="imp-representation-parametername" readonly="readonly"></select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td>Osc Frequency</td>
+                                <td>
+                                    <input class="style10081 w100p num" id="$tab$imp$index$impfreq" type="text" value="" data-ziconfig="int" data-zipath="/$device$/imps/$index$/freq" data-zitooltip="$loc.impFreq.tooltip$" />
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td></td>
+                    <td class="atop imp-model-image-wrapper prelative">
+                        <!--div class="w100p h100p acenter" style="border: 1px solid gray; height: 250px; line-height: 235px;">
+                            Block Diagram
+                        </div-->
+                        <div class="imp-modelimg-base w100p h100p pabsolute"></div>
+                        <div class="imp-modelimg-4pt hidable sh_impmode_4pt w100p h100p pabsolute"></div>
+                        <div class="imp-modelimg-rpcp hidable sh_impmodel_rpcp w100p h100p pabsolute"></div>
+                        <div class="imp-modelimg-rscs hidable sh_impmodel_rscs w100p h100p pabsolute"></div>
+                        <div class="imp-modelimg-rsls hidable sh_impmodel_rsls w100p h100p pabsolute"></div>
+                        <div class="imp-modelimg-gb hidable sh_impmodel_gb w100p h100p pabsolute"></div>
+                        <div class="imp-modelimg-esrcs hidable sh_impmodel_dcs sh_impmodel_qcs w100p h100p pabsolute"></div>
+                        <div class="imp-modelimg-esrls hidable sh_impmodel_dls sh_impmodel_qls w100p h100p pabsolute"></div>
+                        <div class="pabsolute" style="left: 8px;top: 5px;">
+                            <label class="blabel">Device</label>
+                        </div>
+                        <div class="pabsolute" style="right: 70px;top: 5px;">
+                            <label class="blabel">DUT</label>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td class="atop">
+                        <table class="ui-inputs-cont w100p">
+                            <col class="w125"></col>
+                            <col class="w100p"></col>
+                            <col class="w22"></col>
+                            <tr>
+                                <td class="blabel">Range Control</td>
+                                <td>
+                                    <div class="select-wrap w100p" data-zitooltip="$loc.impAutoInputRange.tooltip$">
+                                        <select class="onsel_show_hide" id="$tab$imp$index$rangemode" data-zipath="/$device$/imps/$index$/auto/inputrange">
+                                            <option value="0" data-linked="imputrange_manual">Manual</option>
+                                            <option value="1" data-linked="imputrange_auto">Auto</option>
+                                            <option value="2" data-linked="imputrange_impedance">Impedance</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="led positive" id="$tab$imp$index$autosuppress" data-ziconfig="led" data-zipath="/$device$/imps/$index$/auto/suppress" data-zitooltip="$loc.impAutoSuppress.tooltip$" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="clabel">
+                                    <label class="hidable imputrange_manual">Current Range</label>
+                                    <label class="hidable imputrange_impedance">Range (&#937;)</label>
+                                </td>
+                                <td>
+                                    <div class="hidable imputrange_manual">
+                                        <input class="style10010 w100p num" id="$tab$imp$index$inputcurrentrange" type="text" value="" data-ziconfig="int" data-zipath="/$device$/imps/$index$/current/range" data-zitooltip="$loc.impCurrentRange.tooltip$" />
+                                    </div>
+                                    <div class="hidable imputrange_impedance">
+                                        <div class="select-wrap w100p" data-zitooltip="$loc.impInputRangeImpedance.tooltip$">
+                                            <select id="$tab$imp$index$range" data-zipath="/$device$/imps/$index$/impedancerange">
+                                                <option value="0">100</option>
+                                                <option value="1">1k</option>
+                                                <option value="2">10k</option>
+                                                <option value="3">100k</option>
+                                                <option value="4">1M</option>
+                                                <option value="5">10M</option>
+                                                <option value="6">100M</option>
+                                                <option value="7">1G</option>
+                                                <option value="8">10G</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="clabel">
+                                    <label class="hidable imputrange_manual">Voltage Range</label>
+                                </td>
+                                <td>
+                                    <div class="hidable imputrange_manual">
+                                        <input class="style10010 w100p num" id="$tab$imp$index$inputvoltagerange" type="text" value="" data-ziconfig="int" data-zipath="/$device$/imps/$index$/voltage/range" data-zitooltip="$loc.impVoltageRange.tooltip$" />
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="blabel">Drive Control</td>
+                                <td>
+                                    <a id="$tab$imp$index$autooutput" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/imps/$index$/auto/output" data-zitooltip="$loc.impAutoOutput.tooltip$" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Amplitude</td>
+                                <td>
+                                    <input class="style10130 w100p num" id="$tab$imp$index$outamplitude" type="text" value="" data-zipath="/$device$/imps/$index$/output/amplitude" data-zitooltip="$loc.impOutputAmplitude.tooltip$" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td class="blabel">Bandwidth Control</td>
+                                <td>
+                                    <a id="$tab$imp$index$autobw" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/imps/$index$/auto/bw" data-zitooltip="$loc.impAutoBw.tooltip$" />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">
+                                    <label class="hidable autobw">Max Bandwidth (Hz)</label>
+                                </td>
+                                <td>
+                                    <div class="hidable autobw">
+                                        <input class="style10130 num w100p" id="$tab$imp$index$maxBandwidth" data-zipath="/$device$/imps/$index$/maxbandwidth" type="text" value="" data-zitooltip="$loc.impMaxBW.tooltip$" />
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">&#969; Suppression (dB)</td>
+                                <td>
+                                    <input class="style00000 num w100p" id="$tab$imp$index$suppression" data-zipath="/$device$/imps/$index$/omegasuppression" type="text" value="" data-zitooltip="$loc.impOmegaSuppression.tooltip$" />
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td></td>
+                    <td class="atop">
+                        <table class="ui-inputs-cont w100p">
+                            <col class="w105"></col>
+                            <col class="w50p"></col>
+                            <col class="w50p"></col>
+                            <col class="w22"></col>
+                            <tr>
+                                <td class="blabel" colspan="4">Confidence Indicators</td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Suppression</td>
+                                <td colspan="2">
+                                    <input class="style10130 w100p num" id="$tab$imp$index$ratio" type="text" value="" data-zipath="/$device$/imps/$index$/confidence/suppression/ratio" data-zitooltip="$loc.impSuppressionRatio.tooltip$" />
+                                </td>
+                                <td>
+                                    <a id="$tab$imp$index$suppressionenable" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/imps/$index$/confidence/suppression/enable" data-zitooltip="$loc.impSuppressionEnable.tooltip$" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Compensation</td>
+                                <td colspan="2">
+                                    <input class="style10130 w100p num" id="$tab$imp$index$confcompensationratio" type="text" value="" data-zipath="/$device$/imps/$index$/confidence/compensation/ratio" data-zitooltip="$loc.impConfCompensationRatio.tooltip$" />
+                                </td>
+                                <td>
+                                    <a id="$tab$imp$index$confcompensationen" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/imps/$index$/confidence/compensation/enable" data-zitooltip="$loc.impConfCompensationEnable.tooltip$" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Open Detect</td>
+                                <td colspan="2">
+                                    <input class="style10130 w100p num" id="$tab$imp$index$confopendetectratio" type="text" value="" data-zipath="/$device$/imps/$index$/confidence/opendetect/ratio" data-zitooltip="$loc.impConfOpendetectRatio.tooltip$" />
+                                </td>
+                                <td>
+                                    <a id="$tab$imp$index$confopendetecten" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/imps/$index$/confidence/opendetect/enable" data-zitooltip="$loc.impConfOpendetectEnable.tooltip$" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="flabel">Underflow Detect</td>
+                                <td colspan="2">
+                                    <input class="style10130 w100p num" id="$tab$imp$index$confunderflowratio" type="text" value="" data-zipath="/$device$/imps/$index$/confidence/underflow/ratio" data-zitooltip="$loc.impConfUnderflowRatio.tooltip$" />
+                                </td>
+                                <td>
+                                    <a id="$tab$imp$index$confunderflowen" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/imps/$index$/confidence/underflow/enable" data-zitooltip="$loc.impConfUnderflowEnable.tooltip$" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="$tab$tabs-2" class="tab-content" data-ziconfig="divobject">
+            <table class="w100p">
+                <col style="width:235px"></col>
+                <col class="w30"></col>
+                <col style="width:210px"></col>
+                <col class="w15"></col>
+                <col style="width:70px"></col>
+                <col class="w15"></col>
+                <col style="width:120px"></col>
+                <col class="w15"></col>
+                <col style="width:85px"></col>
+                <col class="w15"></col>
+                <col style="width:135px"></col>
+                <col class="w100p"></col>
+                <tbody>
+                    <tr>
+                        <td class="atop">
+                            <table class="w100p ui-inputs-cont">
+                                <col class="w105" />
+                                <col class="w100p" />
+                                <col class="w22"></col>
+                                <tbody>
+                                    <tr>
+                                        <td>Enable</td>
+                                        <td>
+                                            <a id="$tab$imp$index$enable-1" class="btn icon-toggle" tabindex="0" data-zipath="/$device$/imps/$index$/enable" data-zitooltip="$loc.impEnable.tooltip$" />
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mode</td>
+                                        <td>
+                                            <div class="select-wrap w100p" data-zitooltip="$loc.impFilter.tooltip$">
+                                                <select class="onsel_show_hide" id="$tab$imp$index$filter" data-zipath="/$device$/imps/$index$/filter" data-linked="$tab$tabs-2">
+                                                    <option value="0" data-linked="sh_impfilter_app">Application</option>
+                                                    <option value="1" data-linked="sh_impfilter_adv">Advanced</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Application</td>
+                                        <td>
+                                            <div class="select-wrap w100p" data-zitooltip="$loc.impApplication.tooltip$">
+                                                <select id="$tab$imp$index$application" data-zipath="/$device$/imps/$index$/application" data-ziconfig="imp-application-select"></select>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="blabel" colspan="3">Bias Control</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bias Voltage (V)</td>
+                                        <td>
+                                            <input class="style10130 w100p num" id="$tab$imp$index$biasvalue" type="text" value="" data-ziconfig="int" data-zipath="/$device$/imps/$index$/bias/value" data-zitooltip="$loc.impBiasValue.tooltip$" />
+                                        </td>
+                                        <td>
+                                            <a id="$tab$imp$index$biasen" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/imps/$index$/bias/enable" data-zitooltip="$loc.impBiasEnable.tooltip$" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td></td>
+                        <td class="atop">
+                            <table class="w100p ui-inputs-cont hidable sh_impfilter_adv">
+                                <col class="w85" />
+                                <col class="w100p" />
+                                <col class="w22" />
+                                <tr>
+                                    <td class="blabel" colspan="3">Input Signal</td>
+                                </tr>
+                                <tr>
+                                    <td>Current</td>
+                                    <td>
+                                        <div class="select-wrap w100p" data-zitooltip="$loc.impCInput.tooltip$">
+                                            <select id="$tab$imp$index$iinputselect" data-zipath="/$device$/imps/$index$/current/inputselect" data-ziconfig="imp-currentinput-select"></select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a id="$tab$imp$index$currentinvert" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/imps/$index$/current/invert" data-zitooltip="$loc.impCInputInvert.tooltip$" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Voltage</td>
+                                    <td>
+                                        <div class="select-wrap w100p" data-zitooltip="$loc.impVInput.tooltip$">
+                                            <select id="$tab$imp$index$vinputselect" data-zipath="/$device$/imps/$index$/voltage/inputselect" data-ziconfig="imp-voltageinput-select"></select>
+                                        </div>
+                                    </td>
+                                    <td><a id="$tab$imp$index$voltageinvert" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/imps/$index$/voltage/invert" data-zitooltip="$loc.impVInputInvert.tooltip$" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="flabel">AC</td>
+                                    <td>
+                                        <a id="$tab$imp$index$ac" class="icon-toggle btn" tabindex="0" data-zipath="/$device$/imps/$index$/ac" data-zitooltip="$loc.impInputAc.tooltip$" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="tlabel">Demod Usage</td>
+                                </tr>
+                                <tr>
+                                    <td>Current</td>
+                                    <td>
+                                        <div class="select-wrap no-arrow w100p num" data-zitooltip="$loc.impIDemod.tooltip$">
+                                            <select id="$tab$imp$index$currentdemodselect" data-zipath="/$device$/imps/$index$/current/demodselect" data-ziconfig="demodselect">
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Voltage</td>
+                                    <td>
+                                        <div class="select-wrap no-arrow w100p num" data-zitooltip="$loc.impVDemod.tooltip$">
+                                            <select id="$tab$imp$index$voltagedemodselect" data-zipath="/$device$/imps/$index$/voltage/demodselect" data-ziconfig="demodselect">
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Output</td>
+                                    <td>
+                                        <div class="select-wrap no-arrow w100p num" data-zitooltip="$loc.impOutputDemod.tooltip$">
+                                            <select id="$tab$imp$index$outputdemod" data-zipath="/$device$/imps/$index$/output/demod" data-ziconfig="demodselect" readonly="readonly" />
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                    <tr>
+                                        <td class="blabel">Interpolation</td>
+                                        <td>
+                                            <div class="select-wrap w100p" data-zitooltip="$loc.impInterpolation.tooltip$">
+                                                <select id="$tab$imp$index$extrapolation" data-zipath="/$device$/imps/$index$/interpolation">
+                                                    <option value="0">Linear</option>
+                                                    <option value="1">Piecewise Cubic Hermite (PCHIP)</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                            </table>
+                        </td>
+                        <td></td>
+                        <td class="atop">
+                            <table class="w100p ui-inputs-cont hidable sh_impfilter_adv">
+                                <col class="w35" />
+                                <col class="w35" />
+                                <col class="w100p" />
+                                <tbody>
+                                    <tr>
+                                        <td class="blabel" colspan="3">Ref Freq</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Osc</td>
+                                        <td>Harm</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="select-wrap w100p num" data-zitooltip="$loc.impOsc.tooltip$">
+                                                <select id="$tab$imp$index$oscselect" data-zipath="/$device$/imps/$index$/demod/oscselect" data-ziconfig="oscselect">
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input class="w100p num" id="$tab$imp$index$harm" type="text" value="" data-ziconfig="int" data-zipath="/$device$/imps/$index$/demod/harmonic" data-zitooltip="$loc.impHarm.tooltip$" />
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td></td>
+                        <td class="atop">
+                            <table class="w100p ui-inputs-cont hidable sh_impfilter_adv">
+                                <col class="w35" />
+                                <col class="w55" />
+                                <col class="w100p" />
+                                <tbody>
+                                    <tr>
+                                        <td class="blabel" colspan="3">Low Pass Filters</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Order</td>
+                                        <td>
+                                            <div class="select-wrap w100p br-arrow no-bg">
+                                                <select id="$tab$tcbw" class="tcbwSel" data-zipath="/local/tcbw" data-zitooltip="$loc.impLPTcBw.tooltip$">
+                                                    <option value="0">TC</option>
+                                                    <option value="1">BW NEP</option>
+                                                    <option value="2">BW 3&#8201;dB</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>Sinc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="select-wrap w100p num" data-zitooltip="$loc.impLPOrder.tooltip$">
+                                                <select id="$tab$imp$index$order" data-zipath="/$device$/imps/$index$/demod/order">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input class="style10130 w100p num" id="$tab$imp$index$tc" type="text" value="" data-ziconfig="int" data-zipath="/local/$tab$/tcbwnep" data-zitooltip="$loc.impLPBW.tooltip$" />
+                                        </td>
+                                        <td>
+                                            <a id="$tab$imp$index$sinc" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/imps/$index$/demod/sinc" data-zitooltip="$loc.impSinc.tooltip$" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td></td>
+                        <td class="atop">
+                            <table class="w100p ui-inputs-cont hidable sh_impfilter_adv">
+                                <col class="w65" />
+                                <col class="w100p" />
+                                <tbody>
+                                    <tr>
+                                        <td class="blabel" colspan="2">Data Transfer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rate (Sa/s)</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="style10130 w100p num" id="$tab$imp$index$rate" type="text" value="" data-ziconfig="int" data-zipath="/$device$/imps/$index$/demod/rate" data-zitooltip="$loc.impRate.tooltip$" />
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td></td>
+                        <td class="atop">
+                            <table class="w100p ui-inputs-cont hidable sh_impfilter_adv">
+                                <col class="w100p" />
+                                <col class="w65" />
+                                <tbody>
+                                    <tr>
+                                        <td class="blabel" colspan="2">Signal Output 1</td>
+                                    </tr>
+                                    <!--tr>
+                                        <td>Output</td>
+                                        <td>
+                                            <div class="select-wrap w100p num no-arrow" data-zitooltip="$loc.impOutput.tooltip$">
+                                                <select id="$tab$imp$index$outputselect" data-zipath="/$device$/imps/$index$/output/select" data-ziconfig="imp-outputselect-select" readonly="readonly">
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr-->
+                                    <tr>
+                                        <td class="flabel">On</td>
+                                        <td>
+                                            <a id="$tab$imp$index$outputon" class="icon-toggle btn" tabindex="0" data-zichecked="false" data-zipath="/$device$/imps/$index$/output/on" data-zitooltip="$loc.impOutputOn.tooltip$" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="flabel">Range</td>
+                                        <td>
+                                            <div class="select-wrap w100p">
+                                                <select id="$tab$imp$index$outputrange" data-zipath="/local/imps/$tab$/output/range" data-ziconfig="select-object" data-zitooltip="$loc.impOutputRange.tooltip$"></select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="$tab$tabs-4" class="tab-content" data-ziconfig="divobject">
+            <table class="w100p h100p">
+                <col style="width:250px;"></col>
+                <col class="w15"></col>
+                <col class="w100p"></col>
+                <tr>
+                    <td class="atop">
+                        <table class="ui-inputs-cont w100p">
+                            <col class="w105"></col>
+                            <col class="w100p"></col>
+                            <col class="w22"></col>
+                            <tr>
+                                <td class="flabel">Enable</td>
+                                <td colspan="2">
+                                    <a id="$tab$imp$index$enable-3" class="btn icon-toggle" tabindex="0" data-zipath="/$device$/imps/$index$/enable" data-zitooltip="$loc.impEnable.tooltip$" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

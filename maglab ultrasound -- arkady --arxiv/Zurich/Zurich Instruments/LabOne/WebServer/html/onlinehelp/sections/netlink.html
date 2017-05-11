@@ -1,0 +1,123 @@
+<section>
+  <a name="netlink"><h1>LabOne Net Link</h1></a>
+  <p>Measurement and cursor data can be downloaded from the browser as CSV data. This allows for further processing in any application that supports CSV file formats. As the data is stored internally on the web server it can be read by direct server access from other applications. Most up-to-date software supports data import from web pages or CSV files over the internet. This allows for automatic import and refresh of data sets in many applications. To perform the import the applcation needs to know the address from where to load the data. This link is supplied by the LabOne User Interface. The following chapter lists examples of how to import data into some commonly used applications.</p>
+  <p>The CSV data sent to the application is a snap-shot of the data set on the web server at the time of the request. Many applications support either manual or periodic refresh functionality.</p>
+  <p>Since tabs can be instantiated several times within the same user interface, the link is specific to the tab that it is taken from. Changing the session on the LabOne User Interface or removing tabs may invalidate the link.</p>
+  <p>Supported applications:</p>
+  <ul>
+    <li><a href="#excel">Excel</a></li>
+    <li><a href="#matlab">Matlab</a></li>
+    <li><a href="#python">Python</a></li>
+    <li><a href="#dotnet">C#.NET</a></li>
+    <li><a href="#igor">Igor Pro</a></li>
+    <!--li><a href="#octave">Octave</a></li-->
+    <li><a href="#origin">Origin</a></li>
+  </ul>
+
+  <h2><a name="excel">Excel</a></h2>
+    <p>These instructions are for Excel 2010 English. The procedure for other versions may differ.</p>
+    <p>In Excel, click on the cell where the data is to be placed. From the Data ribbon, click the "From Text" icon. The "Import Text File" dialog will appear.</p>
+    <img src="onlinehelp/img/netlink_excell_01.png" alt="Step 1"/>
+    <p></p>
+    <p>In LabOne, click the "Link" button of the appropriate Math tab. Copy the selected text from the "LabOne Net Link" dialog to the clipboard (either with Ctrl-C or by right clicking and selecting "Copy").</p>
+    <img src="onlinehelp/img/netlink_excell_02.png" alt="Step 2"/>
+    <p></p>
+    <p>In Excel, paste the link into the "File name" entry field of the "Import Text File" dialog and click the "Open" button. This will start the text import wizard. Ensure that the "Delimited" buttion is checked before clicking the "Next" button.</p>
+    <img src="onlinehelp/img/netlink_excell_03.png" alt="Step 3"/>
+    <p></p>
+    <p>In the next dialog, select the delimiter character corresponding to that selected in LabOne (this can be found in the "Sessions" section of the Config tab). The default is semicolon. Click the "Next" button.</p>
+    <img src="onlinehelp/img/netlink_excell_04.png" alt="Step 4"/>
+    <p></p>
+    <p>In the next dialog, click on "Finish" and then "OK" in the "Import Data" dialog. The data from the Math tab will now appear in the Excel sheet.</p>
+    <img src="onlinehelp/img/netlink_excell_05.png" alt="Step 5"/>
+    <p></p>
+    <p>The data in the sheet can be updated by clicking the "Refresh All" icon. To make updating the data easier, the "Import text file" dialog can be suppressed by clicking on "Properties".</p>
+    <img src="onlinehelp/img/netlink_excell_06.png" alt="Step 6"/>
+    <p></p>
+    <p> Deactivate the check box "Prompt for file name on refresh".</p>
+    <img src="onlinehelp/img/netlink_excell_07.png" alt="Step 7"/>
+  <h2><a name="matlab">Matlab</a></h2>
+    <p>By copying the link text from the "LabOne Net Link" dialog to the clipboard, the following code snippet can be used in MatLab to read the data.</p>
+    <pre>
+      <code>
+textscan(urlread(clipboard('paste')),'%s%s%f%s%d%s%s','Headerlines', 4,'Delimiter', ';')
+      </code>
+    </pre>
+  <h2><a name="python">Python</a></h2>
+    <p>The following code snippet can be used in Python to read the LabOne Net Link data, where url is assigned the text copied from the "LabOne Net Link" dialog.</p>
+    <pre>
+      <code>
+import csv
+import urllib
+url = "http://127.0.0.1:8006/netlink?id=c0p5t6p1cfplotmath&amp;ziSessionId=0"
+webpage = urllib.urlopen(url)
+datareader = csv.reader(webpage)
+data = []
+for row in datareader:
+    data.append(row)
+      </code>
+    </pre>
+  <h2><a name="dotnet">C#.NET</a></h2>
+  <p>The .NET Framework offers a WebClient object which can be used to send web requests to the LabOne WebServer and download LabOne Net Link data. The string with comma separated content can be paresed by splitting the data at comma borders.</p>
+  <pre><code>
+using System;
+using System.Text;
+using System.Net;
+
+namespace ExampleCSV
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      try
+      {
+        WebClient wc = new WebClient();
+        byte[] buffer = wc.DownloadData("http://127.0.0.1:8006/netlink?id=c0p1t6p1cfplotmath&amp;ziSessionId=0");
+        String doc = Encoding.ASCII.GetString(buffer);
+        // Parse here CSV lines and extract data
+        // ...
+        Console.WriteLine(doc);
+      } catch (Exception e) {
+        Console.WriteLine("Caught exception: " + e.Message);
+      }
+    }
+  }
+}
+       </code></pre>
+  <h2><a name="igor">Igor Pro</a></h2>
+    <p>These instructions are for Igor Pro 6.34A English. The procedure for other versions may differ. For Igor Pro, the CSV separator has to be the comma. Set this in the LabOne Config tab as follows:</p>
+    <img src="onlinehelp/img/netlink_igor_00.png" alt="Step 0"/>
+    <p></p>
+    <p>In Igor Pro, select the menu "Data->Load Waves->Load Waves...".</p>
+    <img src="onlinehelp/img/netlink_igor_01.png" alt="Step 1"/>
+    <p></p>
+    <p>In the "Load Waves" dialog, click the "File..." button and paste the link text from the "LabOne Net Link" dialog into the entry field. Then click the "Tweaks..." button to open the "Load Data Tweaks" dialog.</p>
+    <img src="onlinehelp/img/netlink_igor_02.png" alt="Step 2"/>
+    <p></p>
+    <p>Adjust values as highlighted below and click "Return". The "Loading Delimited Data" dialog will appear.</p>
+    <img src="onlinehelp/img/netlink_igor_03.png" alt="Step 3"/>
+    <p></p>
+    <p>Click the "Load" button to read the data.</p>
+    <img src="onlinehelp/img/netlink_igor_04.png" alt="Step 4"/>
+    <p></p>
+    <p>The data will appear in the Igor Pro main window.</p>
+    <img src="onlinehelp/img/netlink_igor_05.png" alt="Step 5"/>
+  <!--h2><a name="octave">Octave</a></h2-->
+  <h2><a name="origin">Origin</a></h2>
+    <p>These instructions are for Origin 9.1 English. The procedure for other versions may differ.</p> 
+    <p>Open the import wizard by clicking on the icon highlighted below.</p>
+    <img src="onlinehelp/img/netlink_origin_00.png" alt="Step 0"/>
+    <p></p>
+    <p>Ensure that the ASCII button is selected. Click the "..." button. See screenshot below. The "Import Multiple ASCII" dialog will appear.</p>
+    <img src="onlinehelp/img/netlink_origin_01.png" alt="Step 1"/>
+    <p></p>
+    <p>Paste the link text from the "LabOne Net Link" dialog" into the entry field highlighted below. Then click "Add File(s)" followed by "OK".</p>
+    <img src="onlinehelp/img/netlink_origin_02.png" alt="Step 2"/>
+    <p></p>
+    <p>Back in the "Import Wizard - Source" dialog click "Finish".</p>
+    <img src="onlinehelp/img/netlink_origin_03.png" alt="Step 3"/>
+    <p></p>
+    <p>The data will appear in the Origin main window.</p>
+    <img src="onlinehelp/img/netlink_origin_04.png" alt="Step 4"/>
+</section>
