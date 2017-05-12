@@ -22,11 +22,11 @@ http://www.zhinst.com</Property>
 		</Item>
 		<Item Name="Configure" Type="Folder">
 			<Item Name="Configure.mnu" Type="Document" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Configure/Configure.mnu"/>
-			<Item Name="ziSetValue.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Configure/ziSetValue.vi"/>
+			<Item Name="ziSetValue.vi" Type="VI" URL="../Public/Configure/ziSetValue.vi"/>
 			<Item Name="ziSetValueDouble.vi" Type="VI" URL="../Public/Configure/ziSetValueDouble.vi"/>
-			<Item Name="ziSetValueDoubleArray.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Configure/ziSetValueDoubleArray.vi"/>
-			<Item Name="ziSetValueBinary.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Configure/ziSetValueBinary.vi"/>
-			<Item Name="ziSetValueBinaryArray.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Configure/ziSetValueBinaryArray.vi"/>
+			<Item Name="ziSetValueDoubleArray.vi" Type="VI" URL="../Public/Configure/ziSetValueDoubleArray.vi"/>
+			<Item Name="ziSetValueBinary.vi" Type="VI" URL="../Public/Configure/ziSetValueBinary.vi"/>
+			<Item Name="ziSetValueBinaryArray.vi" Type="VI" URL="../Public/Configure/ziSetValueBinaryArray.vi"/>
 			<Item Name="ziSetValueDemod.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Configure/ziSetValueDemod.vi"/>
 			<Item Name="ziGetValueDouble.vi" Type="VI" URL="../Public/Configure/ziGetValueDouble.vi"/>
 			<Item Name="ziGetValueDemodSample.vi" Type="VI" URL="../Public/Configure/ziGetValueDemodSample.vi"/>
@@ -52,23 +52,23 @@ http://www.zhinst.com</Property>
 			<Item Name="ziGetEventScopeWave.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziGetEventScopeWave.vi"/>
 			<Item Name="ziGetEventTreeChange.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziGetEventTreeChange.vi"/>
 			<Item Name="ziSubscribe.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziSubscribe.vi"/>
-			<Item Name="ziSync.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziSync.vi"/>
+			<Item Name="ziSync.vi" Type="VI" URL="../Public/Data/ziSync.vi"/>
 			<Item Name="ziUnSubscribe.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziUnSubscribe.vi"/>
-			<Item Name="ziTypeAuxInSample.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeAuxInSample.ctl"/>
+			<Item Name="ziTypeAuxInSample.ctl" Type="VI" URL="../Public/Data/ziTypeAuxInSample.ctl"/>
 			<Item Name="ziTypeAuxInSampleGrid.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeAuxInSampleGrid.ctl"/>
-			<Item Name="ziTypeByteArray.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeByteArray.ctl"/>
-			<Item Name="ziTypeCounterSample.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeCounterSample.ctl"/>
-			<Item Name="ziTypeCounterSampleGrid.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeCounterSampleGrid.ctl"/>
+			<Item Name="ziTypeByteArray.ctl" Type="VI" URL="../Public/Data/ziTypeByteArray.ctl"/>
+			<Item Name="ziTypeCounterSample.ctl" Type="VI" URL="../Public/Data/ziTypeCounterSample.ctl"/>
+			<Item Name="ziTypeCounterSampleGrid.ctl" Type="VI" URL="../Public/Data/ziTypeCounterSampleGrid.ctl"/>
 			<Item Name="ziTypeDemodSample.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeDemodSample.ctl"/>
 			<Item Name="ziTypeDemodSampleExGrid.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeDemodSampleExGrid.ctl"/>
-			<Item Name="ziTypeDoubleDataTS.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeDoubleDataTS.ctl"/>
+			<Item Name="ziTypeDoubleDataTS.ctl" Type="VI" URL="../Public/Data/ziTypeDoubleDataTS.ctl"/>
 			<Item Name="ziTypeDoubleDataTSGrid.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeDoubleDataTSGrid.ctl"/>
-			<Item Name="ziTypeImpedanceSample.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeImpedanceSample.ctl"/>
-			<Item Name="ziTypeImpedanceSampleGrid.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeImpedanceSampleGrid.ctl"/>
-			<Item Name="ziTypeIntegerDataTS.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeIntegerDataTS.ctl"/>
+			<Item Name="ziTypeImpedanceSample.ctl" Type="VI" URL="../Public/Data/ziTypeImpedanceSample.ctl"/>
+			<Item Name="ziTypeImpedanceSampleGrid.ctl" Type="VI" URL="../Public/Data/ziTypeImpedanceSampleGrid.ctl"/>
+			<Item Name="ziTypeIntegerDataTS.ctl" Type="VI" URL="../Public/Data/ziTypeIntegerDataTS.ctl"/>
 			<Item Name="ziTypeIntegerDataTSGrid.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeIntegerDataTSGrid.ctl"/>
 			<Item Name="ziTypePollData.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypePollData.ctl"/>
-			<Item Name="ziTypePollType.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypePollType.ctl"/>
+			<Item Name="ziTypePollType.ctl" Type="VI" URL="../Public/Data/ziTypePollType.ctl"/>
 			<Item Name="ziTypePWAWave.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypePWAWave.ctl"/>
 			<Item Name="ziTypeScopeWave.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeScopeWave.ctl"/>
 			<Item Name="ziTypeTreeChange.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Data/ziTypeTreeChange.ctl"/>
@@ -81,24 +81,24 @@ http://www.zhinst.com</Property>
 				<Item Name="ziRawRead.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/LowLevel/ziRawRead.vi"/>
 			</Item>
 			<Item Name="Impedance" Type="Folder">
-				<Item Name="ziImpedance.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziImpedance.vi"/>
-				<Item Name="ziImpedanceCalibObtain.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziImpedanceCalibObtain.vi"/>
-				<Item Name="ziImpedanceCalibApply.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziImpedanceCalibApply.vi"/>
-				<Item Name="ziImpedanceCalibInterp.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziImpedanceCalibInterp.vi"/>
-				<Item Name="ziImpedanceCalibRefZ.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziImpedanceCalibRefZ.vi"/>
-				<Item Name="ziGetVoltage.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetVoltage.vi"/>
-				<Item Name="ziGetVoltageCalc.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetVoltageCalc.vi"/>
-				<Item Name="ziGetVoltageParams.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetVoltageParams.vi"/>
-				<Item Name="ziGetVoltageCalcVec.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetVoltageCalcVec.vi"/>
-				<Item Name="ziGetVoltageCalcVal.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetVoltageCalcVal.vi"/>
-				<Item Name="ziGetCurrent.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetCurrent.vi"/>
-				<Item Name="ziGetCurrentParams.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetCurrentParams.vi"/>
-				<Item Name="ziGetCurrentCalc.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetCurrentCalc.vi"/>
-				<Item Name="ziGetCurrentCalcVal.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetCurrentCalcVal.vi"/>
-				<Item Name="ziGetCurrentCalcVec.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziGetCurrentCalcVec.vi"/>
-				<Item Name="ziTypeCalib.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziTypeCalib.ctl"/>
-				<Item Name="ziTypeCalibModel.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziTypeCalibModel.ctl"/>
-				<Item Name="ziTypeImpedanceEqCircModel.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziTypeImpedanceEqCircModel.ctl"/>
+				<Item Name="ziImpedance.vi" Type="VI" URL="../Public/Utility/Impedance/ziImpedance.vi"/>
+				<Item Name="ziImpedanceCalibObtain.vi" Type="VI" URL="../Public/Utility/Impedance/ziImpedanceCalibObtain.vi"/>
+				<Item Name="ziImpedanceCalibApply.vi" Type="VI" URL="../Public/Utility/Impedance/ziImpedanceCalibApply.vi"/>
+				<Item Name="ziImpedanceCalibInterp.vi" Type="VI" URL="../Public/Utility/Impedance/ziImpedanceCalibInterp.vi"/>
+				<Item Name="ziImpedanceCalibRefZ.vi" Type="VI" URL="../Public/Utility/Impedance/ziImpedanceCalibRefZ.vi"/>
+				<Item Name="ziGetVoltage.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetVoltage.vi"/>
+				<Item Name="ziGetVoltageCalc.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetVoltageCalc.vi"/>
+				<Item Name="ziGetVoltageParams.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetVoltageParams.vi"/>
+				<Item Name="ziGetVoltageCalcVec.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetVoltageCalcVec.vi"/>
+				<Item Name="ziGetVoltageCalcVal.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetVoltageCalcVal.vi"/>
+				<Item Name="ziGetCurrent.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetCurrent.vi"/>
+				<Item Name="ziGetCurrentParams.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetCurrentParams.vi"/>
+				<Item Name="ziGetCurrentCalc.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetCurrentCalc.vi"/>
+				<Item Name="ziGetCurrentCalcVal.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetCurrentCalcVal.vi"/>
+				<Item Name="ziGetCurrentCalcVec.vi" Type="VI" URL="../Public/Utility/Impedance/ziGetCurrentCalcVec.vi"/>
+				<Item Name="ziTypeCalib.ctl" Type="VI" URL="../Public/Utility/Impedance/ziTypeCalib.ctl"/>
+				<Item Name="ziTypeCalibModel.ctl" Type="VI" URL="../Public/Utility/Impedance/ziTypeCalibModel.ctl"/>
+				<Item Name="ziTypeImpedanceEqCircModel.ctl" Type="VI" URL="../Public/Utility/Impedance/ziTypeImpedanceEqCircModel.ctl"/>
 				<Item Name="ziCalibContainer.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/ziCalibContainer.ctl"/>
 				<Item Name="Impedance.mnu" Type="Document" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Utility/Impedance/Impedance.mnu"/>
 			</Item>
@@ -128,43 +128,43 @@ http://www.zhinst.com</Property>
 			<Item Name="ziSetValueInt.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Obsolete/ziSetValueInt.vi"/>
 		</Item>
 		<Item Name="Modules" Type="Folder">
-			<Item Name="ziModClear.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModClear.vi"/>
-			<Item Name="ziModExecute.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModExecute.vi"/>
+			<Item Name="ziModClear.vi" Type="VI" URL="../Public/Modules/ziModClear.vi"/>
+			<Item Name="ziModExecute.vi" Type="VI" URL="../Public/Modules/ziModExecute.vi"/>
 			<Item Name="ziModFinish.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModFinish.vi"/>
-			<Item Name="ziModGetData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetData.vi"/>
-			<Item Name="ziModGetHeader.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetHeader.vi"/>
-			<Item Name="ziModGetNextNode.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetNextNode.vi"/>
-			<Item Name="ziModGetAdvisorData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetAdvisorData.vi"/>
-			<Item Name="ziModGetAuxinData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetAuxinData.vi"/>
-			<Item Name="ziModGetByteArray.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetByteArray.vi"/>
-			<Item Name="ziModGetCounterData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetCounterData.vi"/>
-			<Item Name="ziModGetDemodData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetDemodData.vi"/>
-			<Item Name="ziModGetDoubleData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetDoubleData.vi"/>
-			<Item Name="ziModGetImpedanceData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetImpedanceData.vi"/>
-			<Item Name="ziModGetIntegerData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetIntegerData.vi"/>
-			<Item Name="ziModGetSweeperData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetSweeperData.vi"/>
-			<Item Name="ziModGetZoomFFTData.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetZoomFFTData.vi"/>
-			<Item Name="ziModGetSweeperHeader.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetSweeperHeader.vi"/>
-			<Item Name="ziModGetSWTriggerHeader.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModGetSWTriggerHeader.vi"/>
+			<Item Name="ziModGetData.vi" Type="VI" URL="../Public/Modules/ziModGetData.vi"/>
+			<Item Name="ziModGetHeader.vi" Type="VI" URL="../Public/Modules/ziModGetHeader.vi"/>
+			<Item Name="ziModGetNextNode.vi" Type="VI" URL="../Public/Modules/ziModGetNextNode.vi"/>
+			<Item Name="ziModGetAdvisorData.vi" Type="VI" URL="../Public/Modules/ziModGetAdvisorData.vi"/>
+			<Item Name="ziModGetAuxinData.vi" Type="VI" URL="../Public/Modules/ziModGetAuxinData.vi"/>
+			<Item Name="ziModGetByteArray.vi" Type="VI" URL="../Public/Modules/ziModGetByteArray.vi"/>
+			<Item Name="ziModGetCounterData.vi" Type="VI" URL="../Public/Modules/ziModGetCounterData.vi"/>
+			<Item Name="ziModGetDemodData.vi" Type="VI" URL="../Public/Modules/ziModGetDemodData.vi"/>
+			<Item Name="ziModGetDoubleData.vi" Type="VI" URL="../Public/Modules/ziModGetDoubleData.vi"/>
+			<Item Name="ziModGetImpedanceData.vi" Type="VI" URL="../Public/Modules/ziModGetImpedanceData.vi"/>
+			<Item Name="ziModGetIntegerData.vi" Type="VI" URL="../Public/Modules/ziModGetIntegerData.vi"/>
+			<Item Name="ziModGetSweeperData.vi" Type="VI" URL="../Public/Modules/ziModGetSweeperData.vi"/>
+			<Item Name="ziModGetZoomFFTData.vi" Type="VI" URL="../Public/Modules/ziModGetZoomFFTData.vi"/>
+			<Item Name="ziModGetSweeperHeader.vi" Type="VI" URL="../Public/Modules/ziModGetSweeperHeader.vi"/>
+			<Item Name="ziModGetSWTriggerHeader.vi" Type="VI" URL="../Public/Modules/ziModGetSWTriggerHeader.vi"/>
 			<Item Name="ziModRead.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModRead.vi"/>
-			<Item Name="ziModSetValue.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModSetValue.vi"/>
-			<Item Name="ziModSetValueBinary.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModSetValueBinary.vi"/>
-			<Item Name="ziModSetValueDouble.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModSetValueDouble.vi"/>
-			<Item Name="ziModSetValueBinaryArray.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModSetValueBinaryArray.vi"/>
-			<Item Name="ziModSetValueDoubleArray.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModSetValueDoubleArray.vi"/>
-			<Item Name="ziModStart.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModStart.vi"/>
+			<Item Name="ziModSetValue.vi" Type="VI" URL="../Public/Modules/ziModSetValue.vi"/>
+			<Item Name="ziModSetValueBinary.vi" Type="VI" URL="../Public/Modules/ziModSetValueBinary.vi"/>
+			<Item Name="ziModSetValueDouble.vi" Type="VI" URL="../Public/Modules/ziModSetValueDouble.vi"/>
+			<Item Name="ziModSetValueBinaryArray.vi" Type="VI" URL="../Public/Modules/ziModSetValueBinaryArray.vi"/>
+			<Item Name="ziModSetValueDoubleArray.vi" Type="VI" URL="../Public/Modules/ziModSetValueDoubleArray.vi"/>
+			<Item Name="ziModStart.vi" Type="VI" URL="../Public/Modules/ziModStart.vi"/>
 			<Item Name="ziModStatus.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModStatus.vi"/>
-			<Item Name="ziModSubscribe.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModSubscribe.vi"/>
+			<Item Name="ziModSubscribe.vi" Type="VI" URL="../Public/Modules/ziModSubscribe.vi"/>
 			<Item Name="ziModUnSubscribe.vi" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziModUnSubscribe.vi"/>
-			<Item Name="ziTypeModHandle.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModHandle.ctl"/>
-			<Item Name="ziTypeModSpectrumWave.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModSpectrumWave.ctl"/>
-			<Item Name="ziTypeModResults.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModResults.ctl"/>
-			<Item Name="ziTypeModAdvisorWave.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModAdvisorWave.ctl"/>
-			<Item Name="ziTypeModSWTriggerHeader.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModSWTriggerHeader.ctl"/>
-			<Item Name="ziTypeModSweeperDemodWave.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModSweeperDemodWave.ctl"/>
-			<Item Name="ziTypeModSweeperDoubleWave.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModSweeperDoubleWave.ctl"/>
-			<Item Name="ziTypeModSweeperImpedanceWave.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModSweeperImpedanceWave.ctl"/>
-			<Item Name="ziTypeModSweeperHeader.ctl" Type="VI" URL="/&lt;instrlib&gt;/Zurich Instruments LabOne/Public/Modules/ziTypeModSweeperHeader.ctl"/>
+			<Item Name="ziTypeModHandle.ctl" Type="VI" URL="../Public/Modules/ziTypeModHandle.ctl"/>
+			<Item Name="ziTypeModSpectrumWave.ctl" Type="VI" URL="../Public/Modules/ziTypeModSpectrumWave.ctl"/>
+			<Item Name="ziTypeModResults.ctl" Type="VI" URL="../Public/Modules/ziTypeModResults.ctl"/>
+			<Item Name="ziTypeModAdvisorWave.ctl" Type="VI" URL="../Public/Modules/ziTypeModAdvisorWave.ctl"/>
+			<Item Name="ziTypeModSWTriggerHeader.ctl" Type="VI" URL="../Public/Modules/ziTypeModSWTriggerHeader.ctl"/>
+			<Item Name="ziTypeModSweeperDemodWave.ctl" Type="VI" URL="../Public/Modules/ziTypeModSweeperDemodWave.ctl"/>
+			<Item Name="ziTypeModSweeperDoubleWave.ctl" Type="VI" URL="../Public/Modules/ziTypeModSweeperDoubleWave.ctl"/>
+			<Item Name="ziTypeModSweeperImpedanceWave.ctl" Type="VI" URL="../Public/Modules/ziTypeModSweeperImpedanceWave.ctl"/>
+			<Item Name="ziTypeModSweeperHeader.ctl" Type="VI" URL="../Public/Modules/ziTypeModSweeperHeader.ctl"/>
 		</Item>
 		<Item Name="ziIDToServer.vi" Type="VI" URL="../Public/ziIDToServer.vi"/>
 		<Item Name="ziClose.vi" Type="VI" URL="../Public/ziClose.vi"/>
