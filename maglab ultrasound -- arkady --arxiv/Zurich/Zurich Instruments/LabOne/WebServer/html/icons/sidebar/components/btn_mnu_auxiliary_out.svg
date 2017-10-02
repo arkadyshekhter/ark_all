@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<!--generated document-->
-<!--Copyright (c) 2012 Zurich Instruments AG, www.zhinst.com-->
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="64px" height="64px"><g><line style="fill:none;stroke:#172983;stroke-width:3;" x1="11" y1="26.5" x2="36" y2="26.5"/><polyline points="17,38 17,45 49,45" style="fill:none;stroke:#172983;stroke-width:2"/><path style="fill:#172983;" d="M17 29 l-5,10 10,0 Z"/><polyline points="30,30 30,36 41,36" style="fill:none;stroke:#172983;stroke-width:2"/><path style="fill:#172983;" d="M50 36 l-10,-5 0,10 Z"/></g>
-        --&gt;
-        
-      </svg>
