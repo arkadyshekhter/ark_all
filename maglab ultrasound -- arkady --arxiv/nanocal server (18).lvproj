@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="18008000">
-	<Property Name="varPersistentID:{37CCB6C3-C3D6-4B44-96C7-2C601BB3A668}" Type="Ref">/My Computer/frondend -- data.lvlib/data</Property>
+	<Property Name="varPersistentID:{C464DE30-C51F-4021-BC52-5D98065B6591}" Type="Ref">/My Computer/fronenddatatypelib.lvlib/data</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -11,8 +11,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="frondend -- data.lvlib" Type="Library" URL="../frondend -- data.lvlib"/>
-		<Item Name="frontend -- data type.ctl" Type="VI" URL="../frontend -- data type.ctl"/>
+		<Item Name="fronenddatatypelib.lvlib" Type="Library" URL="../frontend -- data type -- folder/fronenddatatypelib.lvlib"/>
 		<Item Name="nanocal frontend 18.vi" Type="VI" URL="../nanocal frontend 18.vi"/>
 		<Item Name="NanoCalLib.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/NanoCalLib.lvlibp">
 			<Item Name="Front panel" Type="Folder">
@@ -135,6 +134,7 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/AttoTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/AttoTCP.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
+			<Item Name="frontend -- data type.ctl" Type="VI" URL="../frontend -- data type -- folder/frontend -- data type.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="MCL.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/MCL.lvlibp">
 				<Item Name="Application" Type="Folder">

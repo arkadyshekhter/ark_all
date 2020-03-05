@@ -8,12 +8,15 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Item Name="data" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
-		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:AccessType" Type="Str">read/write</Property>
+		<Property Name="Network:ProjectBinding" Type="Str">False</Property>
+		<Property Name="Network:URL" Type="Str">\\146.201.231.54\nanocal_frontend_data\data</Property>
+		<Property Name="Network:UseBinding" Type="Str">True</Property>
 		<Property Name="Network:UseBuffering" Type="Str">False</Property>
-		<Property Name="numTypedefs" Type="UInt">1</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typedefName1" Type="Str">frontend -- data type.ctl</Property>
-		<Property Name="typedefPath1" Type="PathRel">../frontend -- data type.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#/CA!!!"A!A!!!!!!$!"6!#A!/:H*F=86F&lt;G.Z)#B)?CE!!"&amp;!#A!,1S^5)#B+,UN?-CE!2!$RWI9FPA!!!!%::H*P&lt;H2F&lt;G1A,3UA:'&amp;U93"U?8"F,G.U&lt;!!C1&amp;!!!A!!!!%3:H*P&lt;H2F&lt;G1A:'&amp;U93"U?8"F!!!"!!)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typedefPath1" Type="PathRel">../frontend -- data type -- folder/frontend -- data type.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!D(Q!!!"A!A!!!!!!"!!V!"A!'65FO&gt;$%W!!!"!!!!!!!!!!!!!!!!</Property>
 	</Item>
 </Library>
