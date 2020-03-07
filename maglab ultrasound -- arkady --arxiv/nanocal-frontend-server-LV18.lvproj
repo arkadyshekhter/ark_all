@@ -171,7 +171,7 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/AttoTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/AttoTCP.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
-			<Item Name="frontend -- data type.ctl" Type="VI" URL="../frontend -- data type -- folder/frontend -- data type.ctl"/>
+			<Item Name="icicle.ctl" Type="VI" URL="../nanocal server folder LV18/icicle.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="MCL.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/MCL.lvlibp">
 				<Item Name="Application" Type="Folder">
@@ -441,6 +441,9 @@
 				<Item Name="MCL_LVMenuShortCut.ctl" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/MCL.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/MCL_LVMenuShortCut.ctl"/>
 				<Item Name="About SynkTek MCL.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/MCL.lvlibp/For building/About SynkTek MCL.vi"/>
 			</Item>
+			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../nanocal server folder LV18/nanocal publish -- frontpanel.vi"/>
+			<Item Name="nanocal-frontend -- data type.ctl" Type="VI" URL="../nanocal server folder LV18/nanocal-frontend -- data type.ctl"/>
+			<Item Name="publisher action.ctl" Type="VI" URL="../nanocal server folder LV18/publisher action.ctl"/>
 			<Item Name="QTCP.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Internecine Avoider.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/Internecine Avoider.vi"/>
