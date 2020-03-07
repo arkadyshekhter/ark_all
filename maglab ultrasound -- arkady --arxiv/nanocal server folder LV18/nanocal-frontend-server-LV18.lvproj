@@ -10,7 +10,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="nanocal-frontend-server-18.vi" Type="VI" URL="../nanocal server folder LV18/nanocal-frontend-server-18.vi"/>
+		<Item Name="nanocal-frontend-server-18.vi" Type="VI" URL="../nanocal-frontend-server-18.vi"/>
 		<Item Name="NanoCalLib.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/NanoCalLib.lvlibp">
 			<Item Name="Front panel" Type="Folder">
 				<Item Name="NanoCal_FrontPanel.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/NanoCalLib.lvlibp/NanoCal/NanoCal_FrontPanel.vi"/>
