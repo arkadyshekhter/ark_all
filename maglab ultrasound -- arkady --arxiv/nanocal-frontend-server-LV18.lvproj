@@ -11,6 +11,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="nanocal-frontend-server-18.vi" Type="VI" URL="../nanocal server folder LV18/nanocal-frontend-server-18.vi"/>
+		<Item Name="nanocal-frontend-tcplink-server-LV18 -- V2.vi" Type="VI" URL="../nanocal server folder LV18/nanocal-frontend-tcplink-server-LV18 -- V2.vi"/>
 		<Item Name="nanocal-frontend-tcplink-server-LV18.vi.vi" Type="VI" URL="../nanocal-frontend-tcplink-server-LV18.vi.vi"/>
 		<Item Name="NanoCalLib.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/NanoCalLib.lvlibp">
 			<Item Name="Front panel" Type="Folder">
@@ -442,7 +443,6 @@
 				<Item Name="About SynkTek MCL.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/MCL.lvlibp/For building/About SynkTek MCL.vi"/>
 			</Item>
 			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../nanocal server folder LV18/nanocal publish -- frontpanel.vi"/>
-			<Item Name="nanocal-frontend -- data type.ctl" Type="VI" URL="../nanocal server folder LV18/nanocal-frontend -- data type.ctl"/>
 			<Item Name="publisher action.ctl" Type="VI" URL="../nanocal server folder LV18/publisher action.ctl"/>
 			<Item Name="QTCP.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -456,6 +456,8 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="TCP Multiple Connections Data.ctl" Type="VI" URL="../nanocal server folder LV18/TCP Multiple Connections example/controls/TCP Multiple Connections Data.ctl"/>
+			<Item Name="TCP Multiple Connections State.ctl" Type="VI" URL="../nanocal server folder LV18/TCP Multiple Connections example/controls/TCP Multiple Connections State.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
