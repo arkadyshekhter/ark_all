@@ -68,6 +68,7 @@ The server VI in this example shows a usage of the Simple State Machine project 
 		<Item Name="TCP Multiple Connections - Server.vi" Type="VI" URL="../TCP Multiple Connections - Server.vi"/>
 		<Item Name="TCP Multiple Connections - Client 1.vi" Type="VI" URL="../TCP Multiple Connections - Client 1.vi"/>
 		<Item Name="TCP Multiple Connections - Client 2.vi" Type="VI" URL="../TCP Multiple Connections - Client 2.vi"/>
+		<Item Name="nanocal-frontend-tcplink-client-LV19 -- V2.vi" Type="VI" URL="../../nanocal-frontend-tcplink-client-LV19 -- V2.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -102,6 +103,10 @@ The server VI in this example shows a usage of the Simple State Machine project 
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 			</Item>
+			<Item Name="icicle.ctl" Type="VI" URL="../../nanocal server folder LV18/icicle.ctl"/>
+			<Item Name="publisher action.ctl" Type="VI" URL="../../nanocal server folder LV18/publisher action.ctl"/>
+			<Item Name="nanocal-frontend -- data type.ctl" Type="VI" URL="../../nanocal server folder LV18/nanocal-frontend -- data type.ctl"/>
+			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../../nanocal server folder LV18/nanocal publish -- frontpanel.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
