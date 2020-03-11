@@ -69,6 +69,7 @@ The server VI in this example shows a usage of the Simple State Machine project 
 		<Item Name="TCP Multiple Connections - Client 1.vi" Type="VI" URL="../TCP Multiple Connections - Client 1.vi"/>
 		<Item Name="TCP Multiple Connections - Client 2.vi" Type="VI" URL="../TCP Multiple Connections - Client 2.vi"/>
 		<Item Name="nanocal-frontend-tcplink-client-LV19 -- V2.vi" Type="VI" URL="../../nanocal-frontend-tcplink-client-LV19 -- V2.vi"/>
+		<Item Name="nanocal-frontend-tcplink-client-LV19.vi" Type="VI" URL="../../nanocal-frontend-tcplink-client-LV19.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
