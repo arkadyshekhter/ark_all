@@ -10,6 +10,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="arydh -- get all readings.vi" Type="VI" URL="../nanocal server folder LV18/arydh -- get all readings.vi"/>
+		<Item Name="nanocal - config.ctl" Type="VI" URL="../nanocal server folder LV18/nanocal - config.ctl"/>
 		<Item Name="nanocal-frontend-server-18.vi" Type="VI" URL="../nanocal server folder LV18/nanocal-frontend-server-18.vi"/>
 		<Item Name="nanocal-frontend-tcplink-server-LV18 -- V2.vi" Type="VI" URL="../nanocal server folder LV18/nanocal-frontend-tcplink-server-LV18 -- V2.vi"/>
 		<Item Name="nanocal-frontend-tcplink-server-LV18.vi.vi" Type="VI" URL="../nanocal-frontend-tcplink-server-LV18.vi.vi"/>
