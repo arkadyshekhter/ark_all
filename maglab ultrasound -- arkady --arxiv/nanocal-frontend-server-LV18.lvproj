@@ -101,13 +101,9 @@
 		<Item Name="resistoricicle.ctl" Type="VI" URL="../nanocal server folder LV18/resistoricicle.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Assert Block Data Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Block Data Type.vim"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
-				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
-				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -116,7 +112,6 @@
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
-				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
@@ -125,32 +120,15 @@
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="Internecine Avoider.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/Internecine Avoider.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
-				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
-				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
-				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
-				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
-				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
-				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
-				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
-				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
-				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="Sort 2D Array - Pop Stack.vi" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array - Pop Stack.vi"/>
-				<Item Name="Sort 2D Array - Push Stack.vi" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array - Push Stack.vi"/>
-				<Item Name="Sort 2D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array.vim"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="TCP Listen Internal List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen Internal List.vi"/>
 				<Item Name="TCP Listen List Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen List Operations.ctl"/>
@@ -159,18 +137,7 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
-				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
-				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
-				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
-				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
-			<Item Name="2Dwindow-bounds.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/2Dwindow-bounds.ctl"/>
-			<Item Name="2Dwindow.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/2Dwindow.ctl"/>
-			<Item Name="acquire cursor window data.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/acquire cursor window data.vi"/>
-			<Item Name="aggregator - vii - complex - atomic.vi" Type="VI" URL="../nanocal server folder LV18/aggregator - vii - complex - atomic.vi"/>
-			<Item Name="aggregator - vii - real - atomic.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/aggregator - vii - real - atomic.vi"/>
-			<Item Name="agregator -- action.ctl" Type="VI" URL="../nanocal server folder LV18/agregator -- action.ctl"/>
 			<Item Name="AMI_PanelTCP.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/AMI_PanelTCP.lvlibp">
 				<Item Name="Tester panel" Type="Folder">
 					<Item Name="AMI_PanelTCP_Client.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/AMI_PanelTCP.lvlibp/AMI_PanelTCP_Client.vi"/>
@@ -184,16 +151,7 @@
 				</Item>
 				<Item Name="Space Constant.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/AMI_PanelTCP.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
-			<Item Name="array - generate range V3.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/array - generate range V3.vi"/>
-			<Item Name="array - generate range.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/array - generate range.vi"/>
-			<Item Name="array - smart min max.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/array - smart min max.vi"/>
-			<Item Name="array -- sort 2D array -- Complex.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/array -- sort 2D array -- Complex.vi"/>
-			<Item Name="Arydh  lockin fields.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/Arydh  lockin fields.ctl"/>
 			<Item Name="arydh -- get one readings.vi" Type="VI" URL="../nanocal server folder LV18/arydh -- get one readings.vi"/>
-			<Item Name="ARydh -- publish -- handle.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/ARydh -- publish -- handle.vi"/>
-			<Item Name="ARydh_get_voltage -- V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/ARydh_get_voltage -- V1.vi"/>
-			<Item Name="ARydh_set_freq-and-get--V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/ARydh_set_freq-and-get--V1.vi"/>
-			<Item Name="ARydh_set_frequency -- V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/ARydh_set_frequency -- V1.vi"/>
 			<Item Name="AttoTCP.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/AttoTCP.lvlibp">
 				<Item Name="Top level" Type="Folder">
 					<Item Name="AttoTCP_Client_Caller.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/AttoTCP.lvlibp/AttoTCP_Client_Caller.vi"/>
@@ -223,77 +181,8 @@
 				<Item Name="Space Constant.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/AttoTCP.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
 			<Item Name="channelicicle.ctl" Type="VI" URL="../nanocal server folder LV18/channelicicle.ctl"/>
-			<Item Name="circle center from three points.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/circle center from three points.vi"/>
-			<Item Name="circle corners.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/circle corners.ctl"/>
-			<Item Name="command stack.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/command stack.vi"/>
-			<Item Name="comparison control.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/comparison control.ctl"/>
-			<Item Name="construct lorentzian - V2.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/construct lorentzian - V2.vi"/>
-			<Item Name="containing bix.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/containing bix.vi"/>
-			<Item Name="cursor action.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/cursor action.ctl"/>
-			<Item Name="cursor sate.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/cursor sate.ctl"/>
-			<Item Name="cursor window action stack.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/cursor window action stack.vi"/>
-			<Item Name="cursor window action.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/cursor window action.ctl"/>
-			<Item Name="cursor window logic V3.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/cursor window logic V3.vi"/>
-			<Item Name="cursor window state.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/cursor window state.ctl"/>
-			<Item Name="cursor winow.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/cursor winow.ctl"/>
-			<Item Name="data source action.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/data source action.ctl"/>
-			<Item Name="draw - 4 corner circle.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/draw - 4 corner circle.vi"/>
-			<Item Name="draw -- set cursors for lorenzian.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/draw -- set cursors for lorenzian.vi"/>
-			<Item Name="draw a circle.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/draw a circle.vi"/>
-			<Item Name="draw a line.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/draw a line.vi"/>
-			<Item Name="draw complex lorentzian.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/draw complex lorentzian.vi"/>
 			<Item Name="engine reading icicle.ctl" Type="VI" URL="../nanocal server folder LV18/engine reading icicle.ctl"/>
-			<Item Name="file - read-write - list of lines.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/file - read-write - list of lines.vi"/>
-			<Item Name="file -- 9w path.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/file -- 9w path.vi"/>
-			<Item Name="file -- get unique increment name.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/file -- get unique increment name.vi"/>
-			<Item Name="file -- read-write control.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/file -- read-write control.ctl"/>
-			<Item Name="filename-action.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/filename-action.ctl"/>
-			<Item Name="filename-generate-six-digit-thing.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/filename-generate-six-digit-thing.vi"/>
-			<Item Name="filename-manage.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/filename-manage.vi"/>
-			<Item Name="filename-pattern.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/filename-pattern.ctl"/>
-			<Item Name="filter - complex - four.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/filter - complex - four.vi"/>
-			<Item Name="filter -- window span logic.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/filter -- window span logic.vi"/>
-			<Item Name="filter method control.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/filter method control.ctl"/>
-			<Item Name="four-corner circle transformation.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/four-corner circle transformation.ctl"/>
-			<Item Name="FPGASharedResources_DutyCycleCtrl_Typedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_DutyCycleCtrl_Typedef.ctl"/>
-			<Item Name="FPGASharedResources_FreqCtrl_FreqGenTypedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_FreqCtrl_FreqGenTypedef.ctl"/>
-			<Item Name="FPGASharedResources_HarmonicTypdef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_HarmonicTypdef.ctl"/>
-			<Item Name="FPGASharedResources_Lockin_Typedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_Lockin_Typedef.ctl"/>
-			<Item Name="FPGASharedResources_LockinTypeTypedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_LockinTypeTypedef.ctl"/>
-			<Item Name="FPGASharedResources_PhaseShiftCtrl_Typedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_PhaseShiftCtrl_Typedef.ctl"/>
-			<Item Name="freq scan type.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/freq scan type.ctl"/>
-			<Item Name="generate linear region.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/generate linear region.vi"/>
-			<Item Name="gyro -- async fitter.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- async fitter.vi"/>
-			<Item Name="gyro -- async sweeper parameters.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- async sweeper parameters.ctl"/>
-			<Item Name="gyro -- async sweeper.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- async sweeper.vi"/>
-			<Item Name="gyro -- launch async fitter.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- launch async fitter.vi"/>
-			<Item Name="gyro -- launch async pll.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- launch async pll.vi"/>
-			<Item Name="gyro -- launch async sourcer.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- launch async sourcer.vi"/>
-			<Item Name="gyro -- launch async sweeper server.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- launch async sweeper server.vi"/>
-			<Item Name="gyro -- launch async sweeper.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- launch async sweeper.vi"/>
-			<Item Name="gyro -- sourcer async - V3 -- arydh.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- sourcer async - V3 -- arydh.vi"/>
-			<Item Name="gyro -- sourcer async - V3 -- mfli.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro -- sourcer async - V3 -- mfli.vi"/>
-			<Item Name="gyro pll async.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro pll async.vi"/>
-			<Item Name="gyro-sweeper-module-V3.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/gyro-sweeper-module-V3.vi"/>
 			<Item Name="icicle.ctl" Type="VI" URL="../nanocal server folder LV18/icicle.ctl"/>
-			<Item Name="interpolation state - complex.ctl" Type="VI" URL="../nanocal server folder LV18/interpolation state - complex.ctl"/>
-			<Item Name="interpolation state - real.ctl" Type="VI" URL="../nanocal server folder LV18/interpolation state - real.ctl"/>
-			<Item Name="KM_appendline -- freq sweep.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/KM_appendline -- freq sweep.vi"/>
-			<Item Name="KM_file - read-write - list of lines.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/KM_file - read-write - list of lines.vi"/>
-			<Item Name="KM_file -- read-write control.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/KM_file -- read-write control.ctl"/>
-			<Item Name="KM_filter pipe - plot staff - more - V3.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/KM_filter pipe - plot staff - more - V3.vi"/>
-			<Item Name="KM_peak -- find -- pm - V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/KM_peak -- find -- pm - V1.vi"/>
-			<Item Name="LIControl_FreqCtrl_typedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek Host/LIControl/LIControl_FreqCtrl_typedef.ctl"/>
-			<Item Name="LIControl_LockinCtrl_typedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek Host/LIControl/LIControl_LockinCtrl_typedef.ctl"/>
-			<Item Name="LIControl_LockinTimeConstant_typedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek Host/LIControl/LIControl_LockinTimeConstant_typedef.ctl"/>
-			<Item Name="LIData_DataReadings_typedef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/SynkTek Host/LIdata/LIData_DataReadings_typedef.ctl"/>
-			<Item Name="line -- complex.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/line -- complex.vi"/>
-			<Item Name="linear interp iiii- complex - z-omega - divide.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/linear interp iiii- complex - z-omega - divide.vi"/>
-			<Item Name="linear interp iiii- complex - z-omega.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/linear interp iiii- complex - z-omega.vi"/>
-			<Item Name="linear interpolation - real.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/linear interpolation - real.vi"/>
-			<Item Name="linear interpolation iiii- complex.vi" Type="VI" URL="../nanocal server folder LV18/linear interpolation iiii- complex.vi"/>
-			<Item Name="lorentzian transformations.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/lorentzian transformations.vi"/>
-			<Item Name="lorentzian.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/lorentzian.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="MCL.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/MCL.lvlibp">
 				<Item Name="Application" Type="Folder">
@@ -563,65 +452,8 @@
 				<Item Name="MCL_LVMenuShortCut.ctl" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/MCL.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/MCL_LVMenuShortCut.ctl"/>
 				<Item Name="About SynkTek MCL.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/MCL.lvlibp/For building/About SynkTek MCL.vi"/>
 			</Item>
-			<Item Name="MCL_DataRef.ctl" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_DataRef.ctl"/>
-			<Item Name="MCL_Get_DataReadings.vi" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_Get_DataReadings.vi"/>
-			<Item Name="MCL_Get_FrequencyCtrl.vi" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_Get_FrequencyCtrl.vi"/>
-			<Item Name="MCL_Get_PhaseShiftCtrl.vi" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_Get_PhaseShiftCtrl.vi"/>
-			<Item Name="MCL_Get_SynchronousReadings.vi" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_Get_SynchronousReadings.vi"/>
-			<Item Name="MCL_Init.vi" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_Init.vi"/>
-			<Item Name="MCL_Set_FrequencyCtrl.vi" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_Set_FrequencyCtrl.vi"/>
-			<Item Name="MCL_Set_LockinCtrl.vi" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_Set_LockinCtrl.vi"/>
-			<Item Name="MCL_Set_PhaseShiftCtrl.vi" Type="VI" URL="../nanocal/Nanocalorimetry/data/MCL.lvlibp/MCL library/MCL_Set_PhaseShiftCtrl.vi"/>
-			<Item Name="MFLI -- publish -- freq scan.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI -- publish -- freq scan.vi"/>
-			<Item Name="MFLI -- publish -- mfli handle.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI -- publish -- mfli handle.vi"/>
-			<Item Name="MFLI -- publish -- progress.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI -- publish -- progress.vi"/>
-			<Item Name="MFLI frontend action.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI frontend action.ctl"/>
-			<Item Name="mfli reader event.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/mfli reader event.ctl"/>
-			<Item Name="MFLI_api -- V2.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI_api -- V2.vi"/>
-			<Item Name="MFLI_get_voltage -- V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI_get_voltage -- V1.vi"/>
-			<Item Name="MFLI_set_amplitude -- V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI_set_amplitude -- V1.vi"/>
-			<Item Name="MFLI_set_datarate -- V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI_set_datarate -- V1.vi"/>
-			<Item Name="MFLI_set_freq-and-get--V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI_set_freq-and-get--V1.vi"/>
-			<Item Name="MFLI_set_frequency -- V1.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/MFLI_set_frequency -- V1.vi"/>
 			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../nanocal server folder LV18/nanocal publish -- frontpanel.vi"/>
-			<Item Name="peak - fit phase around center - V2.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak - fit phase around center - V2.vi"/>
-			<Item Name="peak -- estimate for lorentzian.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- estimate for lorentzian.vi"/>
-			<Item Name="peak -- fake phase around center.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- fake phase around center.vi"/>
-			<Item Name="peak -- fit function -- minus arctan.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- fit function -- minus arctan.vi"/>
-			<Item Name="peak -- four corner circle transformation logic.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- four corner circle transformation logic.vi"/>
-			<Item Name="peak -- get weights.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- get weights.vi"/>
-			<Item Name="peak -- guess at omega -- dzdomega V2.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- guess at omega -- dzdomega V2.vi"/>
-			<Item Name="peak -- parameters -- complex fit.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- parameters -- complex fit.ctl"/>
-			<Item Name="peak -- PM find lorenzian - V3.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- PM find lorenzian - V3.vi"/>
-			<Item Name="peak -- z center from mult phase points.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/peak -- z center from mult phase points.vi"/>
-			<Item Name="PID - mode.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PID - mode.ctl"/>
-			<Item Name="pid -- parameters.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/pid -- parameters.ctl"/>
-			<Item Name="PID action.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PID action.ctl"/>
-			<Item Name="PLL -- data source -- V3 -- arydh.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PLL -- data source -- V3 -- arydh.vi"/>
-			<Item Name="PLL -- data source -- V3 -- meta.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PLL -- data source -- V3 -- meta.vi"/>
-			<Item Name="PLL -- data source -- V3 -- mfli.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PLL -- data source -- V3 -- mfli.vi"/>
-			<Item Name="PLL -- data source -- V3 -- wrapper.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PLL -- data source -- V3 -- wrapper.vi"/>
-			<Item Name="PLL -- data source -- V3.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PLL -- data source -- V3.vi"/>
-			<Item Name="PLL analyzer -- PID -- V2.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PLL analyzer -- PID -- V2.vi"/>
-			<Item Name="PLL data source.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/PLL data source.ctl"/>
-			<Item Name="pll internal user event action.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/pll internal user event action.ctl"/>
-			<Item Name="pll parameters.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/pll parameters.ctl"/>
-			<Item Name="pll talkback data type.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/pll talkback data type.ctl"/>
-			<Item Name="plot refs -- filter related.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/plot refs -- filter related.ctl"/>
-			<Item Name="publish -- fitter window.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/publish -- fitter window.vi"/>
-			<Item Name="publish -- get frequency and voltage.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/publish -- get frequency and voltage.vi"/>
-			<Item Name="publish -- lorentzian.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/publish -- lorentzian.vi"/>
-			<Item Name="publish -- pll parameters.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/publish -- pll parameters.vi"/>
-			<Item Name="publish -- pll result.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/publish -- pll result.vi"/>
-			<Item Name="publish -- set frequency.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/publish -- set frequency.vi"/>
-			<Item Name="publish -- sweeper window.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/publish -- sweeper window.vi"/>
 			<Item Name="publisher action.ctl" Type="VI" URL="../nanocal server folder LV18/publisher action.ctl"/>
-			<Item Name="Q - not nan -- integer.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/Q - not nan -- integer.vi"/>
-			<Item Name="Q - not nan -- real.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/Q - not nan -- real.vi"/>
-			<Item Name="Q - not nan and gtr than zero - Real.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/Q - not nan and gtr than zero - Real.vi"/>
-			<Item Name="Q -- check range -- i -- integer.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/Q -- check range -- i -- integer.vi"/>
-			<Item Name="Q -- check range -- i -- real.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/Q -- check range -- i -- real.vi"/>
-			<Item Name="Q -- range multiplier -- real -- V2.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/Q -- range multiplier -- real -- V2.vi"/>
 			<Item Name="QTCP.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Internecine Avoider.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/Internecine Avoider.vi"/>
@@ -634,29 +466,8 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="range multiplier action.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/range multiplier action.ctl"/>
-			<Item Name="replace cursor - plot ref - V2.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/replace cursor - plot ref - V2.vi"/>
-			<Item Name="replace cursor - plot ref.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/replace cursor - plot ref.vi"/>
-			<Item Name="replace cursor action stack.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/replace cursor action stack.vi"/>
-			<Item Name="server talk-to-back pair.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/server talk-to-back pair.ctl"/>
-			<Item Name="server talkback message type.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/server talkback message type.ctl"/>
-			<Item Name="server talkto message type.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/server talkto message type.ctl"/>
-			<Item Name="show-win- control.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/show-win- control.ctl"/>
-			<Item Name="stack action -- control.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/stack action -- control.ctl"/>
-			<Item Name="tale of three indices -- check state.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/tale of three indices -- check state.vi"/>
-			<Item Name="tale of three indices -- int -- control.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/tale of three indices -- int -- control.ctl"/>
-			<Item Name="tale of three indices -- selector -- control.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/tale of three indices -- selector -- control.ctl"/>
-			<Item Name="tale of three indices --state.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/tale of three indices --state.ctl"/>
-			<Item Name="tale of three indices.vi" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/tale of three indices.vi"/>
 			<Item Name="TCP Multiple Connections Data.ctl" Type="VI" URL="../nanocal server folder LV18/TCP Multiple Connections example/controls/TCP Multiple Connections Data.ctl"/>
 			<Item Name="TCP Multiple Connections State.ctl" Type="VI" URL="../nanocal server folder LV18/TCP Multiple Connections example/controls/TCP Multiple Connections State.ctl"/>
-			<Item Name="wavepacket.ctl" Type="VI" URL="../nanocal server folder LV18/copy of gyro pll V3 for LV18/wavepacket.ctl"/>
-			<Item Name="ziCheckVersion.vi" Type="VI" URL="../../../Applications/National Instruments/LabVIEW 2019 64-bit/instr.lib/Zurich Instruments LabOne/Public/Utility/ziCheckVersion.vi"/>
-			<Item Name="ziClose.vi" Type="VI" URL="../../../Applications/National Instruments/LabVIEW 2019 64-bit/instr.lib/Zurich Instruments LabOne/Public/ziClose.vi"/>
-			<Item Name="ziGetValueDemodSample.vi" Type="VI" URL="../../../Applications/National Instruments/LabVIEW 2019 64-bit/instr.lib/Zurich Instruments LabOne/Public/Configure/ziGetValueDemodSample.vi"/>
-			<Item Name="ziOpen.vi" Type="VI" URL="../../../Applications/National Instruments/LabVIEW 2019 64-bit/instr.lib/Zurich Instruments LabOne/Public/ziOpen.vi"/>
-			<Item Name="ziSetValueDouble.vi" Type="VI" URL="../../../Applications/National Instruments/LabVIEW 2019 64-bit/instr.lib/Zurich Instruments LabOne/Public/Configure/ziSetValueDouble.vi"/>
-			<Item Name="ziTypeHandle.ctl" Type="VI" URL="../../../Applications/National Instruments/LabVIEW 2019 64-bit/instr.lib/Zurich Instruments LabOne/Public/ziTypeHandle.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
