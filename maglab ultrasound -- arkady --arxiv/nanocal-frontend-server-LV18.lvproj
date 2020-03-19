@@ -365,6 +365,18 @@
 			<Item Name="User_PrepareVIForEmbedded.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/NanoCalLib.lvlibp/User etc/User_PrepareVIForEmbedded.vi"/>
 		</Item>
 		<Item Name="publish -- pick nameed element.vi" Type="VI" URL="../nanocal server folder LV18/publish -- pick nameed element.vi"/>
+		<Item Name="QTCP.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp">
+			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+			<Item Name="Internecine Avoider.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/Internecine Avoider.vi"/>
+			<Item Name="QTCP_Client_Read.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/QTCP_Client_Read.vi"/>
+			<Item Name="QTCP_Server_GetCommand.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/QTCP_Server_GetCommand.vi"/>
+			<Item Name="QTCP_Server_Reply.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/QTCP_Server_Reply.vi"/>
+			<Item Name="TCP Listen Internal List.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/TCP Listen Internal List.vi"/>
+			<Item Name="TCP Listen List Operations.ctl" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/TCP Listen List Operations.ctl"/>
+			<Item Name="TCP Listen.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/TCP Listen.vi"/>
+			<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+			<Item Name="whitespace.ctl" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+		</Item>
 		<Item Name="resistoricicle.ctl" Type="VI" URL="../nanocal server folder LV18/resistoricicle.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -454,18 +466,6 @@
 			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../nanocal server folder LV18/nanocal publish -- frontpanel.vi"/>
 			<Item Name="nanocal-frontend -- data type.ctl" Type="VI" URL="../nanocal server folder LV18/nanocal-frontend -- data type.ctl"/>
 			<Item Name="publisher action.ctl" Type="VI" URL="../nanocal server folder LV18/publisher action.ctl"/>
-			<Item Name="QTCP.lvlibp" Type="LVLibp" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Internecine Avoider.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/Internecine Avoider.vi"/>
-				<Item Name="QTCP_Client_Read.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/QTCP_Client_Read.vi"/>
-				<Item Name="QTCP_Server_GetCommand.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/QTCP_Server_GetCommand.vi"/>
-				<Item Name="QTCP_Server_Reply.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/QTCP_Server_Reply.vi"/>
-				<Item Name="TCP Listen Internal List.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/TCP Listen Internal List.vi"/>
-				<Item Name="TCP Listen List Operations.ctl" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/TCP Listen List Operations.ctl"/>
-				<Item Name="TCP Listen.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/tcp.llb/TCP Listen.vi"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="../../../nanocal/Nanocalorimetry/data/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
-			</Item>
 			<Item Name="TCP Multiple Connections Data.ctl" Type="VI" URL="../nanocal server folder LV18/TCP Multiple Connections example/controls/TCP Multiple Connections Data.ctl"/>
 			<Item Name="TCP Multiple Connections State.ctl" Type="VI" URL="../nanocal server folder LV18/TCP Multiple Connections example/controls/TCP Multiple Connections State.ctl"/>
 		</Item>
