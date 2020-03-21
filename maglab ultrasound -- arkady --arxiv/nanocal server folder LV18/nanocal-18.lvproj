@@ -453,7 +453,6 @@
 			<Item Name="cursor sate.ctl" Type="VI" URL="../cursor sate.ctl"/>
 			<Item Name="engine reading icicle.ctl" Type="VI" URL="../engine reading icicle.ctl"/>
 			<Item Name="icicle.ctl" Type="VI" URL="../icicle.ctl"/>
-			<Item Name="icicle.ctl" Type="VI" URL="../nanocal server folder LV18/icicle.ctl"/>
 			<Item Name="interpolation state - complex.ctl" Type="VI" URL="../interpolation state - complex.ctl"/>
 			<Item Name="interpolation state - real.ctl" Type="VI" URL="../interpolation state - real.ctl"/>
 			<Item Name="linear interpolation iiii- complex.vi" Type="VI" URL="../linear interpolation iiii- complex.vi"/>
@@ -462,11 +461,9 @@
 			<Item Name="nanocal calc command.ctl" Type="VI" URL="../nanocal calc command.ctl"/>
 			<Item Name="nanocal calculate.vi" Type="VI" URL="../nanocal calculate.vi"/>
 			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../nanocal publish -- frontpanel.vi"/>
-			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../nanocal server folder LV18/nanocal publish -- frontpanel.vi"/>
 			<Item Name="nanocal-frontend -- data type.ctl" Type="VI" URL="../nanocal-frontend -- data type.ctl"/>
 			<Item Name="publish -- pick nameed element.vi" Type="VI" URL="../publish -- pick nameed element.vi"/>
 			<Item Name="publisher action.ctl" Type="VI" URL="../publisher action.ctl"/>
-			<Item Name="publisher action.ctl" Type="VI" URL="../nanocal server folder LV18/publisher action.ctl"/>
 			<Item Name="Q - not nan -- real.vi" Type="VI" URL="../Q - not nan -- real.vi"/>
 			<Item Name="Q - not nan and gtr than zero - Real.vi" Type="VI" URL="../Q - not nan and gtr than zero - Real.vi"/>
 			<Item Name="Q -- check range -- i -- real.vi" Type="VI" URL="../Q -- check range -- i -- real.vi"/>

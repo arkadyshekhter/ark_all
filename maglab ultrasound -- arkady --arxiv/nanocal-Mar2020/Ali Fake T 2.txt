@@ -1,0 +1,19 @@
+Thermometer ID: Ali Fake T 2
+Type: Polynomial
+Info: 
+X type: R (ohm)
+Y type: T (K)
+x0: 10000
+y0: 1
+xmin: 1000
+xmax: 100000
+Polynomial coefficients:
+X scaling:log10(x/x0)
+Y scaling:log10(y/y0)
+0.2106
+-1.9547183805737
+0.70744760503859
+-0.14805728518745
+-0.15153669415591
+0.13143244734904
+-0.027637396733984
