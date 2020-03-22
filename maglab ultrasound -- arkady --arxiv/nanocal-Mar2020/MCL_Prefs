@@ -1,7 +1,0 @@
-[01DE9211]
-IP address = "172.22.11.2"
-Hostname = "MCL1-540-SN25"
-
-[Pref1.0]
-SystemIDs = "<Array>\0D\0A<Name></Name>\0D\0A<Dimsize>1</Dimsize>\0D\0A<String>\0D\0A<Name>System ID (serial)</Name>\0D\0A<Val>01DE9211</Val>\0D\0A</String>\0D\0A</Array>\0D\0A"
-SystemID = "01DE9211"
