@@ -1,0 +1,82 @@
+=============new===============
+
+[LabActor]
+server.app.propertiesEnabled=True
+server.tcp.serviceName="My Computer/VI Server"
+server.vi.propertiesEnabled=True
+WebServer.TcpAccess="c+*"
+WebServer.ViAccess="+*"
+DebugServerEnabled=False
+DebugServerWaitOnLaunch=False
+DefaultDataFileLocation="/opt/C/Data"
+tmpdir=/opt/C/Data
+
+;Possible module names: "NONE", "NI-DAQmx", "NI-Scope", "Red Pitaya Digitizer", "GaGe", "VISA Device", "Red Pitaya Lockin", "Monitor Controller", "Pulse Controller", "Integrate Pulse", "Lockin Processor", "File converter", "NHMFL Synthesizer", "Micron Hyperion", "Spectrum Recorder", "Resonance Detector", "TCP Communications", "Format Resonances", "Ruby Spectra", "PID Controller", "Quantum Design"
+
+[Startup Configuration]
+Load Modules.<size(s)> = "5"
+Load Modules 0 = "Monitor Controller"
+Load Modules 1 = "VISA Device"
+Load Modules 2 = "NI-DAQmx"
+Load Modules 3 = "File converter"
+Load Modules 4 = "TCP Communications"
+Full window = "TRUE"
+
+External Modules Loaders.<size(s)> = "0"
+External Modules Loaders 0 = "..\..\ZILabActor\Load ZI Modules.vi"
+
+
+
+
+
+=============old===================
+
+
+
+
+[Startup Configuration]
+Start-up Configuration.Load Modules.<size(s)> = "5"
+Start-up Configuration.Load Modules 0 = "Pulse Controller"
+Start-up Configuration.Load Modules 1 = "Monitor Controller"
+Start-up Configuration.Load Modules 2 = "NI-DAQmx"
+Start-up Configuration.Load Modules 3 = "VISA Device"
+Start-up Configuration.Load Modules 4 = "File converter"
+Start-up Configuration.Load Modules 5 = "Red Pitaya Lockin"
+Start-up Configuration.Load Modules 6 = "NI-Scope"
+Start-up Configuration.Load Modules 7 = "Red Pitaya Digitizer"
+Start-up Configuration.Load Modules 8 = "Integrate Pulse"
+Start-up Configuration.Load Modules 9 = "Lockin Processor"
+Start-up Configuration.Load Modules 10 = "NHMFL Synthesizer"
+Start-up Configuration.Load Modules 11 = "Spectrum Recorder"
+Start-up Configuration.Load Modules 12 = "TCP Communications"
+Start-up Configuration.Load Modules 13 = "Format Resonances"
+Start-up Configuration.Load Modules 14 = "Ruby Spectra"
+Start-up Configuration.Load Modules 15 = "PID Controller"
+Start-up Configuration.Load Modules 16 = "Resonance Detector"
+
+
+Full window = "TRUE"
+
+Start-up Configuration.External Modules Loaders.<size(s)> = "3"
+Start-up Configuration.External Modules Loaders 0 = "../../ZILabActor/Load Stepper Modules.vi"
+Start-up Configuration.External Modules Loaders 1 = "../../ZILabActor/Load Magnet reader Modules.vi"
+Start-up Configuration.External Modules Loaders 2 = "../../ZILabActor/Load PLL reader Modules.vi"
+
+Start-up Configuration.Root Data Folder = "/opt/new/data"
+
+
+
+==========================
+
+
+
+Full window = "TRUE"
+
+Start-up Configuration.External Modules Loaders.<size(s)> = "2"
+Start-up Configuration.External Modules Loaders 0 = "../../ZILabActor/Load Stepper Modules.vi"
+Start-up Configuration.External Modules Loaders 1 = "../../ZILabActor/Load PLL reader Modules.vi"
+Start-up Configuration.External Modules Loaders 2 = "../../ZILabActor/Load Magnet reader Modules.vi"
+
+Start-up Configuration.Root Data Folder = "/C/Data"
+
+
