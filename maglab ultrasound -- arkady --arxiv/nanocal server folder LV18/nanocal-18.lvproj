@@ -565,7 +565,6 @@
 			<Item Name="nanocal calculate.vi" Type="VI" URL="../nanocal calculate.vi"/>
 			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../nanocal publish -- frontpanel.vi"/>
 			<Item Name="nanocal-frontend -- data type.ctl" Type="VI" URL="../nanocal-frontend -- data type.ctl"/>
-			<Item Name="NanoCal_GetLatestData.vi" Type="VI" URL="../../../../nanocal/nanocal software Windows LV20 07Nov2020/Nanocal software/Nanocalorimetry/data/NanoCalLib.lvlibp/NanoCal/NanoCal_GetLatestData.vi"/>
 			<Item Name="NanoCal_GetReference.vi" Type="VI" URL="../../../../nanocal/nanocal software Windows LV20 07Nov2020/Nanocal software/Nanocalorimetry/data/NanoCalLib.lvlibp/NanoCal/NanoCal_GetReference.vi"/>
 			<Item Name="publish -- pick nameed element.vi" Type="VI" URL="../publish -- pick nameed element.vi"/>
 			<Item Name="publisher action.ctl" Type="VI" URL="../publisher action.ctl"/>
