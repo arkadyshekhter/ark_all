@@ -446,12 +446,8 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../NanoCalLib 20210521/AttoTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="../../../NanoCalLib 20210521/AttoTCP.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
-			<Item Name="FPGASharedResources_Lockin_Typedef.ctl" Type="VI" URL="../../../../NanoCalLib 20210521/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_Lockin_Typedef.ctl"/>
-			<Item Name="FPGASharedResources_PhaseType_Typedef.ctl" Type="VI" URL="../../../../NanoCalLib 20210521/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_PhaseType_Typedef.ctl"/>
-			<Item Name="FPGASharedResources_Readings_ReadingChannelTypedef.ctl" Type="VI" URL="../../../../NanoCalLib 20210521/MCL.lvlibp/SynkTek FPGA/FPGA_SharedResources/FPGASharedResources_Readings_ReadingChannelTypedef.ctl"/>
 			<Item Name="icicle.ctl" Type="VI" URL="../icicle.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="MCL_Get_SelectDataReading.vi" Type="VI" URL="../../../../NanoCalLib 20210521/MCL.lvlibp/MCL library/MCL_Get_SelectDataReading.vi"/>
 			<Item Name="MCLWeb.lvlibp" Type="LVLibp" URL="../../../NanoCalLib 20210521/MCLWeb.lvlibp">
 				<Item Name="Testing web access" Type="Folder">
 					<Item Name="MCLWeb_GetURL.vi" Type="VI" URL="../../../NanoCalLib 20210521/MCLWeb.lvlibp/MCLWeb/MCLWeb_GetURL.vi"/>
@@ -538,9 +534,6 @@
 			</Item>
 			<Item Name="nanocal publish -- frontpanel.vi" Type="VI" URL="../nanocal publish -- frontpanel.vi"/>
 			<Item Name="nanocal-frontend -- data type.ctl" Type="VI" URL="../nanocal-frontend -- data type.ctl"/>
-			<Item Name="NanoCal_GetLatestData.vi" Type="VI" URL="../../../../NanoCalLib 20210521/NanoCalLib.lvlibp/NanoCal/NanoCal_GetLatestData.vi"/>
-			<Item Name="NanoCal_GetReference.vi" Type="VI" URL="../../../../NanoCalLib 20210521/NanoCalLib.lvlibp/NanoCal/NanoCal_GetReference.vi"/>
-			<Item Name="publisher action.ctl" Type="VI" URL="../../publisher action.ctl"/>
 			<Item Name="publisher action.ctl" Type="VI" URL="../publisher action.ctl"/>
 			<Item Name="QTCP.lvlibp" Type="LVLibp" URL="../../../NanoCalLib 20210521/QTCP.lvlibp">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../NanoCalLib 20210521/QTCP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
