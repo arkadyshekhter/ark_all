@@ -1,6 +1,0 @@
-
-Oct17, 2019 -- email from Tino Wagner 
-fix MacOS Gatekeeper problem 
-
-xattr -r -d com.apple.quarantine Zurich\ Instruments\ LabOne
-
