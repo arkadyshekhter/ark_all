@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    306685,       8278]
-NotebookOptionsPosition[    304126,       8239]
-NotebookOutlinePosition[    304653,       8259]
-CellTagsIndexPosition[    304610,       8256]
+NotebookDataLength[    306760,       8278]
+NotebookOptionsPosition[    304201,       8239]
+NotebookOutlinePosition[    304728,       8259]
+CellTagsIndexPosition[    304685,       8256]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5057,7 +5057,7 @@ Cell[BoxData[
              SuperscriptBox[
               RowBox[{"\[Eta]", "[", 
                SubscriptBox["\[Omega]", "n"], "]"}], "*"]}]}], 
-           ")"}]}]}]]}]}]}]}], "\n", "\[IndentingNewLine]", 
+           ")"}]}]}]]}]}]}]}], "\[IndentingNewLine]", "\n", 
    RowBox[{"\[Integral]", 
     RowBox[{
      RowBox[{"d\[Eta]", "[", 
@@ -5323,77 +5323,77 @@ Cell[BoxData[
    "  ", "\[IndentingNewLine]", 
    RowBox[{"=", 
     RowBox[{
-     RowBox[{"(", " ", 
-      RowBox[{
-       RowBox[{
-        SuperscriptBox["\[ExponentialE]", 
-         RowBox[{"X", 
-          RowBox[{"{", 
-           RowBox[{"\[Zeta]", "[", 
-            SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}]], " ", 
-        FractionBox["1", 
-         RowBox[{" ", 
-          SuperscriptBox["\[CapitalDelta]\[Omega]", "2"]}]], 
-        FractionBox["d", 
-         RowBox[{"d\[Zeta]", "[", 
-          SubscriptBox["\[Omega]", "n"], "]"}]], 
-        FractionBox["d", 
-         RowBox[{
-          SuperscriptBox["d\[Zeta]", "*"], "[", 
-          SubscriptBox["\[Omega]", "n"], "]"}]], 
-        SuperscriptBox["\[ExponentialE]", 
-         RowBox[{
-          RowBox[{"-", "X"}], 
-          RowBox[{"{", 
-           RowBox[{"\[Zeta]", "[", 
-            SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}]]}], "-", " ", 
-       SuperscriptBox[
-        RowBox[{"(", 
-         RowBox[{
-          SuperscriptBox["\[ExponentialE]", 
-           RowBox[{"X", 
-            RowBox[{"{", 
-             RowBox[{"\[Zeta]", "[", 
-              SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}]], " ", 
-          FractionBox["1", 
-           RowBox[{" ", "\[CapitalDelta]\[Omega]"}]], 
-          FractionBox["d", 
-           RowBox[{"d\[Zeta]", "[", 
-            SubscriptBox["\[Omega]", "n"], "]"}]], 
-          SuperscriptBox["\[ExponentialE]", 
-           RowBox[{
-            RowBox[{"-", "X"}], 
-            RowBox[{"{", 
-             RowBox[{"\[Zeta]", "[", 
-              SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}]]}], ")"}], "2"]}],
-       ")"}], " ", 
-     SubscriptBox["|", 
-      RowBox[{"{", 
+     RowBox[{
+      RowBox[{"(", " ", 
        RowBox[{
         RowBox[{
-         SuperscriptBox["\[Zeta]", "*"], "[", 
-         SubscriptBox["\[Omega]", "n"], "]"}], "=", "0"}], "}"}]]}]}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"=", 
-    RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"X", 
+           RowBox[{"{", 
+            RowBox[{"\[Zeta]", "[", 
+             SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}]], " ", 
+         FractionBox["1", 
+          RowBox[{" ", 
+           SuperscriptBox["\[CapitalDelta]\[Omega]", "2"]}]], 
+         FractionBox["d", 
+          RowBox[{"d\[Zeta]", "[", 
+           SubscriptBox["\[Omega]", "n"], "]"}]], 
+         FractionBox["d", 
+          RowBox[{
+           SuperscriptBox["d\[Zeta]", "*"], "[", 
+           SubscriptBox["\[Omega]", "n"], "]"}]], 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "X"}], 
+           RowBox[{"{", 
+            RowBox[{"\[Zeta]", "[", 
+             SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}]]}], "-", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"X", 
+             RowBox[{"{", 
+              RowBox[{"\[Zeta]", "[", 
+               SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}]], " ", 
+           FractionBox["1", 
+            RowBox[{" ", "\[CapitalDelta]\[Omega]"}]], 
+           FractionBox["d", 
+            RowBox[{"d\[Zeta]", "[", 
+             SubscriptBox["\[Omega]", "n"], "]"}]], 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"-", "X"}], 
+             RowBox[{"{", 
+              RowBox[{"\[Zeta]", "[", 
+               SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}]]}], ")"}], 
+         "2"]}], ")"}], " ", 
+      SubscriptBox["|", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["\[Zeta]", "*"], "[", 
+          SubscriptBox["\[Omega]", "n"], "]"}], "=", "0"}], "}"}]]}], 
+     "\[IndentingNewLine]", "=", 
      RowBox[{
-      FractionBox["1", 
-       RowBox[{" ", 
-        SuperscriptBox["\[CapitalDelta]\[Omega]", "2"]}]], "  ", 
-      FractionBox["d", 
-       RowBox[{"d\[Zeta]", "[", 
-        SubscriptBox["\[Omega]", "n"], "]"}]], 
-      FractionBox["d", 
-       RowBox[{
-        SuperscriptBox["d\[Zeta]", "*"], "[", 
-        SubscriptBox["\[Omega]", "n"], "]"}]], "X", 
-      RowBox[{"{", 
-       RowBox[{"\[Zeta]", "[", 
-        SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}], " ", "=", " ", 
-     RowBox[{
-      FractionBox["1", "\[CapitalDelta]\[Omega]"], " ", 
-      RowBox[{"\[Pi]", "[", 
-       SubscriptBox["\[Omega]", "n"], "]"}]}]}]}], "\[IndentingNewLine]", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{" ", 
+         SuperscriptBox["\[CapitalDelta]\[Omega]", "2"]}]], "  ", 
+       FractionBox["d", 
+        RowBox[{"d\[Zeta]", "[", 
+         SubscriptBox["\[Omega]", "n"], "]"}]], 
+       FractionBox["d", 
+        RowBox[{
+         SuperscriptBox["d\[Zeta]", "*"], "[", 
+         SubscriptBox["\[Omega]", "n"], "]"}]], "X", 
+       RowBox[{"{", 
+        RowBox[{"\[Zeta]", "[", 
+         SubscriptBox["\[Omega]", "n"], "]"}], "}"}]}], " ", "=", " ", 
+      RowBox[{
+       FractionBox["1", "\[CapitalDelta]\[Omega]"], " ", 
+       RowBox[{"\[Pi]", "[", 
+        SubscriptBox["\[Omega]", "n"], "]"}]}]}]}]}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"\[LeftAngleBracket]", 
      RowBox[{"\[LeftAngleBracket]", 
@@ -5464,8 +5464,8 @@ Cell[BoxData[
      FractionBox["1", 
       RowBox[{"2", "\[Pi]"}]], " ", 
      RowBox[{"S", "[", 
-      SubscriptBox["\[Omega]", "n"], "]"}]}]}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", "\n", 
+      SubscriptBox["\[Omega]", "n"], "]"}]}]}], "\[IndentingNewLine]", "\n", 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"(", 
@@ -5504,8 +5504,8 @@ Cell[BoxData[
                SuperscriptBox["x", "2"]}], "+", 
               RowBox[{"b", " ", "x"}], " ", "+", "c"}]], ",", "x"}], "]"}]}], 
          ")"}], "2"]}], ")"}], "/.", 
-     RowBox[{"x", "->", "0"}]}], "//", "FullSimplify"}], "\n", 
-   "\[IndentingNewLine]", 
+     RowBox[{"x", "->", "0"}]}], "//", "FullSimplify"}], 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"2", " ", "a"}]}]}]], "Input",
  CellChangeTimes->{{3.845249394583037*^9, 3.8452493989543953`*^9}, {
    3.845253564308907*^9, 3.845253579666177*^9}, 3.8452536508384447`*^9, 
@@ -8276,10 +8276,10 @@ Cell[163123, 4567, 1666, 50, 229, "Input",ExpressionUUID->"e8ed7035-d43b-4778-aa
 Cell[164792, 4619, 322, 7, 74, "Input",ExpressionUUID->"7474bb9c-f884-4c85-995b-c17067ce5128"],
 Cell[165117, 4628, 1244, 32, 127, "Input",ExpressionUUID->"a74bf3ef-3494-4994-bce0-4795ebfbee03"],
 Cell[166364, 4662, 9004, 248, 846, "Input",ExpressionUUID->"d4d26481-2916-48a7-a0a5-bb7feb1ae822"],
-Cell[175371, 4912, 21980, 602, 1543, "Input",ExpressionUUID->"98ca29bd-df62-498d-b577-669bb3b6f0a0"],
-Cell[197354, 5516, 91957, 2289, 6659, "Input",ExpressionUUID->"9e47a793-c7b6-43a2-9b75-0479a7df49eb"],
-Cell[289314, 7807, 208, 4, 109, "Input",ExpressionUUID->"2b66cd05-459f-4b69-9348-b19e93c71de7"],
-Cell[289525, 7813, 14597, 424, 802, "Input",ExpressionUUID->"d68e1d8c-0221-47b9-8e6f-8a468622d769"]
+Cell[175371, 4912, 22055, 602, 1543, "Input",ExpressionUUID->"98ca29bd-df62-498d-b577-669bb3b6f0a0"],
+Cell[197429, 5516, 91957, 2289, 6659, "Input",ExpressionUUID->"9e47a793-c7b6-43a2-9b75-0479a7df49eb"],
+Cell[289389, 7807, 208, 4, 109, "Input",ExpressionUUID->"2b66cd05-459f-4b69-9348-b19e93c71de7"],
+Cell[289600, 7813, 14597, 424, 802, "Input",ExpressionUUID->"d68e1d8c-0221-47b9-8e6f-8a468622d769"]
 }
 ]
 *)
